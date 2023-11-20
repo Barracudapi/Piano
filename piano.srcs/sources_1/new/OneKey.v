@@ -29,9 +29,9 @@ input key_gpio_in
     );
     wire pos_edge, neg_edge;
     
-    localparam    IDLE = 4'b0001,
-               negEdge = 4'b0010,
-                  Down = 4'b0100,
-               posEdge = 4'b1000
+//    localparam    IDLE = 4'b0001,
+//               negEdge = 4'b0010,
+//                  Down = 4'b0100,
+//               posEdge = 4'b1000
  
 endmodule
