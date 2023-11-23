@@ -2,19 +2,25 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Nov 20 14:12:51 2023
-# Process ID: 14096
-# Current directory: C:/Users/86138/Documents/GitHub/Piano
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17216 C:\Users\86138\Documents\GitHub\Piano\piano.xpr
-# Log file: C:/Users/86138/Documents/GitHub/Piano/vivado.log
-# Journal file: C:/Users/86138/Documents/GitHub/Piano\vivado.jou
+# Start of session at: Thu Nov 23 17:16:17 2023
+# Process ID: 8156
+# Current directory: C:/Users/Administrator/Documents/GitHub/Piano
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2264 C:\Users\Administrator\Documents\GitHub\Piano\piano.xpr
+# Log file: C:/Users/Administrator/Documents/GitHub/Piano/vivado.log
+# Journal file: C:/Users/Administrator/Documents/GitHub/Piano\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/86138/Documents/GitHub/Piano/piano.xpr
+open_project C:/Users/Administrator/Documents/GitHub/Piano/piano.xpr
 update_compile_order -fileset sources_1
-close [ open C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v w ]
-add_files C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v
+close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/led.v w ]
+add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/led.v
 update_compile_order -fileset sources_1
-close [ open C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/auto_play.v w ]
-add_files C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/auto_play.v
+close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/song1.v w ]
+add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/song1.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/song2.v w ]
+add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/song2.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/song3.v w ]
+add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/song3.v
 update_compile_order -fileset sources_1
