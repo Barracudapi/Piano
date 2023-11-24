@@ -22,7 +22,7 @@
 
 module generate_melody(
     input clk,
-    input frequency,
+    input [11:0]frequency,
     output reg melody = 0
     );
     reg [31:0]lasting_time;
@@ -36,7 +36,7 @@ module generate_melody(
     if(frequency == 1)
         lasting_time = 1;
     else
-        lasting_time = N / (2*frequency);
+        lasting_time = N / (frequency);
     end
     
     //counter is to count how many clk cycles it will last

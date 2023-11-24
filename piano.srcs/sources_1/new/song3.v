@@ -23,13 +23,16 @@
 module song3(
 input wire clk,
 input wire reset,
-input wire [5:0] cnt,
 output reg [4:0] music
     );
+    
+    reg [5:0] cnt;
+    
     always @(posedge clk or negedge reset)begin
         if(reset == 1'b0)
             music <= 5'd0;
         else
+        cnt <= cnt +1;
             case(cnt) 
             
             
