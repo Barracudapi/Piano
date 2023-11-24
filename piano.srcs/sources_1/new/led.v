@@ -21,6 +21,11 @@
 
 
 module led(
-
+input wire [7:0] sw,
+output reg [7:0] led
     );
+   
+   always @(*) begin
+    led <= sw;
+    end
 endmodule
