@@ -25,7 +25,7 @@ input wire clk,
 input wire rst,
 input wire [1:0] state,
 input wire [3:0] select_songs,
-output wire frequency
+output wire melody
     );
     parameter  IDLE = 2'b00,
                 PLAY= 2'b01,
@@ -35,19 +35,16 @@ output wire frequency
                 song3= 3'b100;        
     
     reg [4:0] music;
+    wire music1, music2, music3;
+    wire [11:0] frequency;
+    wire melody;
     
-//   generate
-//      if (select_songs == song1) begin
-//        song1 s1(clk, rst, music);
-//      end else if (select_songs == song2) begin
-//        song2 s2(clk, rst, music);
-//      end else if (select_songs == song3) begin
-//        song3 s3(clk, rst, music);
-//      end
-//  endgenerate
-
-
-//i dont know how to instantiate them 
+    
+    song1 s1(clk, rst, music1);
+    song2 s2(clk, rst, music2);
+    song3 s3(clk, rst, music3);
+    
+    
     
     always @(*) begin
         case(state) 
