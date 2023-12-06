@@ -2,12 +2,12 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Nov 25 20:02:54 2023
-# Process ID: 58352
-# Current directory: C:/Users/86138/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/86138/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim/xsim.dir/auto_play_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/86138/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/86138/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Wed Dec  6 12:30:41 2023
+# Process ID: 11672
+# Current directory: C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim/xsim.dir/freeplay_tb2_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/86138/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim/xsim.dir/auto_play_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sat Nov 25 20:02:55 2023...
+source C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim/xsim.dir/freeplay_tb2_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec  6 12:30:42 2023...

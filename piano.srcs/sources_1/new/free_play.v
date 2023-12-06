@@ -23,7 +23,7 @@
 module free_play(
     input [2:0]button,
     input [7:0]sw,
-    output reg frequency
+    output reg [10:0] frequency
     );
     reg [2:0]range;
     
@@ -42,7 +42,7 @@ module free_play(
     
 //    parameter silence = 1;
 
-        //these are the frequency of teach pitch
+        //these are the frequency of each pitch
 parameter low1 = 262, middle1 = 523, high1 = 1046,
           low2 = 294, middle2 = 587, high2 = 1175,
           low3 = 330, middle3 = 659, high3 = 1318,
@@ -73,73 +73,73 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
     //calculate the frequency
     always @(sw) begin
         case(sw) 
-            7'b0100_0000: 
+            8'b0100_0000: 
                 case(range)
                     high: frequency = high7;
                     middle: frequency = middle7;
                     low: frequency = low7;
                     endcase
-           7'b0010_0000: 
+           8'b0010_0000: 
                 case(range)
                     high: frequency = high6;
                     middle: frequency = middle6;
                     low: frequency = low6;
                     endcase
-           7'b1010_0000: 
+           8'b1010_0000: 
                 case(range)
                     high: frequency = high6s;
                     middle: frequency = middle6s;
                     low: frequency = low6s;                                       
                     endcase
-           7'b0001_0000: 
+           8'b0001_0000: 
                 case(range)
                     high: frequency = high5;
                     middle: frequency = middle5;
                     low: frequency = low5;
                     endcase
-           7'b1001_0000: 
+           8'b1001_0000: 
                 case(range)
                     high: frequency = high5s;
                     middle: frequency = middle5s;
                     low: frequency = low5s;
                     endcase
-            7'b0000_1000: 
+            8'b0000_1000: 
                 case(range)
                     high: frequency = high4;
                     middle: frequency = middle4;
                     low: frequency = low4;
                     endcase
-           7'b1000_1000: 
+           8'b1000_1000: 
                 case(range)
                     high: frequency = high4;
                     middle: frequency = middle4;
                     low: frequency = low4;
                     endcase    
-          7'b0000_0100:       
+          8'b0000_0100:       
                 case(range)
                     high: frequency = high3;
                     middle: frequency = middle3;
                     low: frequency = low3;
                     endcase
-            7'b0000_0010: 
+            8'b0000_0010: 
                 case(range)
                     high: frequency = high2;
                     middle: frequency = middle2;
                     low: frequency = low2;
                     endcase
-           7'b1000_0010: 
+           8'b1000_0010: 
                 case(range)
                     high: frequency = high2s;
                     middle: frequency = middle2s;
                     low: frequency = low2s;   
                     endcase   
-             7'b0000_0001: 
+             8'b0000_0001: 
                 case(range)
                     high: frequency = high1;
                     middle: frequency = middle1;
                     low: frequency = low1;
                     endcase
-           7'b1000_0001: 
+           8'b1000_0001: 
                 case(range)
                     high: frequency = high1s;
                     middle: frequency = middle1s;
@@ -149,6 +149,5 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
            endcase
     
     end
-   
     
 endmodule

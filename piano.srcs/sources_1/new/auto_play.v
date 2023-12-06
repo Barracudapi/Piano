@@ -34,7 +34,7 @@ output wire melody
     //wire [4:0] music1;
     wire [4:0]music2;
     wire [4:0]music3;
-    wire [11:0] frequency;
+    wire [10:0] frequency;
     reg[1:0] counter;
     reg [1:0] state;
     reg pause;
