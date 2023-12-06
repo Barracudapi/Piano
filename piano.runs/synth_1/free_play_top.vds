@@ -2,12 +2,12 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Dec  6 13:56:39 2023
-# Process ID: 14256
-# Current directory: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1
+# Start of session at: Wed Dec  6 16:48:36 2023
+# Process ID: 22248
+# Current directory: C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1
 # Command line: vivado.exe -log free_play_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source free_play_top.tcl
-# Log file: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/free_play_top.vds
-# Journal file: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1\vivado.jou
+# Log file: C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1/free_play_top.vds
+# Journal file: C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source free_play_top.tcl -notrace
 Command: synth_design -top free_play_top -part xc7a35tcsg324-1
@@ -15,12 +15,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 352 
+INFO: Helper process launched with PID 19568 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 331.363 ; gain = 101.453
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 387.594 ; gain = 98.617
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'free_play_top' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play_top.v:23]
-INFO: [Synth 8-638] synthesizing module 'free_play' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:23]
+INFO: [Synth 8-638] synthesizing module 'free_play_top' [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'free_play' [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:23]
 	Parameter low1 bound to: 262 - type: integer 
 	Parameter middle1 bound to: 523 - type: integer 
 	Parameter high1 bound to: 1046 - type: integer 
@@ -61,28 +61,30 @@ INFO: [Synth 8-638] synthesizing module 'free_play' [C:/Users/Administrator/Docu
 	Parameter high bound to: 3'b100 
 	Parameter middle bound to: 3'b010 
 	Parameter low bound to: 3'b001 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:65]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:77]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:83]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:89]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:95]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:101]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:107]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:113]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:119]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:125]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:131]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:137]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:143]
-WARNING: [Synth 8-567] referenced signal 'range' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:74]
-INFO: [Synth 8-256] done synthesizing module 'free_play' (1#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:23]
-INFO: [Synth 8-638] synthesizing module 'generate_melody' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:66]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:78]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:84]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:96]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:108]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:138]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:144]
+INFO: [Synth 8-256] done synthesizing module 'free_play' (1#1) [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:23]
+INFO: [Synth 8-638] synthesizing module 'led' [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-256] done synthesizing module 'led' (2#1) [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-638] synthesizing module 'generate_melody' [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:23]
 	Parameter N bound to: 100000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generate_melody' (2#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:23]
-INFO: [Synth 8-256] done synthesizing module 'free_play_top' (3#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play_top.v:23]
-WARNING: [Synth 8-3331] design free_play_top has unconnected port reset
+INFO: [Synth 8-256] done synthesizing module 'generate_melody' (3#1) [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:23]
+INFO: [Synth 8-256] done synthesizing module 'free_play_top' (4#1) [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play_top.v:23]
+WARNING: [Synth 8-3917] design free_play_top has port sd driven by constant 1
+WARNING: [Synth 8-3331] design free_play has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 383.527 ; gain = 153.617
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 439.066 ; gain = 150.090
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -92,46 +94,44 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 383.527 ; gain = 153.617
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 439.066 ; gain = 150.090
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc]
-Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/free_play_top_propImpl.xdc].
+Parsing XDC File [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc]
+Finished Parsing XDC File [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/free_play_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/free_play_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 711.289 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 765.637 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 711.289 ; gain = 481.379
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 765.637 ; gain = 476.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 711.289 ; gain = 481.379
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 765.637 ; gain = 476.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 711.289 ; gain = 481.379
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 765.637 ; gain = 476.660
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "range" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "frequency" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
-WARNING: [Synth 8-327] inferring latch for variable 'frequency_reg' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:78]
-WARNING: [Synth 8-327] inferring latch for variable 'range_reg' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:66]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 711.289 ; gain = 481.379
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 765.637 ; gain = 476.660
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -144,6 +144,8 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
+	               11 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     27 Bit        Muxes := 1     
@@ -159,6 +161,9 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module free_play 
 Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input     11 Bit        Muxes := 7     
 	   4 Input      1 Bit        Muxes := 2     
@@ -184,10 +189,11 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element gm/counter_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
+WARNING: [Synth 8-6014] Unused sequential element gm/counter_reg was removed.  [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
+WARNING: [Synth 8-3917] design free_play_top has port sd driven by constant 1
 WARNING: [Synth 8-3331] design free_play_top has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 711.289 ; gain = 481.379
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 765.637 ; gain = 476.660
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -199,13 +205,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 711.289 ; gain = 481.379
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 765.637 ; gain = 476.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 711.289 ; gain = 481.379
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 765.637 ; gain = 476.660
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -217,7 +223,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 733.258 ; gain = 503.348
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 789.242 ; gain = 500.266
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -241,7 +247,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 733.258 ; gain = 503.348
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 789.242 ; gain = 500.266
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -254,7 +260,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 733.258 ; gain = 503.348
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 789.242 ; gain = 500.266
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -266,25 +272,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 733.258 ; gain = 503.348
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 789.242 ; gain = 500.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 733.258 ; gain = 503.348
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 789.242 ; gain = 500.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 733.258 ; gain = 503.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 789.242 ; gain = 500.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 733.258 ; gain = 503.348
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 789.242 ; gain = 500.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -303,46 +309,43 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |   116|
 |3     |LUT1   |     1|
-|4     |LUT2   |   111|
+|4     |LUT2   |   110|
 |5     |LUT3   |   256|
-|6     |LUT4   |    10|
-|7     |LUT5   |    43|
-|8     |LUT6   |    52|
-|9     |MUXF7  |     3|
-|10    |FDRE   |    33|
-|11    |LD     |    14|
-|12    |IBUF   |    12|
-|13    |OBUF   |     1|
+|6     |LUT4   |     8|
+|7     |LUT5   |    42|
+|8     |LUT6   |    53|
+|9     |FDRE   |    47|
+|10    |IBUF   |    12|
+|11    |OBUF   |    13|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+----------------+------+
 |      |Instance |Module          |Cells |
 +------+---------+----------------+------+
-|1     |top      |                |   653|
+|1     |top      |                |   659|
 |2     |  gm     |generate_melody |   541|
-|3     |  play   |free_play       |    98|
+|3     |  play   |free_play       |    92|
 +------+---------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 733.258 ; gain = 503.348
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 789.242 ; gain = 500.266
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 733.258 ; gain = 175.586
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 733.258 ; gain = 503.348
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 789.242 ; gain = 173.695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 789.242 ; gain = 500.266
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 14 instances were transformed.
-  LD => LDCE: 14 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+35 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 733.258 ; gain = 507.387
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/free_play_top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 789.242 ; gain = 512.582
+INFO: [Common 17-1381] The checkpoint 'C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1/free_play_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file free_play_top_utilization_synth.rpt -pb free_play_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 733.258 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  6 13:57:06 2023...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.019 . Memory (MB): peak = 789.242 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  6 16:49:08 2023...

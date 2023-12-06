@@ -21,47 +21,17 @@
 
 
 module free_play(
+    input clk, reset,
     input [2:0]button,
     input [7:0]sw,
     output reg [10:0] frequency
     );
     reg [2:0]range;
-    
-    //these are the frequency of teach pitch
-//    parameter low1 = 262, low2 = 294, low3 = 330,
-//    low4 = 349, low5 = 370, low6 = 440,  low7 = 494;
-//    parameter low1s = 277, low2s = 311, low4s = 370, low5s = 415, low6s = 466;
-    
-//    parameter middle1 = 523, middle2 = 587, middle3 = 659,middle4 = 699, 
-//    middle5 = 784, middle6 = 880,  middle7 = 988;
-//    parameter middle1s = 277, middle2s = 311, middle4s = 370, middle5s = 415, middle6s = 466;
-    
-//    parameter high1 = 1046, high2 = 1175, high3 = 1318,
-//    high4 = 1398, high5 = 1569, high6 = 1762,  high7 = 1977;
-//    parameter high1s = 277, high2s = 311, high4s = 370, high5s = 415, high6s = 466;
-    
-//    parameter silence = 1;
 
-        //these are the frequency of each pitch
-parameter low1 = 262, middle1 = 523, high1 = 1046,
-          low2 = 294, middle2 = 587, high2 = 1175,
-          low3 = 330, middle3 = 659, high3 = 1318,
-          low4 = 349, middle4 = 699, high4 = 1398,
-          low5 = 370, middle5 = 784, high5 = 1569,
-          low6 = 440, middle6 = 880, high6 = 1762,
-          low7 = 494, middle7 = 988, high7 = 1977,
-          low1s = 277, middle1s = 277, high1s = 277,
-          low2s = 311, middle2s = 311, high2s = 311,
-          low4s = 370, middle4s = 370, high4s = 370,
-          low5s = 415, middle5s = 415, high5s = 415,
-          low6s = 466, middle6s = 466, high6s = 466,
-          silence = 1;
-
-    //the range
-    parameter high=3'b100, middle=3'b010, low=3'b001;
+    `include "ppppparameters.v";
     
     //when button is pressed, change the range
-    always @(button) begin
+    always @(posedge clk) begin
         case(button)
             high: range = high;
             middle: range = middle;
@@ -71,7 +41,7 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
     
     //when sw is turned on/off
     //calculate the frequency
-    always @(sw) begin
+    always @(posedge clk) begin
         case(sw) 
             8'b0100_0000: 
                 case(range)

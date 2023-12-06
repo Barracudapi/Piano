@@ -28,8 +28,8 @@ module generate_melody(
     reg [31:0]lasting_time;
     reg [31:0]counter;
     reg pitch_change;
-    parameter N = 100_000_000;
     
+    `include "ppppparameters.v";
     
     initial begin
     pitch_change = 0;

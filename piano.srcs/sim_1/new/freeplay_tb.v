@@ -25,10 +25,11 @@ module freeplay_tb( );
     reg clk_div;
     reg [2:0]button;
     reg [7:0]sw;
+    wire sd;
     wire melody;
     
 
-    free_play_top tb(clk_div, reset, button, sw, melody);
+    free_play_top tb(clk_div, reset, button, sw, sd, melody);
     
     initial begin
     clk_div = 1'b0;

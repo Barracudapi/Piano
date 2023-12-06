@@ -21,11 +21,15 @@
 
 
 module led(
-input wire [7:0] sw,
-output reg [7:0] led
+input  [7:0] sw,
+input  [2:0] range,
+output reg [7:0] ledsw,
+output reg [2:0] ledrange
     );
    
-   always @(*) begin
-    led <= sw;
+   always@(sw, range) begin
+    ledsw = sw;
+    ledrange = range;
     end
+   
 endmodule

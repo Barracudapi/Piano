@@ -24,9 +24,13 @@ module free_play_top(
  input clk, input reset,
  input wire [2:0] button,
  input [7:0] sw,
- output melody
+ output sd,
+ output melody,
+ output [7:0] ledsw,
+ output [2:0] ledrange
     );
     
+    assign sd = 1'b1;
     wire clk_div;
     
     wire [10:0] frequency;
@@ -37,11 +41,10 @@ module free_play_top(
 //        .clk_div(clk_div)
 //    );
 
-    free_play play(
-    .button(button),
-    .sw(sw),
-    .frequency(frequency)
-    );
+    free_play play(clk, reset, button, sw, frequency);
+    
+    led(sw, button, ledsw, ledrange);
+    
     
     generate_melody gm(.clk(clk), .frequency(frequency), .melody(melody));
 endmodule
