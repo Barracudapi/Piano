@@ -1,15 +1,8 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot freeplay_tb_behav xil_defaultlib.freeplay_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot auto_play_tb_behav xil_defaultlib.auto_play_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 12 for port frequency [C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/auto_play.v:90]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.free_play
-Compiling module xil_defaultlib.generate_melody
-Compiling module xil_defaultlib.free_play_top
-Compiling module xil_defaultlib.freeplay_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot freeplay_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

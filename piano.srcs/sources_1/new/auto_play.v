@@ -23,37 +23,38 @@
 module auto_play(
 input wire clk,
 input wire reset,
-input btn, pausebtn,
+input selectsongbtn, pausebtn,
+output sd,
 output wire [5:0]cnt,
-output reg [4:0] music,
-output [4:0] music1,
 output wire melody
     ); 
     
-    //reg [4:0] music;
-    //wire [4:0] music1;
+    assign sd = 1'b1;
+    
+    reg [4:0] music;
+    wire [4:0] music1;
     wire [4:0]music2;
     wire [4:0]music3;
     wire [10:0] frequency;
     reg[1:0] counter;
     reg [1:0] state;
     reg pause;
+    wire clk1;
     
     
-    song1 s1(clk, reset,cnt, music1);
-    song2 s2(clk, reset, music2);
-    song3 s3(clk, reset, music3);
     
-//    music_to_frequency mf(clk, music, frequency);
-//    generate_melody gm(clk, frequency, melody);
+    clock1 cl1(clk, clk1);
+    song1 s1(clk1, reset,cnt, music1);
+    song2 s2(clk1, reset, music2);
+    song3 s3(clk1, reset, music3);
+
     
-    
-    always @(posedge clk, negedge reset, negedge pausebtn) begin
-        if(!reset) begin
+    always @(posedge clk, posedge reset) begin
+        if(reset) begin
             counter <= 0;
             music <= 0;
             pause <= 1'b0;
-        end else if(!pausebtn) begin
+        end else if(pausebtn) begin
             pause <= ~pause;
         end
         else begin
@@ -62,12 +63,12 @@ output wire melody
         end
       
      
-     always @(posedge clk or negedge reset or btn) begin
+     always @(posedge clk or posedge reset) begin
      counter <= 0;
-        if(!reset)
+        if(reset)
             counter <= 0;
         else begin
-            if(!btn)
+            if(selectsongbtn)
             counter <= counter + 1;
             else
                 counter <= counter;
@@ -76,12 +77,11 @@ output wire melody
         end
      end  
      
-     always @(posedge clk or negedge reset) begin
-     music <= music1;
+     always @(counter) begin
           case(counter)
-             1: music <= music1;
-             2: music <= music2;
-             3: music <= music3;
+             1: music = music1;
+             2: music = music2;
+             3: music = music3;
              default: music <= music1;
           endcase
       end
@@ -89,4 +89,5 @@ output wire melody
      
      music_to_frequency mf(clk, music1, frequency);
      generate_melody gm(clk, frequency, melody);
+     
 endmodule

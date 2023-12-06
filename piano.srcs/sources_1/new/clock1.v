@@ -22,15 +22,11 @@
 
 module clock1(
 input wire clk,
-input wire reset,
 output reg clk_1
     );
     reg [31:0] div_cnt;
     always @(posedge clk) begin
-    if(reset == 0) begin
-        div_cnt <= 32'd0;
-    end
-    else if(div_cnt == 32'd100_000_000) begin
+    if(div_cnt == 32'd100_000_000) begin
         div_cnt <= 0;
     end
     else begin
@@ -39,10 +35,7 @@ output reg clk_1
 end
 
     always @(posedge clk) begin
-        if(reset == 0) begin
-            clk_1 <= 0;
-    end
-    else if (div_cnt == 32'd50_000_000) begin
+    if (div_cnt == 32'd50_000_000) begin
         clk_1 <= 1;
     end
     else if(div_cnt == 32'd100_000_000) begin

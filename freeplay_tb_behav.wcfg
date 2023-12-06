@@ -3,61 +3,65 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="freeplay_tb_behav.wdb" id="1">
+      <db_ref path="auto_play_tb_behav.wdb" id="1">
          <top_modules>
-            <top_module name="freeplay_tb" />
+            <top_module name="auto_play_tb" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="13217865000001fs"></ZoomEndTime>
-      <Cursor1Time time="1908405000000fs"></Cursor1Time>
+      <ZoomEndTime time="13217865000002fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
-   <wvobject fp_name="/freeplay_tb/reset" type="logic">
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/auto_play_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/auto_play_tb/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject fp_name="/freeplay_tb/clk_div" type="logic">
-      <obj_property name="ElementShortName">clk_div</obj_property>
-      <obj_property name="ObjectShortName">clk_div</obj_property>
+   <wvobject fp_name="/auto_play_tb/btn" type="logic">
+      <obj_property name="ElementShortName">btn</obj_property>
+      <obj_property name="ObjectShortName">btn</obj_property>
    </wvobject>
-   <wvobject fp_name="/freeplay_tb/button" type="array">
-      <obj_property name="ElementShortName">button[2:0]</obj_property>
-      <obj_property name="ObjectShortName">button[2:0]</obj_property>
+   <wvobject fp_name="/auto_play_tb/pausebtn" type="logic">
+      <obj_property name="ElementShortName">pausebtn</obj_property>
+      <obj_property name="ObjectShortName">pausebtn</obj_property>
    </wvobject>
-   <wvobject fp_name="/freeplay_tb/sw" type="array">
-      <obj_property name="ElementShortName">sw[7:0]</obj_property>
-      <obj_property name="ObjectShortName">sw[7:0]</obj_property>
+   <wvobject fp_name="/auto_play_tb/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[5:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/freeplay_tb/melody" type="logic">
+   <wvobject fp_name="/auto_play_tb/music" type="array">
+      <obj_property name="ElementShortName">music[4:0]</obj_property>
+      <obj_property name="ObjectShortName">music[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/auto_play_tb/music1" type="array">
+      <obj_property name="ElementShortName">music1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">music1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/auto_play_tb/melody" type="logic">
       <obj_property name="ElementShortName">melody</obj_property>
       <obj_property name="ObjectShortName">melody</obj_property>
    </wvobject>
-   <wvobject fp_name="/freeplay_tb/tb/gm/frequency" type="array">
-      <obj_property name="ElementShortName">frequency[10:0]</obj_property>
-      <obj_property name="ObjectShortName">frequency[10:0]</obj_property>
+   <wvobject fp_name="/auto_play_tb/sd" type="logic">
+      <obj_property name="ElementShortName">sd</obj_property>
+      <obj_property name="ObjectShortName">sd</obj_property>
    </wvobject>
-   <wvobject fp_name="/freeplay_tb/tb/gm/lasting_time" type="array">
-      <obj_property name="ElementShortName">lasting_time[31:0]</obj_property>
-      <obj_property name="ObjectShortName">lasting_time[31:0]</obj_property>
+   <wvobject fp_name="/auto_play_tb/ap/counter" type="array">
+      <obj_property name="ElementShortName">counter[1:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/freeplay_tb/tb/gm/counter" type="array">
-      <obj_property name="ElementShortName">counter[31:0]</obj_property>
-      <obj_property name="ObjectShortName">counter[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/freeplay_tb/tb/gm/pitch_change" type="logic">
-      <obj_property name="ElementShortName">pitch_change</obj_property>
-      <obj_property name="ObjectShortName">pitch_change</obj_property>
-   </wvobject>
-   <wvobject fp_name="/freeplay_tb/tb/gm/N" type="array">
-      <obj_property name="ElementShortName">N[31:0]</obj_property>
-      <obj_property name="ObjectShortName">N[31:0]</obj_property>
+   <wvobject fp_name="/auto_play_tb/ap/clk1" type="logic">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
    </wvobject>
 </wave_config>
