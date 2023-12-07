@@ -25,20 +25,23 @@ module auto_play_tb(
 
 reg clk;
 reg reset;
-reg btn, pausebtn;
+reg ssbtn, pausebtn;
+reg stopbtn, playbtn;
 wire [5:0]cnt;
 wire [4:0] music;
 wire [4:0] music1;
 wire melody;
 wire sd;
 
-auto_play ap(clk, reset, btn, pausebtn,sd, cnt, melody);
+auto_play ap(clk, reset, ssbtn, pausebtn,stopbtn, playbtn, sd, cnt, melody);
 
 initial begin
 clk = 1'b0;
 reset = 1'b0;
-btn = 1'b0;
-pausebtn = 1'b0;
+ssbtn = 0;
+pausebtn = 0;
+stopbtn = 0;
+playbtn = 1'b0;
 forever #5 clk = ~clk;
 end
 initial fork

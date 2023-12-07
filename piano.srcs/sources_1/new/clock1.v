@@ -21,25 +21,33 @@
 
 
 module clock1(
-input wire clk,
+input wire clk,rst,
 output reg clk_1
     );
+    //this is a clock divider
+    //which output a clk with 1s period
+    
     reg [31:0] div_cnt;
-    always @(posedge clk) begin
-    if(div_cnt == 32'd100_000_000) begin
-        div_cnt <= 0;
+    parameter TIME_1S = 1_000_000_00;
+    always @(posedge clk, posedge rst) begin
+        if(rst)
+            div_cnt <= 0;
+        else if(div_cnt == TIME_1S) 
+            div_cnt <= 0;
+        else 
+            div_cnt <= div_cnt + 1;
     end
-    else begin
-        div_cnt <= div_cnt + 1;
-    end
-end
 
-    always @(posedge clk) begin
-    if (div_cnt == 32'd50_000_000) begin
-        clk_1 <= 1;
+    always @(posedge clk, posedge rst) begin
+        if(rst)
+            clk_1 <= 0;
+        else if( div_cnt == TIME_1S/2 )
+            clk_1 <= 1;
+        else if(div_cnt == TIME_1S ) 
+            clk_1 <= 0;
     end
-    else if(div_cnt == 32'd100_000_000) begin
-        clk_1 <= 0;
-    end
-end
+    
+    
+    
+
 endmodule

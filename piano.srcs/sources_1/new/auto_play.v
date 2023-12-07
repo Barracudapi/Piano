@@ -24,10 +24,18 @@ module auto_play(
 input wire clk,
 input wire reset,
 input selectsongbtn, pausebtn,
+input stopbtn, playbtn,
 output sd,
 output wire [5:0]cnt,
 output wire melody
     ); 
+    
+    //three states:stop, play, pause
+    //stop: play, selectsongs
+    //play: stop, pause
+    //pause: pause, play, stop
+    
+    
     
     assign sd = 1'b1;
     
