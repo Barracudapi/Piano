@@ -3,65 +3,38 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="auto_play_tb_behav.wdb" id="1">
+      <db_ref path="clk1_tb_behav.wdb" id="1">
          <top_modules>
-            <top_module name="auto_play_tb" />
+            <top_module name="clk1_tb" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="13217865000002fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomEndTime time="35100000000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
-   <wvobject fp_name="/auto_play_tb/clk" type="logic">
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/clk1_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/reset" type="logic">
-      <obj_property name="ElementShortName">reset</obj_property>
-      <obj_property name="ObjectShortName">reset</obj_property>
+   <wvobject fp_name="/clk1_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/btn" type="logic">
-      <obj_property name="ElementShortName">btn</obj_property>
-      <obj_property name="ObjectShortName">btn</obj_property>
+   <wvobject fp_name="/clk1_tb/clk_1" type="logic">
+      <obj_property name="ElementShortName">clk_1</obj_property>
+      <obj_property name="ObjectShortName">clk_1</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/pausebtn" type="logic">
-      <obj_property name="ElementShortName">pausebtn</obj_property>
-      <obj_property name="ObjectShortName">pausebtn</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/cnt" type="array">
-      <obj_property name="ElementShortName">cnt[5:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt[5:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/music" type="array">
-      <obj_property name="ElementShortName">music[4:0]</obj_property>
-      <obj_property name="ObjectShortName">music[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/music1" type="array">
-      <obj_property name="ElementShortName">music1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">music1[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/melody" type="logic">
-      <obj_property name="ElementShortName">melody</obj_property>
-      <obj_property name="ObjectShortName">melody</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/sd" type="logic">
-      <obj_property name="ElementShortName">sd</obj_property>
-      <obj_property name="ObjectShortName">sd</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/counter" type="array">
-      <obj_property name="ElementShortName">counter[1:0]</obj_property>
-      <obj_property name="ObjectShortName">counter[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/clk1" type="logic">
-      <obj_property name="ElementShortName">clk1</obj_property>
-      <obj_property name="ObjectShortName">clk1</obj_property>
+   <wvobject fp_name="/clk1_tb/c1/div_cnt" type="array">
+      <obj_property name="ElementShortName">div_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">div_cnt[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

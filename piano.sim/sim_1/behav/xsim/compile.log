@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sim_1/new/clk1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk1_tb

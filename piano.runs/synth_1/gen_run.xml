@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="free_play_top.tcl"/>
   <File Type="REPORTS-TCL" Name="free_play_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="free_play_top.vds"/>
-  <File Type="RDS-UTIL" Name="free_play_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="free_play_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="free_play_top.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

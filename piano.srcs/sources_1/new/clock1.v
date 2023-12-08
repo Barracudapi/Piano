@@ -29,6 +29,12 @@ output reg clk_1
     
     reg [31:0] div_cnt;
     parameter TIME_1S = 1_000_000_00;
+    
+    initial begin
+    clk_1 = 1'b0;
+    div_cnt = 0;
+    end
+    
     always @(posedge clk, posedge rst) begin
         if(rst)
             div_cnt <= 0;

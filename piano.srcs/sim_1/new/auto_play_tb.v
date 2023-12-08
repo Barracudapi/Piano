@@ -45,8 +45,8 @@ playbtn = 1'b0;
 forever #5 clk = ~clk;
 end
 initial fork
-#10 btn = 1'b0;
-#20 btn = 1'b1;
+#10 ssbtn = 1'b0;
+#20 ssbtn = 1'b1;
 join
 
 

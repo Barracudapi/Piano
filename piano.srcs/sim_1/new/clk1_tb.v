@@ -33,9 +33,20 @@ module clk1_tb(
     initial begin
     clk = 0;
     rst = 0;
-
+    forever #5 clk = ~clk;      
     end
     
-    s
+    initial begin
+        
+    #100
+    rst = 1'b1 ;
+    #110
+    rst = 1'b0;
+    
+    end
+    
+    
+    
+    
     
 endmodule
