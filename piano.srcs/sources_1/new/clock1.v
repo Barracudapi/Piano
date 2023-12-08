@@ -25,10 +25,11 @@ input wire clk,rst,
 output reg clk_1
     );
     //this is a clock divider
-    //which output a clk with 1s period
+    //which output a clk with 0.5s period
     
     reg [31:0] div_cnt;
-    parameter TIME_1S = 1_000_000_00;
+    //parameter TIME_05S = 500_000_00;
+parameter TIME_05S = 500_000; // for simulation
     
     initial begin
     clk_1 = 1'b0;
@@ -38,7 +39,7 @@ output reg clk_1
     always @(posedge clk, posedge rst) begin
         if(rst)
             div_cnt <= 0;
-        else if(div_cnt == TIME_1S) 
+        else if(div_cnt == TIME_05S) 
             div_cnt <= 0;
         else 
             div_cnt <= div_cnt + 1;
@@ -47,9 +48,9 @@ output reg clk_1
     always @(posedge clk, posedge rst) begin
         if(rst)
             clk_1 <= 0;
-        else if( div_cnt == TIME_1S/2 )
+        else if( div_cnt == (TIME_05S>>1) -1)
             clk_1 <= 1;
-        else if(div_cnt == TIME_1S ) 
+        else if(div_cnt == TIME_05S -1 ) 
             clk_1 <= 0;
     end
     

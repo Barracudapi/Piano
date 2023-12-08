@@ -9,7 +9,7 @@
     <Object name="xc7a35t_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/free_play_top.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/auto_play.bit"/>
       <Properties Property="SLR.COUNT" value="C:/Users/86138/AppData/Roaming/Xilinx/Vivado/1"/>
     </Object>
   </ObjectList>

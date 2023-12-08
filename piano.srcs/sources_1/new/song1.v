@@ -26,28 +26,34 @@
 module song1(
 input wire clk,
 input wire reset,
+input wire spause,
 output reg [5:0] cnt = 0,
 output reg [4:0] music = 0
     );
     // 1  2  3  4  5  6  7  low rang
     // 8  9  10 11 12 13 14  middle
     // 15 16 17 18 19 20 21  high
+    // 0 is silence
     //we are not going to consider sharp now
     //reg [5:0] cnt;
     
-    always@(posedge clk)         
-        cnt <= cnt + 1;
+    always@(posedge clk)
+        if(spause  == 1) begin
+            cnt <= cnt;
+            music <= 5'b0;
+        end else
+            cnt <= cnt + 1;
             
-    always @(posedge clk or negedge reset)begin
+    always @(posedge clk or posedge reset)begin
     //only works when clk goes 1 or reset goes 0
-        if(reset == 1'b0)
+        if(reset)
         //when pressed, reset 0, delete music
             music <= 5'd0;
         else 
             
         //not pressed, reset 1
             case(cnt) 
-              6'd0    :   music <= 5'd13;
+              6'd0    :   music <= 5'd12;
               6'd1    :   music <= 5'd13;
               6'd2    :   music <= 5'd13;
               6'd3    :   music <= 5'd12;
