@@ -26,7 +26,7 @@
 module song1(
 input wire clk,
 input wire reset,
-input wire spause,
+input wire [1:0] state,
 output reg [5:0] cnt = 0,
 output reg [4:0] music = 0
     );
@@ -36,13 +36,27 @@ output reg [4:0] music = 0
     // 0 is silence
     //we are not going to consider sharp now
     //reg [5:0] cnt;
+    parameter sstop = 00, splay = 01, spause = 10;
     
-    always@(posedge clk)
-        if(spause  == 1) begin
+    always@(posedge clk) begin
+        if(state == spause) begin
             cnt <= cnt;
             music <= 5'b0;
-        end else
+        end else if(state == sstop) begin
+            cnt <= 0;
+            music <= 5'b0;
+        end else if(state == splay) begin
             cnt <= cnt + 1;
+        end
+    end
+
+//    always @(posedge clk) begin
+//        if(state == spause) begin
+//            cnt <= cnt;
+//            music <= 5'b0;
+//        end else
+//            cnt <= cnt +1;
+//    end
             
     always @(posedge clk or posedge reset)begin
     //only works when clk goes 1 or reset goes 0

@@ -26,7 +26,10 @@ input wire reset,
 input selectsongbtn, pausebtn,
 input stopbtn, playbtn,
 output sd,
-output wire melody
+output wire melody,
+output [3:0] led_state,
+output [3:0] select_song
+
     ); 
     
     //three states:stop, play, pause
@@ -48,15 +51,18 @@ output wire melody
     wire [10:0] frequency;
     reg [1:0] counter;
     reg [1:0] state; //00 is stop, 01 is play and 10 is pause
-    reg spause, splay, sstop; //these are states;
+    //reg spause, splay, sstop; //these are states;
     wire clk1;
     wire pause, play, stop; //these are the btn after debouncing
     wire select;
+    reg [1:0] music_flag;
     
+    parameter sstop = 00, splay = 01, spause = 10;
     
+    autoplay_led_for_test(clk, state, music_flag, led_state, select_song);
     
     clock1 cl1(clk, reset, clk1);
-    song1 s1(clk1, reset,cnt, music1);
+    song1 s1(clk1, reset,state, cnt, music1);
     song2 s2(clk1, reset, music2);
     song3 s3(clk1, reset, music3);
     
@@ -68,37 +74,34 @@ output wire melody
     //this is the state transmition among pause and play and stop
     always@(posedge clk, posedge reset) begin
         if(reset) begin
-            spause <= 0;
-            splay <= 0;
-            sstop <= 1;
-        end else if(sstop == 1 && play == 1) begin
-            splay <= 1;
-            sstop <= 0;
-        end else if(splay == 1 && stop == 1) begin
-            sstop <= 1;
-            splay <= 0;
-        end else if(splay ==1 && pause == 1) begin
-            splay <= 0;
-            spause <= 1;
-        end else if( spause == 1 && stop == 1) begin
-            spause <= 0;
-            sstop <= 1;
-        end else if( spause == 1 && play == 1) begin
-            spause <= 0;
-            splay <= 1;
-        end else if( spause == 1 && pause == 1) begin
-                spause <= 0;
-                splay <= 1;
+            state <= sstop;
+        end else begin
+            case(state)
+                sstop:
+                    if(play == 1)
+                        state <= splay;
+                splay:
+                    if(stop == 1)
+                        state <= sstop;
+                    else if(pause == 1)
+                        state <= spause;
+                spause:
+                    if(stop == 1)
+                        state <= sstop;
+                    else if(play == 1)
+                        state <= splay;
+                    else if(pause == 1)
+                        state <= splay;
+            endcase
         end
     end
 
-      
      //select songs
     always@(posedge clk, posedge reset) begin
        if(reset) begin
            counter <= 0;
            music <= 5'd0;
-       end else if(sstop == 1) begin
+       end else if(state == sstop) begin
            if(select)
                counter <= counter +1;
            else
@@ -113,13 +116,13 @@ output wire melody
      // but count = 1, it's still music 1, a bit weird, 
      //i think we need to chage it
      
-     always @(counter) begin
-          if(splay == 1) begin
+     always @(posedge clk) begin
+          if(state == splay) begin
               case(counter)
-                 0: music = music1;
-                 1: music = music2;
-                 2: music = music3;
-                 default: music <= music1;
+                 0: begin music = music2; music_flag = 2'b00; end
+                 1: begin music = music1; music_flag = 2'b01; end
+                 2: begin music = music3; music_flag = 2'b10; end
+                 default: begin music <= music2; music_flag = 2'b00;end
                 endcase
             end
             else

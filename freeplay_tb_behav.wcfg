@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="379000000000001fs"></ZoomEndTime>
-      <Cursor1Time time="62500135000000fs"></Cursor1Time>
+      <ZoomEndTime time="29400000000001fs"></ZoomEndTime>
+      <Cursor1Time time="20000055000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="17" />
    <wvobject fp_name="/auto_play_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -32,17 +32,33 @@
       <obj_property name="ElementShortName">ssbtn</obj_property>
       <obj_property name="ObjectShortName">ssbtn</obj_property>
    </wvobject>
+   <wvobject fp_name="/auto_play_tb/ap/select" type="logic">
+      <obj_property name="ElementShortName">select</obj_property>
+      <obj_property name="ObjectShortName">select</obj_property>
+   </wvobject>
    <wvobject fp_name="/auto_play_tb/pausebtn" type="logic">
       <obj_property name="ElementShortName">pausebtn</obj_property>
       <obj_property name="ObjectShortName">pausebtn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/auto_play_tb/ap/pause" type="logic">
+      <obj_property name="ElementShortName">pause</obj_property>
+      <obj_property name="ObjectShortName">pause</obj_property>
    </wvobject>
    <wvobject fp_name="/auto_play_tb/stopbtn" type="logic">
       <obj_property name="ElementShortName">stopbtn</obj_property>
       <obj_property name="ObjectShortName">stopbtn</obj_property>
    </wvobject>
+   <wvobject fp_name="/auto_play_tb/ap/stop" type="logic">
+      <obj_property name="ElementShortName">stop</obj_property>
+      <obj_property name="ObjectShortName">stop</obj_property>
+   </wvobject>
    <wvobject fp_name="/auto_play_tb/playbtn" type="logic">
       <obj_property name="ElementShortName">playbtn</obj_property>
       <obj_property name="ObjectShortName">playbtn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/auto_play_tb/ap/play" type="logic">
+      <obj_property name="ElementShortName">play</obj_property>
+      <obj_property name="ObjectShortName">play</obj_property>
    </wvobject>
    <wvobject fp_name="/auto_play_tb/ap/counter" type="array">
       <obj_property name="ElementShortName">counter[1:0]</obj_property>
@@ -58,6 +74,10 @@
       <obj_property name="ObjectShortName">music1[4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
+   <wvobject fp_name="/auto_play_tb/ap/s1/music" type="array">
+      <obj_property name="ElementShortName">music[4:0]</obj_property>
+      <obj_property name="ObjectShortName">music[4:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/auto_play_tb/ap/music2" type="array">
       <obj_property name="ElementShortName">music2[4:0]</obj_property>
       <obj_property name="ObjectShortName">music2[4:0]</obj_property>
@@ -69,17 +89,5 @@
    <wvobject fp_name="/auto_play_tb/ap/state" type="array">
       <obj_property name="ElementShortName">state[1:0]</obj_property>
       <obj_property name="ObjectShortName">state[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/spause" type="logic">
-      <obj_property name="ElementShortName">spause</obj_property>
-      <obj_property name="ObjectShortName">spause</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/splay" type="logic">
-      <obj_property name="ElementShortName">splay</obj_property>
-      <obj_property name="ObjectShortName">splay</obj_property>
-   </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/sstop" type="logic">
-      <obj_property name="ElementShortName">sstop</obj_property>
-      <obj_property name="ObjectShortName">sstop</obj_property>
    </wvobject>
 </wave_config>

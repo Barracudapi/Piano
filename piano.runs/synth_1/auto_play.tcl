@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -28,6 +29,7 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/86138/Documents/GitHub/Piano/piano.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/autoplay_led_for_test.v
   C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock1.v
   C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v
   C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v
