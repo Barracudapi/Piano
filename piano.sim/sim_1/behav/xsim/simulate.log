@@ -1,2 +1,3 @@
 Vivado Simulator 2017.4
 Time resolution is 1 ps
+$finish called at time : 250 ns : File "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v" Line 40
