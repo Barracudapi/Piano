@@ -59,7 +59,7 @@ output [3:0] select_song
     
     parameter sstop = 00, splay = 01, spause = 10;
     
-    autoplay_led_for_test(clk, state, music_flag, led_state, select_song);
+    autoplay_led_for_test led(clk, state, music_flag, led_state, select_song);
     
     clock1 cl1(clk, reset, clk1);
     song1 s1(clk1, reset,state, cnt, music1);
@@ -97,18 +97,22 @@ output [3:0] select_song
     end
 
      //select songs
-    always@(posedge clk, posedge reset) begin
+    always@(posedge reset) begin
        if(reset) begin
            counter <= 0;
            music <= 5'd0;
-       end else if(state == sstop) begin
-           if(select)
-               counter <= counter +1;
-           else
-               counter <= counter;
-           if(counter == 3)
-               counter <= 0;
        end
+    end
+    
+    always@(select) begin
+        if(state == sstop && select == 1) begin
+            case(counter)
+                0: counter = 2'b01;
+                1: counter = 2'b10;
+                2: counter = 2'b00;
+            endcase
+        end else
+            counter <= counter;
     end
      
      //if default music = music11 

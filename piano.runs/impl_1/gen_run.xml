@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1702106539">
-  <File Type="ROUTE-PWR" Name="auto_play_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="auto_play.tcl"/>
   <File Type="PWROPT-DCP" Name="auto_play_pwropt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="auto_play_power_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="auto_play.tcl"/>
   <File Type="REPORTS-TCL" Name="auto_play_reports.tcl"/>
   <File Type="BG-DRC" Name="auto_play.drc"/>
-  <File Type="OPT-HWDEF" Name="auto_play.hwdef"/>
   <File Type="OPT-DCP" Name="auto_play_opt.dcp"/>
-  <File Type="OPT-DRC" Name="auto_play_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="auto_play.hwdef"/>
   <File Type="PLACE-DCP" Name="auto_play_placed.dcp"/>
-  <File Type="PLACE-IO" Name="auto_play_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="auto_play_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="auto_play_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="auto_play_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="auto_play_incremental_reuse_pre_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="auto_play_postplace_pwropt.dcp"/>
   <File Type="PHYSOPT-DCP" Name="auto_play_physopt.dcp"/>
@@ -21,23 +14,11 @@
   <File Type="ROUTE-ERROR-DCP" Name="auto_play_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="auto_play_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="auto_play_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="auto_play_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="auto_play_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="auto_play_drc_routed.rpx"/>
   <File Type="BITSTR-MSK" Name="auto_play.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="auto_play_methodology_drc_routed.rpt"/>
   <File Type="BG-BGN" Name="auto_play.bgn"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="auto_play_methodology_drc_routed.rpx"/>
   <File Type="BITSTR-RBT" Name="auto_play.rbt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="auto_play_methodology_drc_routed.pb"/>
   <File Type="BG-BIN" Name="auto_play.bin"/>
-  <File Type="ROUTE-PWR-RPX" Name="auto_play_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="auto_play_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="auto_play_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="auto_play_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="auto_play_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="auto_play_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="auto_play_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="auto_play.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="auto_play_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="auto_play_postroute_physopt_bb.dcp"/>

@@ -28,8 +28,8 @@ output reg clk_1
     //which output a clk with 0.5s period
     
     reg [31:0] div_cnt;
-    parameter TIME_05S = 500_000_00;
-//parameter TIME_05S = 500_000; // for simulation
+//    parameter TIME_05S = 500_000_00;
+parameter TIME_05S = 500_000; // for simulation
     
     initial begin
     clk_1 = 1'b0;
