@@ -1,57 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1702106539">
-  <File Type="PWROPT-DCP" Name="auto_play_pwropt.dcp"/>
-  <File Type="PA-TCL" Name="auto_play.tcl"/>
-  <File Type="REPORTS-TCL" Name="auto_play_reports.tcl"/>
-  <File Type="BG-DRC" Name="auto_play.drc"/>
-  <File Type="OPT-DCP" Name="auto_play_opt.dcp"/>
-  <File Type="OPT-HWDEF" Name="auto_play.hwdef"/>
-  <File Type="PLACE-DCP" Name="auto_play_placed.dcp"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="auto_play_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="auto_play_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="auto_play_physopt.dcp"/>
-  <File Type="BG-BIT" Name="auto_play.bit"/>
-  <File Type="ROUTE-ERROR-DCP" Name="auto_play_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="auto_play_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="auto_play_routed_bb.dcp"/>
-  <File Type="BITSTR-MSK" Name="auto_play.msk"/>
-  <File Type="BG-BGN" Name="auto_play.bgn"/>
-  <File Type="BITSTR-RBT" Name="auto_play.rbt"/>
-  <File Type="BG-BIN" Name="auto_play.bin"/>
-  <File Type="ROUTE-TIMING-PB" Name="auto_play_timing_summary_routed.pb"/>
-  <File Type="RDI-RDI" Name="auto_play.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="auto_play_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="auto_play_postroute_physopt_bb.dcp"/>
-  <File Type="BITSTR-NKY" Name="auto_play.nky"/>
-  <File Type="BITSTR-BMM" Name="auto_play_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="auto_play.mmi"/>
-  <File Type="BITSTR-LTX" Name="auto_play.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="auto_play.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1702570095">
+  <File Type="PWROPT-DCP" Name="learning_mode_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="learning_mode_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="learning_mode.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="learning_mode_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="learning_mode_reports.tcl"/>
+  <File Type="BG-DRC" Name="learning_mode.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="learning_mode_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="learning_mode_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="learning_mode.hwdef"/>
+  <File Type="OPT-DCP" Name="learning_mode_opt.dcp"/>
+  <File Type="OPT-DRC" Name="learning_mode_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="learning_mode_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="learning_mode_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="learning_mode_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="learning_mode_placed.dcp"/>
+  <File Type="PLACE-IO" Name="learning_mode_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="learning_mode_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="learning_mode_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="learning_mode_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="learning_mode_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="learning_mode_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="learning_mode_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="learning_mode_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="learning_mode_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="learning_mode_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="learning_mode_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="learning_mode_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="learning_mode.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="learning_mode_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="learning_mode_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="learning_mode_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="learning_mode_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="learning_mode_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="learning_mode_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="learning_mode.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="learning_mode_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="learning_mode.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="learning_mode_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="learning_mode.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="learning_mode_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="learning_mode.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="learning_mode_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="learning_mode_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="learning_mode_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="learning_mode_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="learning_mode_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="learning_mode_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="learning_mode_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="learning_mode_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="learning_mode.vdi"/>
+  <File Type="ROUTE-CLK" Name="learning_mode_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="learning_mode_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="learning_mode_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="learning_mode_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="learning_mode_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="learning_mode_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="learning_mode.nky"/>
+  <File Type="BITSTR-BMM" Name="learning_mode_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="learning_mode.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="learning_mode.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="learning_mode.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/autoplay_led_for_test.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/clock1.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/debounce.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/ppppparameters.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/free_play.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -65,8 +86,55 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/learn_song1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/learning_mode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TOOB.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/autoplay_led_for_test.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debounce.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/music_to_frequency.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -74,6 +142,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/song1.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -81,6 +150,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/song2.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -88,19 +158,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/song3.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/auto_play.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/free_play.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -164,9 +228,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/songonTOOB.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="auto_play"/>
+      <Option Name="TopModule" Val="learning_mode"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

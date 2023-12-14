@@ -2,410 +2,362 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Dec 11 21:16:47 2023
-# Process ID: 11636
+# Start of session at: Thu Dec 14 21:22:46 2023
+# Process ID: 8584
 # Current directory: C:/Users/Administrator/Documents/GitHub/Piano
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6100 C:\Users\Administrator\Documents\GitHub\Piano\piano.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7564 C:\Users\Administrator\Documents\GitHub\Piano\piano.xpr
 # Log file: C:/Users/Administrator/Documents/GitHub/Piano/vivado.log
 # Journal file: C:/Users/Administrator/Documents/GitHub/Piano\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Administrator/Documents/GitHub/Piano/piano.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/86138/Documents/GitHub/Piano' since last save.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/keyboard.v'.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/sim_keyboard.v'.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
+oopen_project C:/Users/Administrator/Documents/GitHub/Piano/piano.xprIINFO: [Project 1-313] Project file moved from 'C:/Users/86138/Documents/GitHub/Piano' since last save.CCRITICAL WARNING: [Project 1-19] Could not find the file 'D:/keyboard.v'.CCRITICAL WARNING: [Project 1-19] Could not find the file 'D:/sim_keyboard.v'.
+Scanning sources...FFinished scanning sourcesINFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+IINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.update_compile_order -fileset sources_1
+eclose [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v w ]
+add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v
 update_compile_order -fileset sources_1
-close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/TOOB.v w ]
-add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/TOOB.v
+close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v w ]
+add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v
 update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v w ]
-add_files -fileset sim_1 C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v
-update_compile_order -fileset sim_1
-set_property top toob_sim [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
-set_property top TOOB [current_fileset]
+set_property top learning_mode [current_fileset]
 update_compile_order -fileset sources_1
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'toob_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj toob_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/TOOB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TOOB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module toob_sim
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot toob_sim_behav xil_defaultlib.toob_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port clk [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v:30]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.TOOB
-Compiling module xil_defaultlib.toob_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot toob_sim_behav
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Dec 14 22:53:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Dec 14 22:55:34 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu Dec 14 22:56:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Dec 14 22:57:35 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu Dec 14 22:58:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Thu Dec 14 23:00:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Dec 14 23:02:48 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu Dec 14 23:03:21 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-11644-S210-15/dcp8/learning_mode.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-11644-S210-15/dcp8/learning_mode.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1159.121 ; gain = 0.645
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1159.121 ; gain = 0.645
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
 
-****** Webtalk v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1303.320 ; gain = 445.188
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:04:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+set_property IOSTANDARD LVCMOS33 [get_ports [list {guide_lights[7]} {guide_lights[6]} {guide_lights[5]} {guide_lights[4]} {guide_lights[3]} {guide_lights[2]} {guide_lights[1]} {guide_lights[0]}]]
+save_constraints -force
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -jobs 8
+[Thu Dec 14 23:05:35 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-11644-S210-15/dcp11/learning_mode.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-11644-S210-15/dcp11/learning_mode.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1744.723 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1744.723 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Thu Dec 14 23:08:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Thu Dec 14 23:08:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-11644-S210-15/dcp12/learning_mode.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-11644-S210-15/dcp12/learning_mode.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1774.461 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1774.461 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {button[2]} {button[1]} {button[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sw[7]} {sw[6]} {sw[5]} {sw[4]} {sw[3]} {sw[2]} {sw[1]} {sw[0]}]]
+place_ports {button[2]} V2
+place_ports {button[1]} V5
+place_ports {button[0]} V4
+place_ports {guide_lights[0]} P5
+place_ports {guide_lights[1]} P4
+place_ports {guide_lights[2]} P3
+place_ports {guide_lights[3]} P2
+place_ports {guide_lights[3]} A9
+place_ports {guide_lights[3]} P2
+place_ports {guide_lights[4]} R2
+place_ports {guide_lights[5]} M4
+place_ports {guide_lights[6]} N4
+place_ports {guide_lights[7]} R1
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[0]}]]
+place_ports {sw[0]} P5
+endgroup
+place_ports {guide_lights[0]} F6
+place_ports {guide_lights[1]} G4
+place_ports {guide_lights[2]} G3
+place_ports {guide_lights[3]} J4
+place_ports {guide_lights[4]} H4
+startgroup
+set_property package_pin "" [get_ports [list  {sw[7]}]]
+place_ports {guide_lights[5]} J3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[6]}]]
+place_ports {guide_lights[6]} J2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[5]}]]
+place_ports {guide_lights[7]} K2
+endgroup
+place_ports {sw[1]} P4
+place_ports {sw[2]} P3
+place_ports {sw[3]} P2
+place_ports {sw[4]} R2
+place_ports {sw[5]} M4
+place_ports {sw[6]} N4
+place_ports {sw[7]} R1
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:12:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:13:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[7]}]]
+place_ports {guide_lights[0]} K2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[6]}]]
+place_ports {guide_lights[1]} J2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[5]}]]
+place_ports {guide_lights[2]} J3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[4]}]]
+place_ports {guide_lights[3]} H4
+endgroup
+place_ports {guide_lights[4]} J4
+place_ports {guide_lights[5]} G3
+place_ports {guide_lights[6]} G4
+place_ports {guide_lights[7]} F6
+startgroup
+set_property package_pin "" [get_ports [list  {sw[7]}]]
+place_ports {sw[0]} R1
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[6]}]]
+place_ports {sw[1]} N4
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[5]}]]
+place_ports {sw[2]} M4
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[4]}]]
+place_ports {sw[3]} R2
+endgroup
+place_ports {sw[4]} P2
+place_ports {sw[5]} P3
+place_ports {sw[6]} P4
+place_ports {sw[7]} P5
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:18:21 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:20:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+set_property DRIVE 12 [get_ports [list {guide_lights[7]} {guide_lights[6]} {guide_lights[5]} {guide_lights[4]} {guide_lights[3]} {guide_lights[2]} {guide_lights[1]} {guide_lights[0]}]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Thu Dec 14 23:26:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:31:51 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Thu Dec 14 23:31:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:33:13 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Thu Dec 14 23:33:13 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:34:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Thu Dec 14 23:34:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:38:33 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Thu Dec 14 23:38:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
-source C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim/xsim.dir/toob_sim_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Dec 11 21:38:06 2023...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 907.539 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "toob_sim_behav -key {Behavioral:sim_1:Functional:toob_sim} -tclbatch {toob_sim.tcl} -view {C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-open_wave_config C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg
-WARNING: Simulation object /auto_play_tb/clk was not found in the design.
-WARNING: Simulation object /auto_play_tb/reset was not found in the design.
-WARNING: Simulation object /auto_play_tb/ssbtn was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/select was not found in the design.
-WARNING: Simulation object /auto_play_tb/pausebtn was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/pause was not found in the design.
-WARNING: Simulation object /auto_play_tb/stopbtn was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/stop was not found in the design.
-WARNING: Simulation object /auto_play_tb/playbtn was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/play was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/counter was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/music was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/music1 was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/s1/music was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/music2 was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/music3 was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/state was not found in the design.
-source toob_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'toob_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 924.480 ; gain = 16.941
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'toob_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj toob_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/TOOB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TOOB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module toob_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot toob_sim_behav xil_defaultlib.toob_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port clk [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v:30]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.TOOB
-Compiling module xil_defaultlib.toob_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot toob_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "toob_sim_behav -key {Behavioral:sim_1:Functional:toob_sim} -tclbatch {toob_sim.tcl} -view {C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-open_wave_config C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg
-WARNING: Simulation object /auto_play_tb/clk was not found in the design.
-WARNING: Simulation object /auto_play_tb/reset was not found in the design.
-WARNING: Simulation object /auto_play_tb/ssbtn was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/select was not found in the design.
-WARNING: Simulation object /auto_play_tb/pausebtn was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/pause was not found in the design.
-WARNING: Simulation object /auto_play_tb/stopbtn was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/stop was not found in the design.
-WARNING: Simulation object /auto_play_tb/playbtn was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/play was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/counter was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/music was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/music1 was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/s1/music was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/music2 was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/music3 was not found in the design.
-WARNING: Simulation object /auto_play_tb/ap/state was not found in the design.
-source toob_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'toob_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-add_wave {{/toob_sim/clk}} 
-add_wave {{/toob_sim/counter}} 
-add_wave {{/toob_sim/tub_sel}} 
-add_wave {{/toob_sim/tub_control}} 
-save_wave_config {C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'toob_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj toob_sim_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot toob_sim_behav xil_defaultlib.toob_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port clk [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v:30]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "toob_sim_behav -key {Behavioral:sim_1:Functional:toob_sim} -tclbatch {toob_sim.tcl} -view {C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-open_wave_config C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg
-source toob_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'toob_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'toob_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj toob_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/TOOB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TOOB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module toob_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot toob_sim_behav xil_defaultlib.toob_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.TOOB
-Compiling module xil_defaultlib.toob_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot toob_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "toob_sim_behav -key {Behavioral:sim_1:Functional:toob_sim} -tclbatch {toob_sim.tcl} -view {C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-open_wave_config C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg
-source toob_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'toob_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 942.094 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'toob_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj toob_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/TOOB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TOOB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module toob_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot toob_sim_behav xil_defaultlib.toob_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.TOOB
-Compiling module xil_defaultlib.toob_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot toob_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "toob_sim_behav -key {Behavioral:sim_1:Functional:toob_sim} -tclbatch {toob_sim.tcl} -view {C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-open_wave_config C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg
-source toob_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-$finish called at time : 250 ns : File "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v" Line 40
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'toob_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'toob_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj toob_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/TOOB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TOOB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module toob_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot toob_sim_behav xil_defaultlib.toob_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.TOOB
-Compiling module xil_defaultlib.toob_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot toob_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano/piano.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "toob_sim_behav -key {Behavioral:sim_1:Functional:toob_sim} -tclbatch {toob_sim.tcl} -view {C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-open_wave_config C:/Users/Administrator/Documents/GitHub/Piano/freeplay_tb_behav.wcfg
-source toob_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-$finish called at time : 250 ns : File "C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v" Line 40
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'toob_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 942.094 ; gain = 0.000
-export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v] -no_script -reset -force -quiet
-remove_files  -fileset sim_1 C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v
-remove_files  -fileset sim_1 C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v
-WARNING: [Vivado 12-818] No files matched 'C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sim_1/new/toob_sim.v'
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/songonTOOB.v w ]
-add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/songonTOOB.v
-update_compile_order -fileset sources_1
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learning_mode.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learning_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Thu Dec 14 23:45:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learning_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:48:38 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Thu Dec 14 23:48:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:51:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Thu Dec 14 23:51:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Thu Dec 14 23:54:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 14 23:56:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Thu Dec 14 23:56:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 15 00:00:06 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Dec 15 00:04:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Fri Dec 15 00:04:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 15 00:07:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Dec 15 00:08:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
+[Fri Dec 15 00:08:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learning_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 23:18:44 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 15 00:13:06 2023...

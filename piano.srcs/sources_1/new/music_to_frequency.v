@@ -26,7 +26,7 @@ module music_to_frequency(
     output reg [11:0]frequency
     );
     
-    `include "ppppparameters.v";
+    `include "ppppparameters.v"
     
     
     always @* begin
