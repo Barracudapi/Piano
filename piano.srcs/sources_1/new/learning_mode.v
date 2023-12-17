@@ -27,8 +27,6 @@ input wire [2:0] button,
 output sd,
 output melody,
 output reg [7:0] guide_lights,
-output [7:0] display_d1,display_d2,
-output tub_d1, tub_d2
     );
     
     `include "ppppparameters.v"
@@ -37,17 +35,12 @@ output tub_d1, tub_d2
    wire [4:0] music;    
    assign sd = 1'b1;
    wire [10:0] frequency;
-   reg [5:0] mistake = 0;
-   reg [3:0] digit1, digit2;
-   reg [5:0] temp = 0;
     
     //learning mode has similar functions to free play except the led function which we modify in this module.
     free_play play(clk, reset, button, sw, frequency);
     generate_melody gm(.clk(clk), .frequency(frequency), .melody(melody));
     learn_song1 song1(cnt, music);
 //    learn_song2 song2(cnt, music);
-    mistake_counter d1(digit1, tub_d1, display_d1);
-    mistake_counter d2(digit2, tub_d2, display_d2);
     
    
         
@@ -85,49 +78,42 @@ output tub_d1, tub_d2
                     cnt <= cnt + 1;
                     guide_lights[0] <= 1'b0;
                 end
-                else mistake <= mistake + 1;
             end
             if(guide_lights[1] == 1'b1) begin
                 if((sw[1] == 1'b1 & button == low & music == 5'd2) | (sw[1] == 1'b1 & button == middle & music == 5'd9) | (sw[1] == 1'b1 & button == high & music == 5'd16)) begin
                     cnt <= cnt + 1;
                     guide_lights[1] <= 1'b0;
                     end
-                    else mistake <= mistake + 1;
                 end
             if(guide_lights[2] == 1'b1) begin
                 if((sw[2] == 1'b1 & button == low & music == 5'd3) | (sw[2] == 1'b1 & button == middle & music == 5'd10) | (sw[2] == 1'b1 & button == high & music == 5'd17)) begin
                     cnt <= cnt + 1;
                     guide_lights[2] <= 1'b0;
                     end
-                    else mistake <= mistake + 1;
                 end
             if(guide_lights[3] == 1'b1) begin
                 if((sw[3] == 1'b1 & button == low & music == 5'd4) | (sw[3] == 1'b1 & button == middle & music == 5'd11) | (sw[3] == 1'b1 & button == high & music == 5'd18)) begin
                     cnt <= cnt + 1;
                     guide_lights[3] <= 1'b0;
                     end
-                    else mistake <= mistake + 1;
                 end
             if(guide_lights[4] == 1'b1) begin
                 if((sw[4] == 1'b1 & button == low & music == 5'd5) | (sw[4] == 1'b1 & button == middle & music == 5'd12) | (sw[4] == 1'b1 & button == high & music == 5'd19)) begin
                     cnt <= cnt + 1;
                     guide_lights[4] <= 1'b0;
                     end
-                    else mistake <= mistake + 1;
                 end
             if(guide_lights[5] == 1'b1) begin
                 if((sw[5] == 1'b1 & button == low & music == 5'd6) | (sw[5] == 1'b1 & button == middle & music == 5'd13) | (sw[5] == 1'b1 & button == high & music == 5'd20)) begin
                     cnt <= cnt + 1;
                     guide_lights[5] <= 1'b0;
                     end
-                    else mistake <= mistake + 1;
                 end
             if(guide_lights[6] == 1'b1) begin
                 if((sw[6] == 1'b1 & button == low & music == 5'd7) | (sw[6] == 1'b1 & button == middle & music == 5'd14) | (sw[6] == 1'b1 & button == high & music == 5'd21)) begin
                     cnt <= cnt + 1;
                     guide_lights[6] <= 1'b0;
                     end
-                    else mistake <= mistake + 1;
-                end
+               end
             end
 endmodule

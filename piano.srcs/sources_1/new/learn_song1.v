@@ -23,6 +23,19 @@
 //memory module
 //input is the cnt, cnt should be incresing
 //and incresing count can get the note in order(output music
+
+
+
+
+
+
+
+
+
+
+
+
+
 module learn_song1(
 input [5:0] cnt,
 output reg [4:0] music = 0
@@ -39,27 +52,27 @@ output reg [4:0] music = 0
         always @(*) begin
             case(cnt) 
               6'd0    :   music <= 5'd1;
-              6'd1    :   music <= 5'd2;
-              6'd2    :   music <= 5'd3;
-              6'd3    :   music <= 5'd4;
-              6'd4    :   music <= 5'd5;
+              6'd1    :   music <= 5'd1;
+              6'd2    :   music <= 5'd5;
+              6'd3    :   music <= 5'd5;
+              6'd4    :   music <= 5'd6;
               6'd5    :   music <= 5'd6;
-              6'd6    :   music <= 5'd7;
-              6'd7    :   music <= 5'd8;
+              6'd6    :   music <= 5'd5;
+              6'd7    :   music <= 5'd4;
               
-              6'd8    :   music <= 5'd9;
-              6'd9    :   music <= 5'd10;
-              6'd10   :   music <= 5'd11;
-              6'd11   :   music <= 5'd12;
-              6'd12   :   music <= 5'd13;
-              6'd13   :   music <= 5'd14;
-              6'd14   :   music <= 5'd15;
-              6'd15   :   music <= 5'd16;
+              6'd8    :   music <= 5'd4;
+              6'd9    :   music <= 5'd3;
+              6'd10   :   music <= 5'd3;
+              6'd11   :   music <= 5'd2;
+              6'd12   :   music <= 5'd2;
+              6'd13   :   music <= 5'd1;
+              6'd14   :   music <= 5'd21;
+              6'd15   :   music <= 5'd21;
               
-              6'd16   :   music <= 5'd17;
-              6'd17   :   music <= 5'd18;
-              6'd18   :   music <= 5'd19;
-              6'd19   :   music <= 5'd20;
+              6'd16   :   music <= 5'd21;
+              6'd17   :   music <= 5'd21;
+              6'd18   :   music <= 5'd21;
+              6'd19   :   music <= 5'd21;
               6'd20   :   music <= 5'd21;
               6'd21   :   music <= 5'd21;
               6'd22   :   music <= 5'd21;

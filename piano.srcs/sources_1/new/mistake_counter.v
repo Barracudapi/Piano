@@ -21,19 +21,13 @@
 
 
 module mistake_counter(
-input [5:0] mistake,
+input [3:0] digit,
 output tub_sel,
 output reg [7:0] tub_ctrl
     );
-    
-    reg [3:0] digit1, digit2;
-    
-    
-    
-  
     assign tub_sel = 1'b1;
     always @(*) begin
-        case(digit1)
+        case(digit)
         4'b0000: tub_ctrl = 8'b11111100;
         4'b0001: tub_ctrl = 8'b01100000;
         4'b0010: tub_ctrl = 8'b11011010;
