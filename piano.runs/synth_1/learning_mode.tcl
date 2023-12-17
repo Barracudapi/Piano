@@ -33,6 +33,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/mistake_counter.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being

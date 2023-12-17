@@ -14,12 +14,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11188 
+INFO: Helper process launched with PID 12512 
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:36]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:39]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:42]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 343.449 ; gain = 113.008
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 343.656 ; gain = 113.656
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'learning_mode' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:23]
 	Parameter low1 bound to: 262 - type: integer 
@@ -165,12 +165,15 @@ INFO: [Synth 8-256] done synthesizing module 'generate_melody' (2#1) [C:/Users/A
 INFO: [Synth 8-638] synthesizing module 'learn_song1' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v:26]
 INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v:40]
 INFO: [Synth 8-256] done synthesizing module 'learn_song1' (3#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v:26]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:47]
-INFO: [Synth 8-256] done synthesizing module 'learning_mode' (4#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:23]
+INFO: [Synth 8-638] synthesizing module 'mistake_counter' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/mistake_counter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/mistake_counter.v:32]
+INFO: [Synth 8-256] done synthesizing module 'mistake_counter' (4#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/mistake_counter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:59]
+INFO: [Synth 8-256] done synthesizing module 'learning_mode' (5#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:23]
 WARNING: [Synth 8-3917] design learning_mode has port sd driven by constant 1
 WARNING: [Synth 8-3331] design free_play has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 375.676 ; gain = 145.234
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 376.551 ; gain = 146.551
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -180,7 +183,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 375.676 ; gain = 145.234
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 376.551 ; gain = 146.551
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -188,9 +191,6 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc]
-WARNING: [Vivado 12-507] No nets matched 'sw_IBUF[0]'. [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/learning_mode_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/learning_mode_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -199,29 +199,32 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 710.957 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 713.238 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 710.957 ; gain = 480.516
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 713.238 ; gain = 483.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 710.957 ; gain = 480.516
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 713.238 ; gain = 483.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 710.957 ; gain = 480.516
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 713.238 ; gain = 483.238
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "range" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "frequency" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:41]
+WARNING: [Synth 8-6014] Unused sequential element mistake_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:88]
+WARNING: [Synth 8-6014] Unused sequential element digit1_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:49]
+WARNING: [Synth 8-6014] Unused sequential element digit2_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'tub_ctrl_reg' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/mistake_counter.v:33]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 710.957 ; gain = 480.516
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 713.238 ; gain = 483.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -234,10 +237,14 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      6 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
 +---Registers : 
 	               11 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
@@ -245,9 +252,12 @@ Detailed RTL Component Info :
 	   4 Input     11 Bit        Muxes := 7     
 	   2 Input      8 Bit        Muxes := 2     
 	  22 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 14    
+	  64 Input      5 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 2     
 	  13 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
+	  11 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -258,13 +268,18 @@ Hierarchical RTL Component report
 Module learning_mode 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      6 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
 +---Registers : 
-	                6 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 2     
 	  22 Input      7 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 12    
 Module free_play 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -280,6 +295,14 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     27 Bit        Muxes := 1     
+Module learn_song1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  64 Input      5 Bit        Muxes := 1     
+Module mistake_counter 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -296,28 +319,20 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element gm/counter_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:41]
+WARNING: [Synth 8-6014] Unused sequential element mistake_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:88]
+WARNING: [Synth 8-6014] Unused sequential element digit1_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:49]
+WARNING: [Synth 8-6014] Unused sequential element digit2_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v:50]
 WARNING: [Synth 8-3917] design learning_mode has port sd driven by constant 1
-WARNING: [Synth 8-3917] design learning_mode has port guide_lights[7] driven by constant 0
-WARNING: [Synth 8-3331] design learning_mode has unconnected port reset
-WARNING: [Synth 8-3332] Sequential element (cnt_reg[5]) is unused and will be removed from module learning_mode.
+WARNING: [Synth 8-3917] design learning_mode has port tub_d1 driven by constant 1
+WARNING: [Synth 8-3917] design learning_mode has port tub_d2 driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2/tub_ctrl_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d1/tub_ctrl_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\guide_lights_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (d1/tub_ctrl_reg[0]) is unused and will be removed from module learning_mode.
+WARNING: [Synth 8-3332] Sequential element (d2/tub_ctrl_reg[0]) is unused and will be removed from module learning_mode.
+WARNING: [Synth 8-3332] Sequential element (guide_lights_reg[7]) is unused and will be removed from module learning_mode.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 710.957 ; gain = 480.516
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-ROM:
-+--------------+-------------+---------------+----------------+
-|Module Name   | RTL Object  | Depth x Width | Implemented As | 
-+--------------+-------------+---------------+----------------+
-|learn_song1   | music       | 64x4          | LUT            | 
-|learning_mode | song1/music | 64x4          | LUT            | 
-+--------------+-------------+---------------+----------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 713.238 ; gain = 483.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -329,13 +344,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 710.957 ; gain = 480.516
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 714.336 ; gain = 484.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 710.957 ; gain = 480.516
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 714.781 ; gain = 484.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -347,7 +362,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 735.629 ; gain = 505.188
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 742.863 ; gain = 512.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -371,7 +386,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 735.629 ; gain = 505.188
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.863 ; gain = 512.863
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -384,7 +399,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 735.629 ; gain = 505.188
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.863 ; gain = 512.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -396,25 +411,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 735.629 ; gain = 505.188
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.863 ; gain = 512.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 735.629 ; gain = 505.188
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.863 ; gain = 512.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 735.629 ; gain = 505.188
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.863 ; gain = 512.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 735.629 ; gain = 505.188
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.863 ; gain = 512.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -430,46 +445,50 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     2|
+|1     |BUFG   |     1|
 |2     |CARRY4 |   116|
-|3     |LUT1   |     2|
-|4     |LUT2   |   112|
-|5     |LUT3   |   258|
-|6     |LUT4   |    14|
-|7     |LUT5   |    44|
-|8     |LUT6   |    65|
-|9     |FDRE   |    52|
-|10    |IBUF   |    12|
-|11    |OBUF   |    10|
+|3     |LUT1   |     4|
+|4     |LUT2   |   109|
+|5     |LUT3   |   268|
+|6     |LUT4   |    30|
+|7     |LUT5   |    58|
+|8     |LUT6   |    82|
+|9     |FDRE   |    80|
+|10    |LD     |    14|
+|11    |IBUF   |    13|
+|12    |OBUF   |    28|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------+----------------+------+
-|      |Instance |Module          |Cells |
-+------+---------+----------------+------+
-|1     |top      |                |   687|
-|2     |  gm     |generate_melody |   541|
-|3     |  play   |free_play       |    90|
-+------+---------+----------------+------+
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |   803|
+|2     |  d1     |mistake_counter   |    15|
+|3     |  d2     |mistake_counter_0 |    15|
+|4     |  gm     |generate_melody   |   537|
+|5     |  play   |free_play         |    95|
++------+---------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 735.629 ; gain = 505.188
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.863 ; gain = 512.863
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 735.629 ; gain = 169.906
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 735.629 ; gain = 505.188
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 742.863 ; gain = 176.176
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.863 ; gain = 512.863
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 14 instances were transformed.
+  LD => LDCE: 14 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-37 Infos, 14 Warnings, 1 Critical Warnings and 0 Errors encountered.
+43 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 735.629 ; gain = 509.891
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 742.863 ; gain = 516.902
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/learning_mode.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file learning_mode_utilization_synth.rpt -pb learning_mode_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 735.629 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 15 00:08:44 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 742.863 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 17 21:00:31 2023...
