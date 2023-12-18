@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+<<<<<<< HEAD
+# Start of session at: Mon Dec 18 20:58:24 2023
+# Process ID: 4636
+# Current directory: C:/Users/Administrator/Documents/GitHub/Piano
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7584 C:\Users\Administrator\Documents\GitHub\Piano\piano.xpr
+=======
+# Start of session at: Thu Dec 14 21:22:46 2023
+# Process ID: 8584
+# Current directory: C:/Users/Administrator/Documents/GitHub/Piano
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7564 C:\Users\Administrator\Documents\GitHub\Piano\piano.xpr
+>>>>>>> 2abe4914cee8466690aac9679b53b466a762c9c5
+# Log file: C:/Users/Administrator/Documents/GitHub/Piano/vivado.log
+# Journal file: C:/Users/Administrator/Documents/GitHub/Piano\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/Administrator/Documents/GitHub/Piano/piano.xprupdate_compile_order -fileset sources_1
+
+close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v w ]
+add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learning_mode.v
+update_compile_order -fileset sources_1
+<<<<<<< HEAD
+add_files -norecurse {C:/Users/Administrator/Desktop/scan_seg.v C:/Users/Administrator/Desktop/light_7seg_ego1.v}
+=======
+close [ open C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v w ]
+add_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top learning_mode [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+>>>>>>> 2abe4914cee8466690aac9679b53b466a762c9c5
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/mistake_counter.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/mistake_counter.v
+remove_files  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/mistake_counter.v
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+<<<<<<< HEAD
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_en[7]} {seg_en[6]} {seg_en[5]} {seg_en[4]} {seg_en[3]} {seg_en[2]} {seg_en[1]} {seg_en[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_out0[7]} {seg_out0[6]} {seg_out0[5]} {seg_out0[4]} {seg_out0[3]} {seg_out0[2]} {seg_out0[1]} {seg_out0[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_out1[7]} {seg_out1[6]} {seg_out1[5]} {seg_out1[4]} {seg_out1[3]} {seg_out1[2]} {seg_out1[1]} {seg_out1[0]}]]
+place_ports {seg_en[7]} G2
+place_ports {seg_en[6]} C2
+place_ports {seg_en[5]} C1
+place_ports {seg_en[4]} H1
+place_ports {seg_en[3]} G1
+place_ports {seg_en[2]} F1
+place_ports {seg_en[1]} E1
+place_ports {seg_en[0]} G6
+place_ports {seg_out0[7]} B4
+place_ports {seg_out0[6]} A4
+place_ports {seg_out0[5]} A3
+place_ports {seg_out0[4]} B1
+place_ports {seg_out0[3]} A1
+place_ports {seg_out0[2]} B3
+place_ports {seg_out0[1]} B2
+place_ports {seg_out0[0]} D5
+place_ports {seg_out1[7]} D4
+place_ports {seg_out1[6]} E3
+place_ports {seg_out1[5]} D3
+place_ports {seg_out1[4]} F4
+place_ports {seg_out1[3]} F3
+place_ports {seg_out1[2]} E2
+place_ports {seg_out1[1]} D2
+place_ports {seg_out1[0]} H2
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+=======
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+set_property IOSTANDARD LVCMOS33 [get_ports [list {guide_lights[7]} {guide_lights[6]} {guide_lights[5]} {guide_lights[4]} {guide_lights[3]} {guide_lights[2]} {guide_lights[1]} {guide_lights[0]}]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list {button[2]} {button[1]} {button[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sw[7]} {sw[6]} {sw[5]} {sw[4]} {sw[3]} {sw[2]} {sw[1]} {sw[0]}]]
+place_ports {button[2]} V2
+place_ports {button[1]} V5
+place_ports {button[0]} V4
+place_ports {guide_lights[0]} P5
+place_ports {guide_lights[1]} P4
+place_ports {guide_lights[2]} P3
+place_ports {guide_lights[3]} P2
+place_ports {guide_lights[3]} A9
+place_ports {guide_lights[3]} P2
+place_ports {guide_lights[4]} R2
+place_ports {guide_lights[5]} M4
+place_ports {guide_lights[6]} N4
+place_ports {guide_lights[7]} R1
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[0]}]]
+place_ports {sw[0]} P5
+endgroup
+place_ports {guide_lights[0]} F6
+place_ports {guide_lights[1]} G4
+place_ports {guide_lights[2]} G3
+place_ports {guide_lights[3]} J4
+place_ports {guide_lights[4]} H4
+startgroup
+set_property package_pin "" [get_ports [list  {sw[7]}]]
+place_ports {guide_lights[5]} J3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[6]}]]
+place_ports {guide_lights[6]} J2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[5]}]]
+place_ports {guide_lights[7]} K2
+endgroup
+place_ports {sw[1]} P4
+place_ports {sw[2]} P3
+place_ports {sw[3]} P2
+place_ports {sw[4]} R2
+place_ports {sw[5]} M4
+place_ports {sw[6]} N4
+place_ports {sw[7]} R1
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[7]}]]
+place_ports {guide_lights[0]} K2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[6]}]]
+place_ports {guide_lights[1]} J2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[5]}]]
+place_ports {guide_lights[2]} J3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {guide_lights[4]}]]
+place_ports {guide_lights[3]} H4
+endgroup
+place_ports {guide_lights[4]} J4
+place_ports {guide_lights[5]} G3
+place_ports {guide_lights[6]} G4
+place_ports {guide_lights[7]} F6
+startgroup
+set_property package_pin "" [get_ports [list  {sw[7]}]]
+place_ports {sw[0]} R1
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[6]}]]
+place_ports {sw[1]} N4
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[5]}]]
+place_ports {sw[2]} M4
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[4]}]]
+place_ports {sw[3]} R2
+endgroup
+place_ports {sw[4]} P2
+place_ports {sw[5]} P3
+place_ports {sw[6]} P4
+place_ports {sw[7]} P5
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property DRIVE 12 [get_ports [list {guide_lights[7]} {guide_lights[6]} {guide_lights[5]} {guide_lights[4]} {guide_lights[3]} {guide_lights[2]} {guide_lights[1]} {guide_lights[0]}]]
+save_constraints -force
+>>>>>>> 2abe4914cee8466690aac9679b53b466a762c9c5
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learning_mode.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learning_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learning_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+<<<<<<< HEAD
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+=======
+>>>>>>> 2abe4914cee8466690aac9679b53b466a762c9c5
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learning_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

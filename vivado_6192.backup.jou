@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 19 17:03:48 2023
+# Process ID: 6192
+# Current directory: C:/Users/Administrator/Piano/Piano
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6588 C:\Users\Administrator\Piano\Piano\piano.xpr
+# Log file: C:/Users/Administrator/Piano/Piano/vivado.log
+# Journal file: C:/Users/Administrator/Piano/Piano\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Piano/Piano/piano.xpr
+update_compile_order -fileset sources_1

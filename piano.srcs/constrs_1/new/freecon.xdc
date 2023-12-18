@@ -5,36 +5,15 @@ set_property IOSTANDARD LVCMOS33 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports melody]
 set_property IOSTANDARD LVCMOS33 [get_ports reset]
 
-set_property PACKAGE_PIN V2 [get_ports {button[2]}]
-set_property PACKAGE_PIN V5 [get_ports {button[1]}]
-set_property PACKAGE_PIN V4 [get_ports {button[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {button[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {button[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {button[0]}]
 
 
 
 set_property IOSTANDARD LVCMOS33 [get_ports sd]
 set_property PACKAGE_PIN M6 [get_ports sd]
 
-set_property PACKAGE_PIN F6 [get_ports {guide_lights[7]}]
-set_property PACKAGE_PIN G4 [get_ports {guide_lights[6]}]
-set_property PACKAGE_PIN G3 [get_ports {guide_lights[5]}]
-set_property PACKAGE_PIN J4 [get_ports {guide_lights[4]}]
-set_property PACKAGE_PIN H4 [get_ports {guide_lights[3]}]
-set_property PACKAGE_PIN J3 [get_ports {guide_lights[2]}]
-set_property PACKAGE_PIN J2 [get_ports {guide_lights[1]}]
-set_property PACKAGE_PIN K2 [get_ports {guide_lights[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {guide_lights[7]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {guide_lights[6]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {guide_lights[5]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {guide_lights[4]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {guide_lights[3]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {guide_lights[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {guide_lights[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {guide_lights[0]}]
 
 
+<<<<<<< HEAD
 set_property PACKAGE_PIN P5 [get_ports {sw[7]}]
 set_property PACKAGE_PIN P4 [get_ports {sw[6]}]
 set_property PACKAGE_PIN P3 [get_ports {sw[5]}]
@@ -101,3 +80,34 @@ set_property PACKAGE_PIN F3 [get_ports {seg_out1[3]}]
 set_property PACKAGE_PIN E2 [get_ports {seg_out1[2]}]
 set_property PACKAGE_PIN D2 [get_ports {seg_out1[1]}]
 set_property PACKAGE_PIN H2 [get_ports {seg_out1[0]}]
+=======
+
+
+
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports {led_state[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_state[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_state[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {select_song[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {select_song[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {select_song[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {select_songs[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {select_songs[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {select_songs[0]}]
+set_property PACKAGE_PIN F6 [get_ports {led_state[2]}]
+set_property PACKAGE_PIN G4 [get_ports {led_state[1]}]
+set_property PACKAGE_PIN G3 [get_ports {led_state[0]}]
+set_property PACKAGE_PIN K1 [get_ports {select_song[2]}]
+set_property PACKAGE_PIN H6 [get_ports {select_song[1]}]
+set_property PACKAGE_PIN J3 [get_ports {select_song[0]}]
+set_property PACKAGE_PIN R3 [get_ports {select_songs[2]}]
+set_property PACKAGE_PIN T3 [get_ports {select_songs[1]}]
+set_property PACKAGE_PIN T5 [get_ports {select_songs[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports pausebtn]
+set_property IOSTANDARD LVCMOS33 [get_ports stopbtn]
+set_property IOSTANDARD LVCMOS33 [get_ports playbtn]
+set_property PACKAGE_PIN V1 [get_ports pausebtn]
+set_property PACKAGE_PIN U4 [get_ports playbtn]
+set_property PACKAGE_PIN R17 [get_ports stopbtn]
+>>>>>>> 2abe4914cee8466690aac9679b53b466a762c9c5

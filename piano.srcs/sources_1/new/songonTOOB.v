@@ -24,7 +24,6 @@ module songonTOOB(
 input [1:0] counter,
 output reg [7:0] tub_sel 
     );
-    //song display on autoplay
     wire [7:0] ctrl1, ctrl2, ctrl3, ctrl4, ctrl5;
     wire [7:0] ctrl6, ctrl7, ctrl8, ctrl9, ctrl10;
     wire [7:0] ctrl11, ctrl12, ctrl13, ctrl14, ctrl15;
