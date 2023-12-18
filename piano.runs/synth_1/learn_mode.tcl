@@ -29,10 +29,13 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/Administrator/Documents/GitHub/Piano/piano.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v
+  C:/Users/Administrator/Desktop/light_7seg_ego1.v
+  C:/Users/Administrator/Desktop/scan_seg.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
