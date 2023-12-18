@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Dec 17 21:36:21 2023
+# Process ID: 12280
+# Current directory: C:/Users/Administrator/Documents/GitHub/Piano
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6580 C:\Users\Administrator\Documents\GitHub\Piano\piano.xpr
+# Log file: C:/Users/Administrator/Documents/GitHub/Piano/vivado.log
+# Journal file: C:/Users/Administrator/Documents/GitHub/Piano\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Documents/GitHub/Piano/piano.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+startgroup
+set_property package_pin "" [get_ports [list  {display_d1[7]}]]
+place_ports {display_d1[0]} D5
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {display_d1[6]}]]
+place_ports {display_d1[1]} B2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {display_d1[5]}]]
+place_ports {display_d1[2]} B3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {display_d1[4]}]]
+place_ports {display_d1[3]} A1
+endgroup
+place_ports {display_d1[4]} B1
+place_ports {display_d1[5]} A3
+place_ports {display_d1[6]} A4
+place_ports {display_d1[7]} B4
+startgroup
+set_property package_pin "" [get_ports [list  {display_d1[7]}]]
+place_ports {display_d2[7]} B4
+endgroup
+set_property is_loc_fixed true [get_ports [list  {display_d1[7]}]]
+startgroup
+set_property package_pin "" [get_ports [list  {display_d2[7]}]]
+place_ports {display_d1[7]} B4
+endgroup
+add_files -fileset constrs_1 -norecurse C:/Users/Administrator/Downloads/lab6_demo2.xdc
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/lab6_demo2.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/Administrator/Downloads/lab6_demo2.xdc
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse C:/Users/Administrator/Downloads/lab6_demo2.xdc
+add_files -norecurse C:/Users/Administrator/Downloads/lab6_demo2.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/lab6_demo2.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Downloads/lab6_demo2.v
+remove_files  C:/Users/Administrator/Downloads/lab6_demo2.v
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+refresh_design
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1

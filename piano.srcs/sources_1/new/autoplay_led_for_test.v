@@ -24,8 +24,8 @@ module autoplay_led_for_test(
     input clk,
     input [1:0] state,
     input [1:0] music, 
-    output reg [2:0] led_state,
-    output reg [2:0] select_song
+    output reg [3:0] led_state,
+    output reg [3:0] select_song
     );
     
     parameter sstop = 00, splay = 01, spause = 10;

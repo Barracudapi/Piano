@@ -27,16 +27,16 @@ module debounce_tb(
     reg Reset;
     reg Key;
     wire key_out;
-//    wire pos;
-//    wire neg;
+    wire pos;
+    wire neg;
    
     debounce dut1(
         Clk,
         Reset,
         Key,
-        key_out
-//        pos,
-//        neg
+        key_out,
+        pos,
+        neg
         );
      initial Clk=0;
      always#5 Clk=!Clk;

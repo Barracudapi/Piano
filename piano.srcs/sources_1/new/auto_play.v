@@ -23,13 +23,12 @@
 module auto_play(
 input wire clk,
 input wire reset,
-input [2:0] select_songs,
-input pausebtn,
+input selectsongbtn, pausebtn,
 input stopbtn, playbtn,
 output sd,
 output wire melody,
-output [2:0] led_state,
-output [2:0] select_song
+output [3:0] led_state,
+output [3:0] select_song
 
     ); 
     
@@ -55,6 +54,7 @@ output [2:0] select_song
     //reg spause, splay, sstop; //these are states;
     wire clk1;
     wire pause, play, stop; //these are the btn after debouncing
+    wire select;
     reg [1:0] music_flag;
     
     parameter sstop = 00, splay = 01, spause = 10;
@@ -69,7 +69,7 @@ output [2:0] select_song
     debounce d1(clk, reset, stopbtn, stop);
     debounce d2(clk, reset, playbtn, play);
     debounce d3(clk, reset, pausebtn, pause);
-
+    debounce d4(clk, reset, selectsongbtn, select);
     
     //this is the state transmition among pause and play and stop
     always@(posedge clk, posedge reset) begin
@@ -90,24 +90,50 @@ output [2:0] select_song
                         state <= sstop;
                     else if(play == 1)
                         state <= splay;
+                    else if(pause == 1)
+                        state <= splay;
             endcase
         end
     end
 
+     //select songs
+    always@(posedge reset) begin
+       if(reset) begin
+           counter <= 0;
+           music <= 5'd0;
+       end
+    end
     
-    always@(posedge reset, posedge clk) begin
-        if(reset) 
-            music <= 5'd0;
-        else if(state == sstop) begin
-            case(select_songs)
-                3'b100: begin music <= music2; music_flag <= 2'b01; end
-                3'b010: begin music <= music1; music_flag <= 2'b10; end
-                3'b001: begin music <= music3; music_flag <= 2'b11; end
-                default: begin music <= music2; music_flag <= 2'b00;end
-               endcase
-           end
+    always@(select) begin
+        if(state == sstop && select == 1) begin
+            case(counter)
+                0: counter = 2'b01;
+                1: counter = 2'b10;
+                2: counter = 2'b00;
+            endcase
+        end else
+            counter <= counter;
     end
      
+     //if default music = music11 
+     //then it means count = 0, music is music1,
+     // but count = 1, it's still music 1, a bit weird, 
+     //i think we need to chage it
+     
+     always @(posedge clk) begin
+          if(state == splay) begin
+              case(counter)
+                 0: begin music = music2; music_flag = 2'b00; end
+                 1: begin music = music1; music_flag = 2'b01; end
+                 2: begin music = music3; music_flag = 2'b10; end
+                 default: begin music <= music2; music_flag = 2'b00;end
+                endcase
+            end
+            else
+                music <= 1'b0;
+      end
+      
+      
      
      music_to_frequency mf(clk, music, frequency);
      generate_melody gm(clk, frequency, melody);
