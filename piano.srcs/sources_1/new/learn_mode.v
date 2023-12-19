@@ -20,28 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/12/14 21:31:00
-// Design Name: 
-// Module Name: learning_mode
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 
 module learn_mode(
 input clk, reset,
@@ -56,20 +34,23 @@ output [7:0] seg_out0, seg_out1
     `include "ppppparameters.v"
    wire [1:0] useless_state;
    reg [5:0] cnt = 6'd0;
-   wire [4:0] music;    
+   wire [4:0] music;
    assign sd = 1'b1;
    wire [10:0] frequency;
    reg [7:0] prev = 0;
    reg [3:0] digit1 = 0; 
    reg [3:0] digit2 = 0;
    wire [7:0] sw_d;
+   wire [2:0] interval;
+   reg [1:0] song_choice = 2'b00;
+   wire select_song_buttond;
     
     //learning mode has similar functions to free play except the led function which we modify in this module.
     free_play play(clk, reset, button, sw, frequency);
     generate_melody gm(.clk(clk), .frequency(frequency), .melody(melody));
-    learn_song1 song1(cnt, music);
-//    learn_song2 song2(cnt, music);
-    scan_seg sc_seg(cnt, digit1, digit2, reset, clk, seg_en, seg_out0, seg_out1);
+    learn_song1 song1(cnt, music, interval);
+//    learn_song2 song2(cnt2, music2, interval2);
+    scan_seg sc_seg(interval, cnt, digit1, digit2, reset, clk, seg_en, seg_out0, seg_out1);
     
     
     //sometimes if you dont flip the switch fast enough, it glitches and cnt increments too many times. A switch debouncer is added to mitigate this issue.
@@ -81,6 +62,28 @@ output [7:0] seg_out0, seg_out1
     debounce debounce5(clk ,reset, sw[5], sw_d[5]);
     debounce debounce6(clk ,reset, sw[6], sw_d[6]);
     debounce debounce7(clk ,reset, sw[7], sw_d[7]);
+    
+    
+//    debounce song_choice_button_debouncer(clk, reset, select_song_button, select_song_buttond);      
+//        always@(select_song_buttond) begin      
+//            if(select_song_buttond == 1) begin
+//                song_choice <= song_choice +1;
+//                case(song_choice)
+//                    1: begin
+//                            cnt <= cnt1;
+//                            music <= music1;
+//                            interval <= interval1;
+//                        end
+//                    2: begin
+//                            cnt <= cnt2;
+//                            music <= music2;
+//                            interval <= interval2;
+//                        end
+//                    default: song_choice <= 2'b01;
+//                endcase
+//            end else
+//                song_choice <= song_choice;
+//            end
     
    
         

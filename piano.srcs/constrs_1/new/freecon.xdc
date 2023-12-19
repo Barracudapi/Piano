@@ -13,7 +13,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports {button[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {button[0]}]
 
 
-
 set_property IOSTANDARD LVCMOS33 [get_ports sd]
 set_property PACKAGE_PIN M6 [get_ports sd]
 

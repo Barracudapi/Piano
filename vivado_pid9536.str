@@ -1,0 +1,3130 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 9536
+License: Customer
+
+Current time: 	Tue Dec 19 21:00:34 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 225 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: C:/Users/Administrator/Documents/GitHub/Piano
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Administrator/Documents/GitHub/Piano/vivado.log
+Vivado journal file location: 	C:/Users/Administrator/Documents/GitHub/Piano/vivado.jou
+Engine tmp dir: 	C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-9536-S210-07
+
+GUI allocated memory:	276 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 679 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Administrator\Documents\GitHub\Piano\piano.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Administrator/Documents/GitHub/Piano/piano.xpr 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 84 MB (+85672kb) [00:00:04]
+// [Engine Memory]: 590 MB (+466799kb) [00:00:04]
+// [GUI Memory]: 98 MB (+9775kb) [00:00:04]
+// [GUI Memory]: 108 MB (+6187kb) [00:00:05]
+// [Engine Memory]: 629 MB (+9864kb) [00:00:05]
+// [GUI Memory]: 115 MB (+1627kb) [00:00:05]
+// Tcl Message: open_project C:/Users/Administrator/Documents/GitHub/Piano/piano.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// [Engine Memory]: 689 MB (+30667kb) [00:00:06]
+// Project name: piano; location: C:/Users/Administrator/Documents/GitHub/Piano; part: xc7a35tcsg324-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 42 MB. Current time: 12/19/23 9:00:36 PM CST
+// a (cj): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v)]", 3); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 7); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 7); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v)]", 3); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v)]", 3, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), song1 : learn_song1 (learn_song1.v)]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 18 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 7); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v), u0 : light_7seg_ego1 (light_7seg_ego1.v)]", 8, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v), u0 : light_7seg_ego1 (light_7seg_ego1.v)]", 8, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 39 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 7); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), song1 : learn_song1 (learn_song1.v)]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), song1 : learn_song1 (learn_song1.v)]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("learn_song1.v", 96, 229); // cd (w, cj)
+// Elapsed time: 26 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, ppppparameters.v]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, ppppparameters.v]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 3); // k (j, cj)
+selectCodeEditor("learn_song1.v", 246, 109); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 138, 104); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 146, 103); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 300, 127); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 156, 161); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 303, 166); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 246, 99); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 141, 43); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 238, 81); // cd (w, cj)
+// Elapsed time: 25 seconds
+selectCodeEditor("learn_song1.v", 191, 88); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 229, 104); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("learn_song1.v", 292, 237); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 144, 357); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 264, 353); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 376, 348); // cd (w, cj)
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 1); // k (j, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 8, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v), u1 : light_7seg_ego1 (light_7seg_ego1.v)]", 10, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 1); // k (j, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 717 MB. GUI used memory: 46 MB. Current time: 12/19/23 9:05:26 PM CST
+selectCodeEditor("learn_mode.v", 153, 106); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("learn_mode.v", 113, 184); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 188, 277); // cd (w, cj)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 5); // k (j, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("scan_seg.v", 136, 177); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 1); // k (j, cj)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 2); // k (j, cj)
+selectCodeEditor("light_7seg_ego1.v", 190, 82); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("light_7seg_ego1.v", 272, 97); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 5); // k (j, cj)
+selectCodeEditor("scan_seg.v", 216, 409); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("scan_seg.v", 419, 358); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 2); // k (j, cj)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 2); // k (j, cj)
+selectCodeEditor("light_7seg_ego1.v", 143, 179); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 157, 138); // cd (w, cj)
+// Elapsed time: 28 seconds
+selectCodeEditor("light_7seg_ego1.v", 64, 127); // cd (w, cj)
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("light_7seg_ego1.v", 220, 156); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 128, 393); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 108, 429); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 152, 389); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 141, 53); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 100, 86); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 107, 216); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 370, 219); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 105, 223); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 109, 241); // cd (w, cj)
+// Elapsed time: 23 seconds
+selectCodeEditor("light_7seg_ego1.v", 148, 332); // cd (w, cj)
+// Elapsed time: 37 seconds
+selectCodeEditor("light_7seg_ego1.v", 218, 363); // cd (w, cj)
+typeControlKey((HResource) null, "light_7seg_ego1.v", 'c'); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 224, 373); // cd (w, cj)
+typeControlKey((HResource) null, "light_7seg_ego1.v", 'v'); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 140, 407); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 236, 407); // cd (w, cj)
+typeControlKey((HResource) null, "light_7seg_ego1.v", 'v'); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 316, 453); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 438, 292); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 73, 333); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 69, 369); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 75, 374); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 72, 408); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 72, 448); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 224, 388); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 432, 455); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("light_7seg_ego1.v", 274, 314); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 222, 255); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("light_7seg_ego1.v", 298, 348); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 71, 223); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 65, 214); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 70, 219); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 140, 429); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 68, 220); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 71, 220); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 3); // k (j, cj)
+selectCodeEditor("learn_song1.v", 429, 121); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 290, 134); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 154, 142); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 228, 142); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("learn_song1.v", 152, 142); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 301, 135); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 155, 140); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 225, 142, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // ac (ai, Popup.HeavyWeightWindow)
+// [Engine Memory]: 728 MB (+4486kb) [00:12:15]
+// Elapsed time: 19 seconds
+selectComboBox("FindAndReplaceDialog.cj_Ìæ»»(R)£º", "begin music <= 5'd21; interval = 3'b001; end", -1); // JComboBox (cj, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cj_²éÕÒ(F)", "²éÕÒ(F)"); // JButton (cj, FindAndReplaceDialog)
+selectCodeEditor("learn_song1.v", 551, 19); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 381, 295); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("learn_song1.v", 547, 260); // cd (w, cj)
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// f (cj): Launch Runs: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 21:14:11 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 21:14:11 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 63 MB. Current time: 12/19/23 9:14:11 PM CST
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 76 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cj): Launch Runs: addNotify
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 11 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 21:15:40 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 1); // k (j, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bs (cj):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 796 MB (+33550kb) [00:15:45]
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 50 MB. Current time: 12/19/23 9:16:16 PM CST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// [Engine Memory]: 1,059 MB (+233088kb) [00:15:50]
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,059 MB. GUI used memory: 50 MB. Current time: 12/19/23 9:16:18 PM CST
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,188 MB (+79892kb) [00:15:50]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 177 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Device 21-403] Loading part xc7a35tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-9536-S210-07/dcp0/learn_mode.xdc] Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-9536-S210-07/dcp0/learn_mode.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1250.953 ; gain = 1.324 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1250.953 ; gain = 1.324 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1393.188 ; gain = 446.555 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 122 MB (+1340kb) [00:15:54]
+// 'dO' command handler elapsed time: 9 seconds
+// Elapsed time: 10 seconds
+dismissDialog("Open Implemented Design"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 129 MB (+768kb) [00:15:56]
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bs (cj)
+// [GUI Memory]: 139 MB (+3035kb) [00:15:57]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// [Engine Memory]: 1,248 MB (+1297kb) [00:15:58]
+// bs (cj):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// RouteApi::initDelayMediator elapsed time: 7.9s
+// [Engine Memory]: 1,554 MB (+254920kb) [00:16:00]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,147 MB (+540763kb) [00:16:05]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// [GUI Memory]: 147 MB (+996kb) [00:16:06]
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,171 MB. GUI used memory: 94 MB. Current time: 12/19/23 9:16:36 PM CST
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectCodeEditor("learn_song1.v", 263, 104); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+// Elapsed time: 89 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ppppparameters.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectCodeEditor("learn_song1.v", 442, 56); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,191 MB. GUI used memory: 93 MB. Current time: 12/19/23 9:20:16 PM CST
+// Elapsed time: 49 seconds
+selectCodeEditor("light_7seg_ego1.v", 93, 261); // cd (w, cj)
+typeControlKey((HResource) null, "light_7seg_ego1.v", 'c'); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 201, 201); // cd (w, cj)
+typeControlKey((HResource) null, "light_7seg_ego1.v", 'v'); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 72, 219); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 229, 401); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 21:21:18 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 55 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 14 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 21:22:33 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 21:22:33 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 16 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectCodeEditor("learn_mode.v", 44, 296); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 404, 200); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ppppparameters.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectCodeEditor("learn_song1.v", 260, 102); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 587, 100); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectCodeEditor("light_7seg_ego1.v", 127, 373); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 274, 156); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 271, 157); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 103, 163); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 70, 178); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 69, 183); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 532, 200); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 122, 351); // cd (w, cj)
+selectCodeEditor("light_7seg_ego1.v", 682, 179); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 21:25:23 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,214 MB. GUI used memory: 95 MB. Current time: 12/19/23 9:26:01 PM CST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 21:26:13 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 21:26:13 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'interval' should not be used in output port connection [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:71]. ]", 4, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;71;-;;-;16;-;"); // ah (O, cj)
+selectCodeEditor("learn_mode.v", 17, 297); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("learn_mode.v", 117, 368); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 255, 180); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bs (cj):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 21:27:07 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 21:27:07 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 65 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 21:28:26 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 31 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+// [GUI Memory]: 154 MB (+50kb) [00:29:07]
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectCodeEditor("light_7seg_ego1.v", 221, 278); // cd (w, cj)
+// Elapsed time: 201 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ppppparameters.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ppppparameters.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+// Elapsed time: 126 seconds
+selectCodeEditor("light_7seg_ego1.v", 1104, 237); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF (Q, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 8); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 8); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 8); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 8); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), sc_seg : scan_seg (scan_seg.v)]", 8); // B (D, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectCodeEditor("learn_mode.v", 233, 124); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("learn_mode.v", 313, 133); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 234, 117); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 191, 117); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 149, 176); // cd (w, cj)
+// Elapsed time: 30 seconds
+selectCodeEditor("learn_mode.v", 170, 277); // cd (w, cj)
+// Elapsed time: 22 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 3); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 3); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_song2 (learn_song2.v)]", 24, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce2 (debounce2.v)]", 23, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectCodeEditor("learn_song1.v", 291, 92); // cd (w, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+dismissDialog("Add Sources"); // c (cj)
+selectCodeEditor("learn_song1.v", 523, 79); // cd (w, cj)
+typeControlKey((HResource) null, "learn_song1.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_song1.v", 523, 103); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 5); // k (j, cj)
+selectCodeEditor("learn_song2.v", 558, 120); // cd (w, cj)
+typeControlKey((HResource) null, "learn_song2.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_song2.v", 106, 255); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+// [GUI Memory]: 165 MB (+2903kb) [00:37:27]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ppppparameters.v", 4); // k (j, cj)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("learn_mode.v", 452, 109); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("learn_mode.v", 75, 48); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 137, 333); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 281, 347); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 162, 373); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 286, 391); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 238, 311); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 176, 334); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 332, 353); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 61, 426); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 135, 385); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 214, 328); // cd (w, cj)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("learn_mode.v", 343, 331); // cd (w, cj)
+// Elapsed time: 32 seconds
+selectCodeEditor("learn_mode.v", 558, 336); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 325, 375); // cd (w, cj)
+// Elapsed time: 22 seconds
+selectCodeEditor("learn_mode.v", 250, 89); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 248, 102); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 162, 256); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 134, 277); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 198, 247); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 146, 294); // cd (w, cj)
+// Elapsed time: 42 seconds
+selectCodeEditor("learn_mode.v", 118, 142); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 239, 261); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 239, 274); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 266, 356); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("learn_mode.v", 120, 345); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 146, 136); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("learn_mode.v", 132, 161); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 172, 184); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 185, 189); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 147, 338); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 139, 364); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 138, 354); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 120, 155); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 62, 207); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 181, 220); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 49, 283); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 227, 284); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 40, 355); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 130, 146); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 80, 373); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("learn_mode.v", 149, 106); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 145, 105); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 317, 104); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 127, 145); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 357, 127); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 219, 153); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 220, 146); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 20, 162); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("learn_mode.v", 60, 184); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 62, 182); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 185, 236); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 57, 181); // cd (w, cj)
+// Elapsed time: 20 seconds
+selectCodeEditor("learn_mode.v", 68, 180); // cd (w, cj)
+// Elapsed time: 15 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("learn_mode.v", 453, 254); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("learn_mode.v", 147, 237); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 448, 236); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 53, 107); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 195, 108); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 17, 124); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 843, 196); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 151, 129); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 103, 146); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("learn_mode.v", 79, 145); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 71, 182); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 165, 173); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 106, 181); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("learn_mode.v", 75, 147); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 113, 142); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 116, 144); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 107, 183); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("learn_mode.v", 180, 221); // cd (w, cj)
+// Elapsed time: 22 seconds
+selectCodeEditor("learn_mode.v", 432, 173); // cd (w, cj)
+// Elapsed time: 38 seconds
+selectCodeEditor("learn_mode.v", 65, 278); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 94, 352); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 100, 356); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 260, 209); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 228, 225); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 92, 147); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 135, 163); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("learn_mode.v", 288, 209); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 286, 199); // cd (w, cj)
+// Elapsed time: 32 seconds
+selectCodeEditor("learn_mode.v", 207, 261); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 199, 284); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 182, 301); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 45, 297); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 333, 191); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 148, 422); // cd (w, cj)
+// Elapsed time: 41 seconds
+selectCodeEditor("learn_mode.v", 108, 447); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 170, 444); // cd (w, cj)
+// Elapsed time: 19 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 25); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, freecon.xdc]", 27, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, freecon.xdc]", 27, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("freecon.xdc", 342, 159); // cd (w, cj)
+selectCodeEditor("freecon.xdc", 346, 186); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// [GUI Memory]: 173 MB (+463kb) [00:49:44]
+selectCodeEditor("learn_mode.v", 107, 124); // cd (w, cj)
+// Elapsed time: 36 seconds
+selectCodeEditor("learn_mode.v", 183, 161); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 170, 195); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 159, 161); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 63, 143); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 400, 99); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), play : free_play (free_play.v)]", 5, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), play : free_play (free_play.v)]", 5, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 3); // k (j, cj)
+selectCodeEditor("learn_song2.v", 258, 165); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("learn_song2.v", 358, 144); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 21:52:05 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,231 MB. GUI used memory: 98 MB. Current time: 12/19/23 9:52:27 PM CST
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 59 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Implementation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, freecon.xdc]", 27, false); // B (D, cj)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, cj)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, freecon.xdc]", 27, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 26, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("freecon.xdc", 394, 178); // cd (w, cj)
+selectCodeEditor("freecon.xdc", 381, 144); // cd (w, cj)
+selectCodeEditor("freecon.xdc", 451, 180); // cd (w, cj)
+typeControlKey((HResource) null, "freecon.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("freecon.xdc", 264, 223); // cd (w, cj)
+typeControlKey(null, null, 'z');
+selectCodeEditor("freecon.xdc", 268, 212); // cd (w, cj)
+selectCodeEditor("freecon.xdc", 395, 141); // cd (w, cj)
+typeControlKey((HResource) null, "freecon.xdc", 'c'); // cd (w, cj)
+selectCodeEditor("freecon.xdc", 409, 178); // cd (w, cj)
+typeControlKey((HResource) null, "freecon.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("freecon.xdc", 313, 216); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("freecon.xdc", 175, 215); // cd (w, cj)
+// Elapsed time: 32 seconds
+selectCodeEditor("freecon.xdc", 658, 122); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// x (cj): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 21:54:26 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 21:54:26 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 16 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'music' should not be used in output port connection [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]. ]", 4, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;75;-;;-;16;-;"); // ah (O, cj)
+selectCodeEditor("learn_mode.v", 190, 201); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 478, 139); // cd (w, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-285] failed synthesizing module 'learn_mode' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:46]. ]", 5, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;46;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bs (cj):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 21:55:02 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 21:55:02 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cj): Implementation Failed: addNotify
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net song_choice[1] with 1st driver pin 'song_choice_reg[1]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:92]. ]", 4, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;92;-;;-;16;-;"); // ah (O, cj)
+selectCodeEditor("learn_mode.v", 81, 222); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 166, 175); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 52, 139); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+dismissDialog("Save Project"); // am (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cj): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// am (cj): Save Project: addNotify
+dismissDialog("Reset and Re-run"); // i (cj)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 21:56:25 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cj): Implementation Failed: addNotify
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net song_choice[1] with 1st driver pin 'song_choice_reg[1]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:92]. ]", 4, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;92;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net song_choice[1] with 1st driver pin 'song_choice_reg[1]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:92]. ]", 4, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;92;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 68 seconds
+selectCodeEditor("learn_mode.v", 81, 199); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 81, 29); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("learn_mode.v", 25, 102); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 227, 117); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 209, 104); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 149, 157); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("learn_mode.v", 76, 146); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 223, 142); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 255, 182); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 100, 221); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 123, 235); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 128, 159); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 221, 180); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 21:58:54 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 21:58:54 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cj): Implementation Failed: addNotify
+// Elapsed time: 67 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net cnt[5] with 1st driver pin 'cnt_reg[5]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]. ]", 4, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;75;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("learn_mode.v", 166, 115); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 199, 104); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 143, 182); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 167, 114); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 166, 118, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("learn_mode.v", 163, 118); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 140, 125); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 146, 127); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("learn_mode.v", 148, 333); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 332, 162); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 249, 295); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 46, 315); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 280, 388); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("learn_mode.v", 449, 70); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cj): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// am (cj): Save Project: addNotify
+dismissDialog("Reset and Re-run"); // i (cj)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Tue Dec 19 22:01:36 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cj): Implementation Failed: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net cnt[5] with 1st driver pin 'cnt_reg[5]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]. ]", 4, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;75;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net cnt[5] with 1st driver pin 'cnt_reg[5]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]. ]", 4, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;75;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), gm : generate_melody (generate_melody.v)]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), gm : generate_melody (generate_melody.v)]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v), gm : generate_melody (generate_melody.v)]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "free_play.v", 7); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freecon.xdc", 6); // k (j, cj)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ppppparameters.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net cnt[5] with 1st driver pin 'cnt_reg[5]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]. ]", 4); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net cnt[5] with 1st driver pin 'cnt_reg[5]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]. , [Synth 8-3352] multi-driven net cnt[2] with 2nd driver pin 'cnt_reg[2]/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:115]. ]", 11, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;115;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net cnt[5] with 1st driver pin 'cnt_reg[5]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]. , [Synth 8-3352] multi-driven net cnt[1] with 1st driver pin 'cnt_reg[1]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]. ]", 12, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;75;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net cnt[5] with 1st driver pin 'cnt_reg[5]__0/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]. , [Synth 8-3352] multi-driven net cnt[2] with 2nd driver pin 'cnt_reg[2]/Q' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:115]. ]", 11, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;115;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs (cj):  Resetting Runs : addNotify
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Tue Dec 19 22:03:59 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:03:59 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 53 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 22:05:17 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_FAILED
+// ah (cj): Bitstream Generation Failed: addNotify
+// Elapsed time: 23 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, freecon.xdc]", 27, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 26, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 18 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF (Q, cj)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("learn_mode.v", 77, 85); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is music_reg[4]_i_3_n_0. Please evaluate your design. The cells in the loop are: music_reg[4]_i_3.. ]", 9, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "net;-;music_reg[4]_i_3_n_0;-;;-;10;-;"); // ah (O, cj)
+// HOptionPane Warning: 'Cannot find net. (Select Object)'
+// [Engine Memory]: 2,255 MB (+485kb) [01:06:25]
+closeView(PAResourceOtoP.PAViews_PACKAGE, "Package"); // A
+// Device view-level: 0.0
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // Y
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freecon.xdc", 8); // k (j, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,257 MB. GUI used memory: 130 MB. Current time: 12/19/23 10:06:57 PM CST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "generate_melody.v", 7); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "free_play.v", 6); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectCodeEditor("learn_mode.v", 204, 135); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("learn_mode.v", 277, 186); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 49, 180); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 21, 158); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 192, 199); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cj): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// am (cj): Save Project: addNotify
+dismissDialog("Reset and Re-run"); // i (cj)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 22:07:50 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+selectCodeEditor("learn_mode.v", 304, 184); // cd (w, cj)
+// [GUI Memory]: 182 MB (+206kb) [01:07:22]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 47 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 22:08:42 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:08:42 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 42 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: RUN_STEP_COMPLETED
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 82 seconds
+selectCodeEditor("learn_mode.v", 142, 354); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 29, 238); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("learn_mode.v", 145, 125); // cd (w, cj)
+// Elapsed time: 425 seconds
+selectCodeEditor("learn_mode.v", 144, 182); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("learn_mode.v", 358, 81); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 22:19:35 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 47 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 22:20:25 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:20:25 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 86 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 102 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, learn_mode (learn_mode.v)]", 4); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, auto_play (auto_play.v)]", 6, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, auto_play (auto_play.v), cl1 : clock1 (clock1.v)]", 8, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [GUI Memory]: 191 MB (+201kb) [01:23:22]
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "auto_play.v", 6); // k (j, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("auto_play.v", 125, 290); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scan_seg.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "auto_play.v", 6); // k (j, cj)
+// Elapsed time: 32 seconds
+selectCodeEditor("auto_play.v", 66, 374); // cd (w, cj)
+typeControlKey((HResource) null, "auto_play.v", 'c'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectCodeEditor("learn_mode.v", 117, 201); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 131, 237); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 349, 198); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("learn_mode.v", 220, 315); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("learn_mode.v", 345, 266); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("learn_mode.v", 148, 337); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 327, 222); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("learn_mode.v", 160, 409); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 196, 101); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 221, 187); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 162, 409); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 227, 180); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 161, 256); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 286, 284); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 272, 306); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 145, 103); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 144, 197); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("learn_mode.v", 268, 293); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 330, 296); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 119, 336); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 160, 332); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 162, 332); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 251, 331); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 259, 271); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("learn_mode.v", 166, 318); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 118, 356); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("learn_mode.v", 383, 256); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 73, 457); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 110, 466); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 116, 461); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 318, 449); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 93, 169); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 88, 166); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 285, 359); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 235, 315); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 353, 231); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 260, 348); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 190, 346); // cd (w, cj)
+// [GUI Memory]: 201 MB (+394kb) [01:28:09]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 22:28:41 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 49 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a (N, ah)
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 22:29:35 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:29:35 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 85 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 34 seconds
+selectCodeEditor("learn_mode.v", 301, 206); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 263, 206); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("learn_mode.v", 246, 190); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 22:32:05 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 47 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 15 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 22:33:09 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:33:09 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cj): Bitstream Generation Failed: addNotify
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("learn_mode.v", 254, 160); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 280, 176); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 74, 196); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 34, 159); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 39, 159); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cj): Reset and Re-run: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,280 MB. GUI used memory: 105 MB. Current time: 12/19/23 10:35:07 PM CST
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// am (cj): Save Project: addNotify
+dismissDialog("Reset and Re-run"); // i (cj)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 22:35:11 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 91 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bs (cj):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,298 MB. GUI used memory: 90 MB. Current time: 12/19/23 10:36:45 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,298 MB. GUI used memory: 91 MB. Current time: 12/19/23 10:36:45 PM CST
+// Tcl Message: refresh_design 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,298 MB. GUI used memory: 73 MB. Current time: 12/19/23 10:36:46 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 186 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-9536-S210-07/dcp21/learn_mode.xdc] Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-9536-S210-07/dcp21/learn_mode.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2457.066 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2457.066 ; gain = 0.000 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Reloading"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 22:36:52 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:36:52 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 63 seconds
+selectCodeEditor("learn_mode.v", 352, 308); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 326, 310); // cd (w, cj)
+// Elapsed time: 41 seconds
+selectCodeEditor("learn_mode.v", 191, 332); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 455, 230); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 444, 335); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 575, 270); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 230, 203); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 336, 229); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 375, 214); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 36, 165); // cd (w, cj)
+// Elapsed time: 29 seconds
+selectCodeEditor("learn_mode.v", 185, 120); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 185, 120, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("learn_mode.v", 185, 120); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 185, 120); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 185, 120); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 161, 150); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 160, 124); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 160, 124, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("learn_mode.v", 387, 294); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 445, 291); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 511, 197); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 116, 335); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 491, 200); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 205, 353); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 197, 369); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 22:41:51 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 48 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 22:42:42 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:42:42 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 89 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 31 seconds
+selectCodeEditor("learn_mode.v", 168, 317); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("learn_mode.v", 119, 391); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 259, 393); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 258, 391); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 139, 386); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 103, 405); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 153, 368); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 135, 384); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 277, 137); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("learn_mode.v", 270, 161); // cd (w, cj)
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("learn_mode.v", 335, 176); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 164, 317); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("learn_mode.v", 220, 333); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("learn_mode.v", 242, 326); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 162, 348); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("learn_mode.v", 248, 337); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "auto_play.v", 6); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectCodeEditor("learn_mode.v", 263, 291); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'c'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 126, 295); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 181, 258); // cd (w, cj)
+typeControlKey((HResource) null, "learn_mode.v", 'v'); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 146, 278); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 250, 296); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 22:47:40 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 53 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 22:48:36 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:48:36 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 91 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 47 seconds
+selectCodeEditor("learn_mode.v", 289, 142); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 278, 141); // cd (w, cj)
+// Elapsed time: 92 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freecon.xdc", 4); // k (j, cj)
+selectCodeEditor("freecon.xdc", 164, 198); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+dismissDialog("Save Project"); // am (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// x (cj): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 22:52:47 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:52:47 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 88 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 31 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "auto_play.v", 6, false, true); // k (j, cj) - Double Click
+selectCodeEditor("auto_play.v", 249, 203); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "auto_play.v", 6); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("learn_mode.v", 233, 144); // cd (w, cj)
+// Elapsed time: 133 seconds
+selectCodeEditor("learn_mode.v", 169, 197); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 245, 368); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 167, 428); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 187, 429); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 360, 425); // cd (w, cj)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("learn_mode.v", 167, 428); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 269, 425); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 269, 376); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 480, 147); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 22:58:37 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 52 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 22:59:33 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 22:59:33 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// bs (cj):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 90 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+selectCodeEditor("learn_mode.v", 102, 384); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 578, 270); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 14, 310); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 391, 257); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 285, 139); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 153, 119); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 23:02:56 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 47 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 23:03:46 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 23:03:46 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 49 seconds
+selectCodeEditor("learn_mode.v", 518, 442); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 122, 427); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 121, 410); // cd (w, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 29 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("learn_mode.v", 148, 181); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 151, 180); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 187, 182); // cd (w, cj)
+typeControlKey(null, null, 'z');
+selectCodeEditor("learn_mode.v", 159, 197); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 200, 176); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 223, 256); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 257, 274); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 23:06:23 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,333 MB. GUI used memory: 109 MB. Current time: 12/19/23 11:06:48 PM CST
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 59 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 23:07:25 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 23:07:25 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freecon.xdc", 4); // k (j, cj)
+// ah (cj): Synthesis Failed: addNotify
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectCodeEditor("freecon.xdc", 428, 196); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 23:07:50 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 23:07:50 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'interval' should not be used in output port connection [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:51]. ]", 4, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;51;-;;-;16;-;"); // ah (O, cj)
+selectCodeEditor("learn_mode.v", 39, 301); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec 19 23:08:23 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 23:08:23 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 86 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+selectCodeEditor("learn_mode.v", 193, 312); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: FILE_SET_CHANGE
+// f (cj): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 23:10:16 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "auto_play.v", 6); // k (j, cj)
+selectCodeEditor("auto_play.v", 240, 158); // cd (w, cj)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freecon.xdc", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song2.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_song1.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "light_7seg_ego1.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "learn_mode.v", 0); // k (j, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs (cj):  Resetting Runs : addNotify
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Tue Dec 19 23:11:07 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 23:11:07 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+selectCodeEditor("learn_mode.v", 122, 430); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 112, 426); // cd (w, cj)
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'music' should not be used in output port connection [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:51]. ]", 4, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;51;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'music' should not be used in output port connection [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:51]. ]", 4, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Administrator\Documents\GitHub\Piano\piano.srcs\sources_1\new\learn_mode.v;-;;-;16;-;line;-;51;-;;-;16;-;"); // ah (O, cj)
+selectCodeEditor("learn_mode.v", 41, 105); // cd (w, cj)
+selectCodeEditor("learn_mode.v", 250, 148); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 19 23:11:40 2023] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log [Tue Dec 19 23:11:40 2023] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2023/12/17 20:07:16
+// Create Date: 2023/11/23 17:17:41
 // Design Name: 
-// Module Name: learn_song2
+// Module Name: song1
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,86 +19,100 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+//this module store the info of the song
+//memory module
+//input is the cnt, cnt should be incresing
+//and incresing count can get the note in order(output music
 
 module learn_song2(
 input [5:0] cnt,
-output reg [4:0] music = 0
+output reg [4:0] music = 0,
+output reg [2:0] interval = 0
     );
-always @(*) begin
-                case(cnt) 
-                  6'd0    :   music <= 5'd1;
-                  6'd1    :   music <= 5'd2;
-                  6'd2    :   music <= 5'd3;
-                  6'd3    :   music <= 5'd4;
-                  6'd4    :   music <= 5'd5;
-                  6'd5    :   music <= 5'd6;
-                  6'd6    :   music <= 5'd7;
-                  6'd7    :   music <= 5'd8;
-                  
-                  6'd8    :   music <= 5'd9;
-                  6'd9    :   music <= 5'd10;
-                  6'd10   :   music <= 5'd11;
-                  6'd11   :   music <= 5'd12;
-                  6'd12   :   music <= 5'd13;
-                  6'd13   :   music <= 5'd14;
-                  6'd14   :   music <= 5'd15;
-                  6'd15   :   music <= 5'd16;
-                  
-                  6'd16   :   music <= 5'd17;
-                  6'd17   :   music <= 5'd18;
-                  6'd18   :   music <= 5'd19;
-                  6'd19   :   music <= 5'd20;
-                  6'd20   :   music <= 5'd21;
-                  6'd21   :   music <= 5'd21;
-                  6'd22   :   music <= 5'd21;
-                  6'd23   :   music <= 5'd21;
-                  
-                  6'd24   :   music <= 5'd21;
-                  6'd25   :   music <= 5'd21;
-                  6'd26   :   music <= 5'd21;
-                  6'd27   :   music <= 5'd21;
-                  6'd28   :   music <= 5'd21;
-                  6'd29   :   music <= 5'd21;
-                  6'd30   :   music <= 5'd21;
-                  6'd31   :   music <= 5'd21;
-                  
-                  6'd32   :   music <= 5'd21;
-                  6'd33   :   music <= 5'd21;
-                  6'd34   :   music <= 5'd21;
-                  6'd35   :   music <= 5'd21;
-                  6'd36   :   music <= 5'd21;
-                  6'd37   :   music <= 5'd21;
-                  6'd38   :   music <= 5'd21;
-                  6'd39   :   music <= 5'd21;
-                  
-                  6'd40   :   music <= 5'd21;
-                  6'd41   :   music <= 5'd21;
-                  6'd42   :   music <= 5'd21;
-                  6'd43   :   music <= 5'd21;
-                  6'd44   :   music <= 5'd21;
-                  6'd45   :   music <= 5'd21;
-                  6'd46   :   music <= 5'd21;
-                  6'd47   :   music <= 5'd21;
-                  
-                  6'd48   :   music <= 5'd21;
-                  6'd49   :   music <= 5'd21;
-                  6'd50   :   music <= 5'd21;
-                  6'd51   :   music <= 5'd21;
-                  6'd52   :   music <= 5'd21;
-                  6'd53   :   music <= 5'd21;
-                  6'd54   :   music <= 5'd21;
-                  6'd55   :   music <= 5'd21;
-                  
-                  6'd56   :   music <= 5'd21;
-                  6'd57   :   music <= 5'd21;
-                  6'd58   :   music <= 5'd21;
-                  6'd59   :   music <= 5'd21;
-                  6'd60   :   music <= 5'd21;
-                  6'd61   :   music <= 5'd21;
-                  6'd62   :   music <= 5'd21;
-                  6'd63   :   music <= 5'd21;
-                  default  :   music <= 5'd0;
-                endcase
-                end
-     
-    endmodule
+    // 1  2  3  4  5  6  7  low rang
+    // 8  9  10 11 12 13 14  middle
+    // 15 16 17 18 19 20 21  high
+    // 0 is silence
+    //we are not going to consider sharp now
+    //reg [5:0] cnt;
+    
+            
+        //not pressed, reset 1
+        always @(*) begin
+            case(cnt) 
+              6'd0    : begin  music <= 5'd1; interval = 3'b001; end
+              6'd1    :   begin music <= 5'd2; interval = 3'b011; end
+              6'd2    :   begin music <= 5'd1; interval = 3'b010; end
+              6'd3    :   begin music <= 5'd2; interval = 3'b100; end
+              6'd4    :   begin music <= 5'd1; interval = 3'b001; end
+              6'd5    :   begin music <= 5'd2; interval = 3'b011; end
+              6'd6    :   begin music <= 5'd1; interval = 3'b010; end
+              6'd7    :   begin music <= 5'd3; interval = 3'b100; end
+              
+              6'd8    :   begin music <= 5'd21; interval = 3'b001; end
+              6'd9    :   begin music <= 5'd21; interval = 3'b001; end
+              6'd10   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd11   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd12   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd13   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd14   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd15   :   begin music <= 5'd21; interval = 3'b001; end
+              
+              6'd16   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd17   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd18   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd19   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd20   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd21   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd22   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd23   :   begin music <= 5'd21; interval = 3'b001; end
+              
+              6'd24   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd25   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd26   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd27   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd28   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd29   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd30   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd31   :   begin music <= 5'd21; interval = 3'b001; end
+              
+              6'd32   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd33   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd34   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd35   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd36   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd37   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd38   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd39   :   begin music <= 5'd21; interval = 3'b001; end
+              
+              6'd40   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd41   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd42   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd43   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd44   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd45   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd46   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd47   :   begin music <= 5'd21; interval = 3'b001; end
+              
+              6'd48   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd49   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd50   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd51   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd52   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd53   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd54   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd55   :   begin music <= 5'd21; interval = 3'b001; end
+              
+              6'd56   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd57   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd58   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd59   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd60   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd61   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd62   :   begin music <= 5'd21; interval = 3'b001; end
+              6'd63   :   begin music <= 5'd21; interval = 3'b001; end
+              default  :   music <= 5'd0;
+            endcase
+            end
+ 
+endmodule
