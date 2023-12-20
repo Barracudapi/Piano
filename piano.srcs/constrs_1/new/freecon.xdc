@@ -5,12 +5,12 @@ set_property IOSTANDARD LVCMOS33 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports melody]
 set_property IOSTANDARD LVCMOS33 [get_ports reset]
 
-set_property PACKAGE_PIN V2 [get_ports {button[2]}]
-set_property PACKAGE_PIN V5 [get_ports {button[1]}]
-set_property PACKAGE_PIN V4 [get_ports {button[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {button[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {button[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {button[0]}]
+set_property PACKAGE_PIN V2 [get_ports {octave_sw[2]}]
+set_property PACKAGE_PIN V5 [get_ports {octave_sw[1]}]
+set_property PACKAGE_PIN V4 [get_ports {octave_sw[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {octave_sw[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {octave_sw[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {octave_sw[0]}]
 
 
 set_property IOSTANDARD LVCMOS33 [get_ports sd]
