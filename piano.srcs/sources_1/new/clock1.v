@@ -28,29 +28,29 @@ output reg clk_1
     //which output a clk with 0.5s period
     
     reg [31:0] div_cnt;
-//    parameter TIME_05S = 500_000_00;
-parameter TIME_05S = 500_000; // for simulation
+parameter TIME_03S = 300_000_00;
+//parameter TIME_03S = 500_000; // for simulation
     
     initial begin
     clk_1 = 1'b0;
     div_cnt = 0;
     end
     
-    always @(posedge clk, posedge rst) begin
-        if(rst)
+    always @(posedge clk, negedge rst) begin
+        if(~rst)
             div_cnt <= 0;
-        else if(div_cnt == TIME_05S) 
+        else if(div_cnt == TIME_03S) 
             div_cnt <= 0;
         else 
             div_cnt <= div_cnt + 1;
     end
 
-    always @(posedge clk, posedge rst) begin
-        if(rst)
+    always @(posedge clk, negedge rst) begin
+        if(~rst)
             clk_1 <= 0;
-        else if( div_cnt == (TIME_05S>>1) -1)
+        else if( div_cnt == (TIME_03S>>1) -1)
             clk_1 <= 1;
-        else if(div_cnt == TIME_05S -1 ) 
+        else if(div_cnt == TIME_03S -1 ) 
             clk_1 <= 0;
     end
     

@@ -24,26 +24,27 @@ module autoplay_led_for_test(
     input clk,
     input [1:0] state,
     input [1:0] music, 
-    output reg [3:0] led_state,
-    output reg [3:0] select_song
+    output reg [2:0] led_state,
+    output reg [2:0] select_song
     );
     
-    parameter sstop = 00, splay = 01, spause = 10;
+    parameter sstop = 2'b00, splay = 2'b01, spause = 2'b10;
     
     always@ (posedge clk) begin
         case(state)
             sstop: led_state = 3'b100;
             splay: led_state = 3'b010;
             spause: led_state = 3'b001;
-            default: led_state = 3'b000;
+            default: led_state = 3'b111;
         endcase
     end
     
     always@ (posedge clk) begin
         case(music)
-            00:select_song = 3'b100;
-            01:select_song = 3'b010;
-            10:select_song = 3'B001;
+            2'b00:select_song = 3'b100;
+            2'b01:select_song = 3'b010;
+            2'b10:select_song = 3'b001;
+            default: select_song = 3'b111;
         endcase
     end
         

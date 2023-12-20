@@ -24,12 +24,11 @@ module debounce2(
     input clk,
     input rst,
     input key,
-    output key_flag, //when the key is viberating
-    output reg key_state //the wave after debouncing
+    output reg key_pflag //when the key is pressed
     );
-    
-    reg key_pflag; //
-    reg key_rflag;
+    wire key_flag; //when the key is pressed/ released
+    reg key_state; //the wave after debouncing
+    reg key_rflag; //when the key is released
     assign key_flag = (key_pflag | key_rflag);
     reg [1:0] r_key; //
     
@@ -58,8 +57,8 @@ module debounce2(
     
     
     //transition among 4 states( the scripts is on the paper
-    always@(posedge clk, posedge rst) begin
-        if(rst) begin
+    always@(posedge clk, negedge rst) begin
+        if(~rst) begin
             state <= idle;
             cnt <= 0;
             key_pflag <= 0;

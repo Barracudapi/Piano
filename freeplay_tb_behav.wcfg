@@ -3,89 +3,93 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="auto_play_tb_behav.wdb" id="1">
+      <db_ref path="auto_play_tb2_behav.wdb" id="1">
          <top_modules>
-            <top_module name="auto_play_tb" />
+            <top_module name="auto_play_tb2" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="6675531914896fs"></ZoomStartTime>
-      <ZoomEndTime time="45975531914897fs"></ZoomEndTime>
-      <Cursor1Time time="27325531915000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="176400000000003fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="155"></NameColumnWidth>
+      <NameColumnWidth column_width="135"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="17" />
-   <wvobject fp_name="/auto_play_tb/clk" type="logic">
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/auto_play_tb2/ap/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/reset" type="logic">
+   <wvobject fp_name="/auto_play_tb2/ap/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ssbtn" type="logic">
-      <obj_property name="ElementShortName">ssbtn</obj_property>
-      <obj_property name="ObjectShortName">ssbtn</obj_property>
+   <wvobject fp_name="/auto_play_tb2/ap/selectsongbtn" type="logic">
+      <obj_property name="ElementShortName">selectsongbtn</obj_property>
+      <obj_property name="ObjectShortName">selectsongbtn</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/select" type="logic">
+   <wvobject fp_name="/auto_play_tb2/ap/select" type="logic">
       <obj_property name="ElementShortName">select</obj_property>
       <obj_property name="ObjectShortName">select</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/pausebtn" type="logic">
+   <wvobject fp_name="/auto_play_tb2/ap/pausebtn" type="logic">
       <obj_property name="ElementShortName">pausebtn</obj_property>
       <obj_property name="ObjectShortName">pausebtn</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/pause" type="logic">
+   <wvobject fp_name="/auto_play_tb2/ap/pause" type="logic">
       <obj_property name="ElementShortName">pause</obj_property>
       <obj_property name="ObjectShortName">pause</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/stopbtn" type="logic">
+   <wvobject fp_name="/auto_play_tb2/ap/stopbtn" type="logic">
       <obj_property name="ElementShortName">stopbtn</obj_property>
       <obj_property name="ObjectShortName">stopbtn</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/stop" type="logic">
+   <wvobject fp_name="/auto_play_tb2/ap/stop" type="logic">
       <obj_property name="ElementShortName">stop</obj_property>
       <obj_property name="ObjectShortName">stop</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/playbtn" type="logic">
+   <wvobject fp_name="/auto_play_tb2/ap/playbtn" type="logic">
       <obj_property name="ElementShortName">playbtn</obj_property>
       <obj_property name="ObjectShortName">playbtn</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/play" type="logic">
+   <wvobject fp_name="/auto_play_tb2/ap/play" type="logic">
       <obj_property name="ElementShortName">play</obj_property>
       <obj_property name="ObjectShortName">play</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/counter" type="array">
-      <obj_property name="ElementShortName">counter[1:0]</obj_property>
-      <obj_property name="ObjectShortName">counter[1:0]</obj_property>
+   <wvobject fp_name="/auto_play_tb2/ap/melody" type="logic">
+      <obj_property name="ElementShortName">melody</obj_property>
+      <obj_property name="ObjectShortName">melody</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/music_flag" type="array">
-      <obj_property name="ElementShortName">music_flag[1:0]</obj_property>
-      <obj_property name="ObjectShortName">music_flag[1:0]</obj_property>
+   <wvobject fp_name="/auto_play_tb2/ap/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[5:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/music" type="array">
+   <wvobject fp_name="/auto_play_tb2/ap/music" type="array">
       <obj_property name="ElementShortName">music[4:0]</obj_property>
       <obj_property name="ObjectShortName">music[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/music1" type="array">
+   <wvobject fp_name="/auto_play_tb2/ap/music1" type="array">
       <obj_property name="ElementShortName">music1[4:0]</obj_property>
       <obj_property name="ObjectShortName">music1[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/music2" type="array">
+   <wvobject fp_name="/auto_play_tb2/ap/music2" type="array">
       <obj_property name="ElementShortName">music2[4:0]</obj_property>
       <obj_property name="ObjectShortName">music2[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/ap/music3" type="array">
+   <wvobject fp_name="/auto_play_tb2/ap/music3" type="array">
       <obj_property name="ElementShortName">music3[4:0]</obj_property>
       <obj_property name="ObjectShortName">music3[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/auto_play_tb/melody" type="logic">
-      <obj_property name="ElementShortName">melody</obj_property>
-      <obj_property name="ObjectShortName">melody</obj_property>
+   <wvobject fp_name="/auto_play_tb2/ap/counter" type="array">
+      <obj_property name="ElementShortName">counter[1:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/auto_play_tb2/ap/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -42,16 +42,16 @@ module debounce(
     
     
     //only when 20ms passed, will we assign keyin to keyout
-    always @( posedge clk, posedge rst) begin
-        if(rst)begin
+    always @( posedge clk, negedge rst) begin
+        if(~rst)begin
             key_out <= 0;
             state_key = 0;
         end else if(cnt == TIME_20MS -1)
             key_out <= key_in;
     end
     
-    always @( posedge clk, posedge rst) begin
-        if(rst)
+    always @( posedge clk, negedge rst) begin
+        if(~rst)
             cnt <= 22'b0;
         else if( cnt_start == 0)
             cnt <= 22'b0;
@@ -59,8 +59,8 @@ module debounce(
             cnt <= cnt + 1;
     end
     
-    always @( posedge clk, posedge rst) begin
-        if(rst)
+    always @( posedge clk, negedge rst) begin
+        if(~rst)
             cnt_start <= 0;
         else if( cnt_start == 0 && key_in != key_out)
             cnt_start <= 1;
@@ -83,8 +83,8 @@ module debounce(
 //        end
 //    end
 
-    always @(posedge clk, posedge rst) begin
-        if(rst) begin
+    always @(posedge clk, negedge rst) begin
+        if(~rst) begin
             pos_key = 0;
             neg_key = 0;
             count = 0;

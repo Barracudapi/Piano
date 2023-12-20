@@ -36,7 +36,7 @@ output reg [4:0] music = 0
     // 0 is silence
     //we are not going to consider sharp now
     //reg [5:0] cnt;
-    parameter sstop = 00, splay = 01, spause = 10;
+     parameter sstop = 2'b00, splay = 2'b01, spause = 2'b10;
     
     always@(posedge clk) begin
         if(state == spause) begin
@@ -58,9 +58,9 @@ output reg [4:0] music = 0
 //            cnt <= cnt +1;
 //    end
             
-    always @(posedge clk or posedge reset)begin
+    always @(posedge clk or negedge reset)begin
     //only works when clk goes 1 or reset goes 0
-        if(reset)
+        if(~reset)
         //when pressed, reset 0, delete music
             music <= 5'd0;
         else 
