@@ -41,4 +41,7 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
     //1 / the frequency of clk
     parameter N = 100_000_000;
     
+    //no buttons are playing a note
+    parameter not_playing_note = 8'b00000000;
+    
     

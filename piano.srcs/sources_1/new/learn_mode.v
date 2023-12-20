@@ -53,7 +53,7 @@ output [7:0] seg_out0, seg_out1
     scan_seg sc_seg(interval, cnt, digit1, digit2, reset, clk, seg_en, seg_out0, seg_out1);
     
     
-    //sometimes if you dont flip the switch fast enough, it glitches and cnt increments too many times. A switch debouncer is added to mitigate this issue.
+    //sometimes if you dont flip the switch fast enough, it glitches and cnt increments too many times. A switch debouncer for each switch is added to mitigate this issue.
     debounce debounce0(clk ,reset, sw[0], sw_d[0]);
     debounce debounce1(clk ,reset, sw[1], sw_d[1]);
     debounce debounce2(clk ,reset, sw[2], sw_d[2]);
@@ -117,70 +117,63 @@ output [7:0] seg_out0, seg_out1
            endcase
            //led will switch to the next light when the correct note is played with the right frequency
             if(guide_lights[0] == 1'b1) begin
-            if(prev == 8'b00000000) begin
+            if(prev == not_playing_note) begin
                 if((sw_d[0] == 1'b1 & button == low & music == 5'd1) | sw_d[0] == 1'b1 & button == middle & music == 5'd8 | sw_d[0] == 1'b1 & button == high & music == 5'd15) begin
                     cnt <= cnt + 1;
                     guide_lights[0] <= 1'b0;
                 end
-                else digit1 <= digit1 +1;
                 end
             end
             if(guide_lights[1] == 1'b1) begin
-            if(prev == 8'b00000000) begin
+            if(prev == not_playing_note) begin
                 if((sw_d[1] == 1'b1 & button == low & music == 5'd2) | (sw_d[1] == 1'b1 & button == middle & music == 5'd9) | (sw_d[1] == 1'b1 & button == high & music == 5'd16)) begin
                     cnt <= cnt + 1;
                     guide_lights[1] <= 1'b0;
                     end
-                    else digit1 <= digit1 +1;
                 end
                 end
             if(guide_lights[2] == 1'b1) begin
-            if(prev == 8'b00000000) begin
+            if(prev == not_playing_note) begin
                 if((sw_d[2] == 1'b1 & button == low & music == 5'd3) | (sw_d[2] == 1'b1 & button == middle & music == 5'd10) | (sw_d[2] == 1'b1 & button == high & music == 5'd17)) begin
                     cnt <= cnt + 1;
                     guide_lights[2] <= 1'b0;
                     end
-                    else digit1 <= digit1 +1;
                     end
                 end
             if(guide_lights[3] == 1'b1) begin
-            if(prev == 8'b00000000) begin
+            if(prev == not_playing_note) begin
                 if((sw_d[3] == 1'b1 & button == low & music == 5'd4) | (sw_d[3] == 1'b1 & button == middle & music == 5'd11) | (sw_d[3] == 1'b1 & button == high & music == 5'd18)) begin
                     cnt <= cnt + 1;
                     guide_lights[3] <= 1'b0;
                     end
-                    else digit1 <= digit1 +1;
-                    
                     end
                 end
             if(guide_lights[4] == 1'b1) begin
-            if(prev == 8'b00000000) begin
+            if(prev == not_playing_note) begin
                 if((sw_d[4] == 1'b1 & button == low & music == 5'd5) | (sw_d[4] == 1'b1 & button == middle & music == 5'd12) | (sw_d[4] == 1'b1 & button == high & music == 5'd19)) begin
                     cnt <= cnt + 1;
                     guide_lights[4] <= 1'b0;
                     end
-                    else digit1 <= digit1 +1;
                     end
                 end
             if(guide_lights[5] == 1'b1) begin
-            if(prev == 8'b00000000) begin
+            if(prev == not_playing_note) begin
                 if((sw_d[5] == 1'b1 & button == low & music == 5'd6) | (sw_d[5] == 1'b1 & button == middle & music == 5'd13) | (sw_d[5] == 1'b1 & button == high & music == 5'd20)) begin
                     cnt <= cnt + 1;
                     guide_lights[5] <= 1'b0;
                     end
-                    else digit1 <= digit1 +1;
                     end
                 end
             if(guide_lights[6] == 1'b1) begin
-            if(prev == 8'b00000000) begin
+            if(prev == not_playing_note) begin
                 if((sw_d[6] == 1'b1 & button == low & music == 5'd7) | (sw_d[6] == 1'b1 & button == middle & music == 5'd14) | (sw_d[6] == 1'b1 & button == high & music == 5'd21)) begin
                     cnt <= cnt + 1;
                     guide_lights[6] <= 1'b0;
                     end
-                    else digit1 <= digit1 +1;
                     end
                end
                prev = sw_d;
+               if(prev !== sw_d & sw_d !== not_playing_note) begin digit1 <= digit1 + 1; end
                
                if(digit1 == 4'b1001) begin
                     digit2 <= digit2 +1;
