@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../piano.srcs/sources_1/new/light_7seg_ego1.v" \
+"../../../../piano.srcs/sources_1/new/scan_seg.v" \
+"../../../../piano.srcs/sim_1/new/tubs_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

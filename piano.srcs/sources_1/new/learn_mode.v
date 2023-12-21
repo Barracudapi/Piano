@@ -1,4 +1,3 @@
-@ -1,185 +1,202 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -54,7 +53,7 @@ output [7:0] seg_out0, seg_out1
     generate_melody gm(.clk(clk), .frequency(frequency), .melody(melody));
     learn_song1 song1(cnt, music, interval);
 //    learn_song2 song2(cnt2, music2, interval2);
-    scan_seg sc_seg(interval, cnt, digit1, digit2, reset, clk, seg_en, seg_out0, seg_out1);
+//    scan_seg sc_seg(interval, digit1, digit2, reset, clk, seg_en, seg_out0, seg_out1);
     
     
     //sometimes if you dont flip the switch fast enough, it glitches and cnt increments too many times. A switch debouncer for each switch is added to mitigate this issue.
@@ -188,14 +187,24 @@ output [7:0] seg_out0, seg_out1
 //                if(sw_d !== guide_lights & sw_d !== not_playing_note & digit1 == temp) begin digit1 <= digit1 +1; end
 //                else if(sw_d == guide_lights & octave !== octave_sw & sw_d !== not_playing_note & digit1 == temp & cnt_checker == cnt) begin digit1 <= digit1 + 1; end
 //                else digit1 <= digit1;
-                if(sw_d == guide_lights & octave == octave_sw & digit1 != temp) begin digit1 <= digit1; end
-                else begin digit1 <= digit1 + 1; end
+//                if(sw_d == guide_lights & octave == octave_sw & digit1 != temp) begin digit1 <= digit1; end
+//                else begin if(sw_d !== not_playing_note & cnt == cnt_checker) digit1 <= digit1 + 1; end
                 
-                if(sw_d ==not_playing_note) begin temp <= digit1; cnt_checker <= cnt; end
+//                if(sw_d ==not_playing_note) begin temp <= digit1; cnt_checker <= cnt; end
                 
-                if(digit1 == 4'b1010) begin
-                    digit2 <= digit2 +1;
-                    digit1 <= 4'b0000;
-               end
+//                if(digit1 == 4'b1010) begin
+//                    digit2 <= digit2 +1;
+//                    digit1 <= 4'b0000;
+//               end
+                    
             end
+            
+            always @(sw_d) begin
+                if(sw_d != guide_lights | octave != octave_sw) begin
+                     if(digit1 == 1'd9) begin
+                         digit1 <= 1'd0;
+                         digit2 <= digit2 + 1;
+                   end else digit1 <= digit1 + 1;
+               end
+           end
 endmodule

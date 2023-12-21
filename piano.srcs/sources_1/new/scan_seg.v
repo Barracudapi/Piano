@@ -21,9 +21,7 @@
 
 
 module scan_seg(
-input [5:0] note_cnt,
-input [3:0] digit1, digit2,
-//input [3:0] sw,
+input [3:0] sw,
 input rst_n, input clk,
 output reg [7:0] seg_en,
 output [7:0] seg_out0,
@@ -36,9 +34,9 @@ output [7:0] seg_out1
     
     parameter period = 200000;
     
-    always @(posedge clk)
+    always @(posedge clk or negedge rst_n)
     begin
-        if(rst_n) begin
+        if(!rst_n) begin
             cnt<= 0;
             clkout <= 0;
         end
@@ -55,7 +53,7 @@ output [7:0] seg_out1
         
     always @(posedge clkout or negedge rst_n)
     begin
-        if(rst_n)
+        if(~rst_n)
             scan_cnt <= 0;
         else begin
             if(scan_cnt == 3'd7)
@@ -71,8 +69,8 @@ output [7:0] seg_out1
                 3'b001: seg_en = 8'h02;
                 3'b010: seg_en = 8'h04;
                 3'b011: seg_en = 8'h08;
-                3'b100: seg_en = 8'h10;
-                3'b101: seg_en = 8'h20;
+                3'b100: seg_en = 8'h20;
+                3'b101: seg_en = 8'h30;
                 3'b110: seg_en = 8'h40;
                 3'b111: seg_en = 8'h80;
                 default: seg_en = 8'h00;
@@ -80,6 +78,6 @@ output [7:0] seg_out1
                 end
                 
                 wire [7:0] useless_seg_en0, useless_seg_en1;
-                  light_7seg_ego1 u0(.note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out0), .seg_en(useless_seg_en0));
-                  light_7seg_ego1 u1(.note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out1), .seg_en(useless_seg_en1));
+                light_7seg_ego1 u0(.sw({1'b0, scan_cnt}), .seg_out(seg_out0), .seg_en(useless_seg_en0));
+                light_7seg_ego1 u1(.sw({1'b0, scan_cnt}), .seg_out(seg_out1), .seg_en(useless_seg_en1));
 endmodule
