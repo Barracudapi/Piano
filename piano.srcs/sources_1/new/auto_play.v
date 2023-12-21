@@ -59,7 +59,7 @@ output led
     
     parameter sstop = 2'b00, splay = 2'b01, spause = 2'b10;
     
-    autoplay_led_for_test led(clk, state, counter, led_state, select_song);
+    autoplay_led_for_test ledd(clk, state, counter, led_state, select_song);
     
     clock1 cl1(clk, reset, clk1);
     song1 s1(clk1, reset,state, cnt, music1);

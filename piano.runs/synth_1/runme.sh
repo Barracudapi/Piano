@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log auto_play.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source auto_play.tcl
+EAStep vivado -log learn_mode.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source learn_mode.tcl
