@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -28,16 +29,18 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/86138/Documents/GitHub/Piano/piano.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/autoplay_led_for_test.v
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/autoplay_led_show_notes.v
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/autoplay_test_cnt.v
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock1.v
   C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v
   C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v
   C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song2.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/light_7seg_ego1.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/scan_seg.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/music_to_frequency.v
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/song1.v
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/song2.v
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/song3.v
+  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/auto_play.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -54,10 +57,10 @@ read_xdc C:/Users/86138/Documents/GitHub/Piano/piano.srcs/constrs_1/new/ff.xdc
 set_property used_in_implementation false [get_files C:/Users/86138/Documents/GitHub/Piano/piano.srcs/constrs_1/new/ff.xdc]
 
 
-synth_design -top learn_mode -part xc7a35tcsg324-1
+synth_design -top auto_play -part xc7a35tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef learn_mode.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file learn_mode_utilization_synth.rpt -pb learn_mode_utilization_synth.pb"
+write_checkpoint -force -noxdef auto_play.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file auto_play_utilization_synth.rpt -pb auto_play_utilization_synth.pb"

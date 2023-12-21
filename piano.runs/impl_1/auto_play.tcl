@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -72,10 +73,10 @@ set rc [catch {
   set_property parent.project_path C:/Users/86138/Documents/GitHub/Piano/piano.xpr [current_project]
   set_property ip_output_repo C:/Users/86138/Documents/GitHub/Piano/piano.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1/learn_mode.dcp
+  add_files -quiet C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1/auto_play.dcp
   read_xdc C:/Users/86138/Documents/GitHub/Piano/piano.srcs/constrs_1/new/freecon.xdc
   read_xdc C:/Users/86138/Documents/GitHub/Piano/piano.srcs/constrs_1/new/ff.xdc
-  link_design -top learn_mode -part xc7a35tcsg324-1
+  link_design -top auto_play -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -91,8 +92,8 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   opt_design 
-  write_checkpoint -force learn_mode_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file learn_mode_drc_opted.rpt -pb learn_mode_drc_opted.pb -rpx learn_mode_drc_opted.rpx"
+  write_checkpoint -force auto_play_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file auto_play_drc_opted.rpt -pb auto_play_drc_opted.pb -rpx auto_play_drc_opted.rpx"
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -109,10 +110,10 @@ set rc [catch {
   create_msg_db place_design.pb
   implement_debug_core 
   place_design 
-  write_checkpoint -force learn_mode_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file learn_mode_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file learn_mode_utilization_placed.rpt -pb learn_mode_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file learn_mode_control_sets_placed.rpt"
+  write_checkpoint -force auto_play_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file auto_play_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file auto_play_utilization_placed.rpt -pb auto_play_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file auto_play_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -128,22 +129,40 @@ set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force learn_mode_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file learn_mode_drc_routed.rpt -pb learn_mode_drc_routed.pb -rpx learn_mode_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file learn_mode_methodology_drc_routed.rpt -pb learn_mode_methodology_drc_routed.pb -rpx learn_mode_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file learn_mode_power_routed.rpt -pb learn_mode_power_summary_routed.pb -rpx learn_mode_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file learn_mode_route_status.rpt -pb learn_mode_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file learn_mode_timing_summary_routed.rpt -rpx learn_mode_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file learn_mode_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file learn_mode_clock_utilization_routed.rpt"
+  write_checkpoint -force auto_play_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file auto_play_drc_routed.rpt -pb auto_play_drc_routed.pb -rpx auto_play_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file auto_play_methodology_drc_routed.rpt -pb auto_play_methodology_drc_routed.pb -rpx auto_play_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file auto_play_power_routed.rpt -pb auto_play_power_summary_routed.pb -rpx auto_play_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file auto_play_route_status.rpt -pb auto_play_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file auto_play_timing_summary_routed.rpt -rpx auto_play_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file auto_play_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file auto_play_clock_utilization_routed.rpt"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
-  write_checkpoint -force learn_mode_routed_error.dcp
+  write_checkpoint -force auto_play_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force auto_play.mmi }
+  write_bitstream -force auto_play.bit 
+  catch {write_debug_probes -quiet -force auto_play}
+  catch {file copy -force auto_play.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

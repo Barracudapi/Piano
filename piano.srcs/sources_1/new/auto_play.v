@@ -29,7 +29,10 @@ output sd,
 output wire melody,
 output [2:0] led_state,
 output [2:0] select_song,
-output led
+output led,
+output led2,
+output [3:0] an,
+output [7:0] seeg
     ); 
     
     //three states:stop, play, pause
@@ -38,8 +41,12 @@ output led
     //pause: pause, play, stop
     
     
-    autoplay_led_show_notes m1(music, led);
-    
+
+    autoplay_test_cnt m1(cnt, led2);
+    autoplay_test_states_songs m2(clk, state, counter, led_state, select_song);
+    autoplay_test_note m3(music, led); 
+     scan_led_hex_disp m4(clk, reset,4'b0, 4'b0,
+       {0,0,counter[5], counter[4]}, counter[3:0], 4'b0, an, seeg);   
     
     assign sd = 1'b1;
     
@@ -59,7 +66,8 @@ output led
     
     parameter sstop = 2'b00, splay = 2'b01, spause = 2'b10;
     
-    autoplay_led_for_test ledd(clk, state, counter, led_state, select_song);
+    autoplay_test_states_songs ledd(clk, state, counter, led_state, select_song);
+    autoplay_test_note leddd(music, led);
     
     clock1 cl1(clk, reset, clk1);
     song1 s1(clk1, reset,state, cnt, music1);

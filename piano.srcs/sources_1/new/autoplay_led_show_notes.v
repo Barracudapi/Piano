@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module autoplay_led_show_notes(
+module autoplay_test_note(
     input [4:0] note,
     output led1
     );

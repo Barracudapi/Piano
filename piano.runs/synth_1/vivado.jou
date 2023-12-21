@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Dec 21 20:15:21 2023
-# Process ID: 69292
+# Start of session at: Thu Dec 21 20:40:29 2023
+# Process ID: 70392
 # Current directory: C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1
-# Command line: vivado.exe -log learn_mode.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source learn_mode.tcl
-# Log file: C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1/learn_mode.vds
+# Command line: vivado.exe -log auto_play.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source auto_play.tcl
+# Log file: C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1/auto_play.vds
 # Journal file: C:/Users/86138/Documents/GitHub/Piano/piano.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source learn_mode.tcl -notrace
+source auto_play.tcl -notrace

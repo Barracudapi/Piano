@@ -23,3 +23,7 @@ set_property PACKAGE_PIN R17 [get_ports stopbtn]
 
 set_property IOSTANDARD LVCMOS33 [get_ports led]
 set_property PACKAGE_PIN F6 [get_ports led]
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports led2]
+set_property PACKAGE_PIN G4 [get_ports led2]

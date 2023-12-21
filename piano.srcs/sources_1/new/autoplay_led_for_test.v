@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module autoplay_led_for_test(
+module autoplay_test_states_songs(
     input clk,
     input [1:0] state,
     input [1:0] music, 
