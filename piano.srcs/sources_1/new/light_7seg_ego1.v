@@ -21,12 +21,27 @@
 
 
 module light_7seg_ego1(
+input [5:0] note_cnt,
 input [3:0] sw, output reg[7:0] seg_out, output [7:0] seg_en
     );
     assign seg_en = 8'hff;
     always @(*)
         case(sw)
-            4'h0: seg_out = 8'b1111_1100;
+            4'h0:
+            case(note_cnt) 
+                0: seg_out = 8'b1111_1100;
+                1: seg_out = 8'b0110_0000;
+                2: seg_out = 8'b1101_1010;
+                3: seg_out = 8'b1111_0010;
+                4: seg_out = 8'b0110_0110;
+                5: seg_out = 8'b1011_0110;
+                6: seg_out = 8'b1011_1110;
+                7: seg_out = 8'b1110_0000;
+                8: seg_out = 8'b1111_1110;
+                9: seg_out = 8'b1110_0110;
+                default:
+                seg_out = 8'b0000_0000;
+                endcase
             4'h1: seg_out = 8'b0110_0000;
             4'h2: seg_out = 8'b1101_1010;
             4'h3: seg_out = 8'b1111_0010;

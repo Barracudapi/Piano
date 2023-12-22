@@ -41,10 +41,10 @@ output reg [2:0] interval = 0
         always @(*) begin
             case(cnt) 
               6'd0    : begin  music <= 5'd21; interval = 3'b001; end
-              6'd1    :   begin music <= 5'd21; interval = 3'b011; end
-              6'd2    :   begin music <= 5'd21; interval = 3'b010; end
-              6'd3    :   begin music <= 5'd21; interval = 3'b100; end
-              6'd4    :   begin music <= 5'd21; interval = 3'b001; end
+              6'd1    :   begin music <= 5'd1; interval = 3'b011; end
+              6'd2    :   begin music <= 5'd2; interval = 3'b010; end
+              6'd3    :   begin music <= 5'd11; interval = 3'b100; end
+              6'd4    :   begin music <= 5'd15; interval = 3'b001; end
               6'd5    :   begin music <= 5'd21; interval = 3'b011; end
               6'd6    :   begin music <= 5'd21; interval = 3'b010; end
               6'd7    :   begin music <= 5'd21; interval = 3'b100; end

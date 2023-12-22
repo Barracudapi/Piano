@@ -1,25 +1,5 @@
-set_property IOSTANDARD LVCMOS33 [get_ports {led_state[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {led_state[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {led_state[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {select_song[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {select_song[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {select_song[0]}]
-set_property PACKAGE_PIN J3 [get_ports {led_state[2]}]
-set_property PACKAGE_PIN J2 [get_ports {led_state[1]}]
-set_property PACKAGE_PIN K2 [get_ports {led_state[0]}]
-set_property PACKAGE_PIN L1 [get_ports {select_song[2]}]
-set_property PACKAGE_PIN K3 [get_ports {select_song[0]}]
-set_property PACKAGE_PIN M1 [get_ports {select_song[1]}]
-set_property PACKAGE_PIN R15 [get_ports pausebtn]
-set_property PACKAGE_PIN U4 [get_ports playbtn]
-set_property IOSTANDARD LVCMOS33 [get_ports pausebtn]
-set_property IOSTANDARD LVCMOS33 [get_ports playbtn]
 set_property PACKAGE_PIN P15 [get_ports reset]
-set_property IOSTANDARD LVCMOS33 [get_ports selectsongbtn]
-set_property IOSTANDARD LVCMOS33 [get_ports stopbtn]
-set_property PACKAGE_PIN V1 [get_ports selectsongbtn]
-set_property PACKAGE_PIN R17 [get_ports stopbtn]
 
 
-set_property IOSTANDARD LVCMOS33 [get_ports led]
-set_property PACKAGE_PIN F6 [get_ports led]
+
+
