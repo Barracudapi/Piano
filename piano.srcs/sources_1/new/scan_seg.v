@@ -21,6 +21,10 @@
 
 
 module scan_seg(
+input [3:0] digit1,
+input [3:0] digit2,
+input [2:0] interval,
+input [2:0] octave,
 input [5:0] note_cnt,
 input rst_n, input clk,
 output reg [7:0] seg_en,
@@ -78,6 +82,6 @@ output [7:0] seg_out1
                 end
                 
                 wire [7:0] useless_seg_en0, useless_seg_en1;
-                light_7seg_ego1 u0(.note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out0), .seg_en(useless_seg_en0));
-                light_7seg_ego1 u1(.note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out1), .seg_en(useless_seg_en1));
+                light_7seg_ego1 u0(.digit1(digit1), .digit2(digit2), .interval(interval), .octave(octave), .note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out0), .seg_en(useless_seg_en0));
+                light_7seg_ego1 u1(.digit1(digit1), .digit2(digit2), .interval(interval), .octave(octave), .note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out1), .seg_en(useless_seg_en1));
 endmodule

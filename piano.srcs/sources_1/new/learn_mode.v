@@ -31,7 +31,8 @@ output melody,
 output reg [7:0] guide_lights,
 output [7:0] seg_en,
 output [7:0] seg_out0, seg_out1,
-output [1:0] led_for_ss
+output [1:0] led_for_ss,
+output [3:0] interval_led
     );
     `include "ppppparameters.v"
    wire [1:0] useless_state;
@@ -53,6 +54,8 @@ output [1:0] led_for_ss
    reg [1:0] song_choice = 2'b00;
    wire select_song_octave_swd;
    reg [2:0] octave;
+   wire clk_1sec;
+   wire [2:0] countdown;
     
    reg counter_for_sss;
    reg [1:0] sss_shift;
@@ -62,8 +65,9 @@ output [1:0] led_for_ss
     generate_melody gm(.clk(clk), .frequency(frequency), .melody(melody));
     learn_song1 song1(cnt, music1, interval1);
     learn_song2 song2(cnt, music2, interval2);
-    scan_seg sc_seg(cnt, reset, clk, seg_en, seg_out0, seg_out1);
-    
+    scan_seg sc_seg(digit1, digit2, interval, octave, cnt, reset, clk, seg_en, seg_out0, seg_out1);
+    clock2(clk, reset, clk_1sec);
+    Interval show_interval(clk_1sec, reset, interval, interval_led, countdown);
     assign led_for_ss = sss_shift;
     
     
@@ -121,7 +125,7 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
       end else begin  
       guide_lights <= 8'b0000_0000;
       case(music)
-           5'd1: begin guide_lights[0] = 1'b1; octave <= low; end
+           5'd1: begin guide_lights[0] <= 1'b1; octave <= low; end
            5'd2: begin guide_lights[1] <= 1'b1; octave <= low; end
            5'd3:begin guide_lights[2] <= 1'b1; octave <= low; end
            5'd4:begin guide_lights[3] <= 1'b1; octave <= low; end
@@ -147,7 +151,14 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
            endcase
           
            //led will switch to the next light when the correct note is played with the right frequency
-            
+            if(guide_lights[0] == 1'b1) begin
+           if(prev == not_playing_note) begin
+               if((sw_d[0] == 1'b1 & octave_sw == low & music == 5'd1) | sw_d[0] == 1'b1 & octave_sw == middle & music == 5'd8 | sw_d[0] == 1'b1 & octave_sw == high & music == 5'd15) begin
+                   cnt <= cnt + 1;
+                   guide_lights[0] <= 1'b0;
+               end
+               end
+           end
             if(guide_lights[1] == 1'b1) begin
             if(prev == not_playing_note) begin
                 if((sw_d[1] == 1'b1 & octave_sw == low & music == 5'd2) | (sw_d[1] == 1'b1 & octave_sw == middle & music == 5'd9) | (sw_d[1] == 1'b1 & octave_sw == high & music == 5'd16)) begin
@@ -156,14 +167,6 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                     end
                 end
                 end
-            if(guide_lights[0] == 1'b1) begin
-                        if(prev == not_playing_note) begin
-                            if((sw_d[0] == 1'b1 & octave_sw == low & music == 5'd1) | sw_d[0] == 1'b1 & octave_sw == middle & music == 5'd8 | sw_d[0] == 1'b1 & octave_sw == high & music == 5'd15) begin
-                                cnt <= cnt + 1;
-                                guide_lights[0] <= 1'b0;
-                            end
-                            end
-                        end
             if(guide_lights[2] == 1'b1) begin
             if(prev == not_playing_note) begin
                 if((sw_d[2] == 1'b1 & octave_sw == low & music == 5'd3) | (sw_d[2] == 1'b1 & octave_sw == middle & music == 5'd10) | (sw_d[2] == 1'b1 & octave_sw == high & music == 5'd17)) begin
@@ -224,7 +227,7 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
             end
             
             always @(sw_d) begin
-                if(sw_d != guide_lights | octave != octave_sw) begin
+                if(sw_d != guide_lights | (octave != octave_sw & sw_d == not_playing_note)) begin
                      if(digit1 == 4'd9) begin
                          digit1 <= 4'd0;
                          digit2 <= digit2 + 1;

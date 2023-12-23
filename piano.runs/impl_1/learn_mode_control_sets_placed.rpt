@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Fri Dec 22 16:37:05 2023
-| Host         : S210-07 running 64-bit major release  (build 9200)
+| Date         : Fri Dec 22 23:24:21 2023
+| Host         : Alaina running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file learn_mode_control_sets_placed.rpt
 | Design       : learn_mode
 | Device       : xc7a35t
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    17 |
-| Unused register locations in slices containing registers |    83 |
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    93 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              10 |            7 |
-| No           | No                    | Yes                    |             233 |           78 |
+| No           | No                    | No                     |              23 |           12 |
+| No           | No                    | Yes                    |             266 |           93 |
 | No           | Yes                   | No                     |              32 |            8 |
-| Yes          | No                    | No                     |              22 |           13 |
-| Yes          | No                    | Yes                    |              36 |           17 |
+| Yes          | No                    | No                     |              22 |           12 |
+| Yes          | No                    | Yes                    |              36 |           20 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -45,39 +45,43 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------+------------------------------+-----------------------+------------------+----------------+
-|  Clock Signal  |         Enable Signal        |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
-+----------------+------------------------------+-----------------------+------------------+----------------+
-|  clk_IBUF_BUFG | debounce0/key_out_i_1_n_0    | sc_seg/clkout_reg_0   |                1 |              1 |
-|  clk_IBUF_BUFG | debounce1/key_out_i_1__0_n_0 | sc_seg/clkout_reg_0   |                1 |              1 |
-|  clk_IBUF_BUFG | debounce2/key_out_i_1__1_n_0 | sc_seg/clkout_reg_0   |                1 |              1 |
-|  clk_IBUF_BUFG | debounce3/key_out_i_1__2_n_0 | sc_seg/clkout_reg_0   |                1 |              1 |
-|  clk_IBUF_BUFG | debounce4/key_out_i_1__3_n_0 | sc_seg/clkout_reg_0   |                1 |              1 |
-|  clk_IBUF_BUFG | debounce5/key_out_i_1__4_n_0 | sc_seg/clkout_reg_0   |                1 |              1 |
-|  clk_IBUF_BUFG | debounce6/key_out_i_1__5_n_0 | sc_seg/clkout_reg_0   |                1 |              1 |
-|  clk_IBUF_BUFG | debounce7/key_out_i_1__6_n_0 | sc_seg/clkout_reg_0   |                1 |              1 |
-|  sc_seg/clkout |                              | sc_seg/clkout_reg_0   |                1 |              3 |
-|  clk_IBUF_BUFG | play/range[2]_i_1_n_0        |                       |                2 |              3 |
-|  clk_IBUF_BUFG | debounce0/E[0]               | sc_seg/clkout_reg_0   |                2 |              6 |
-|  clk_IBUF_BUFG | prev                         |                       |                4 |              8 |
-|  clk_IBUF_BUFG |                              |                       |                7 |             10 |
-|  clk_IBUF_BUFG | play/frequency               |                       |                7 |             11 |
-|  clk_IBUF_BUFG | ssdebounce/state[0]          | sc_seg/clkout_reg_0   |                7 |             22 |
-|  clk_IBUF_BUFG |                              | gm/counter[0]_i_1_n_0 |                8 |             32 |
-|  clk_IBUF_BUFG |                              | sc_seg/clkout_reg_0   |               77 |            230 |
-+----------------+------------------------------+-----------------------+------------------+----------------+
++------------------------+------------------------------+---------------------------+------------------+----------------+
+|      Clock Signal      |         Enable Signal        |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++------------------------+------------------------------+---------------------------+------------------+----------------+
+|  clk_IBUF_BUFG         | ssdebounce/state[0]          | sc_seg/scan_cnt_reg[0]_0  |                1 |              1 |
+|  clk_IBUF_BUFG         | debounce1/key_out_i_1__0_n_0 | debounce0/cnt_reg[21]_0   |                1 |              1 |
+|  clk_IBUF_BUFG         | debounce2/key_out_i_1__1_n_0 | ssdebounce/state_reg[1]_0 |                1 |              1 |
+|  clk_IBUF_BUFG         | debounce3/key_out_i_1__2_n_0 | debounce0/cnt_reg[21]_0   |                1 |              1 |
+|  clk_IBUF_BUFG         | debounce4/key_out_i_1__3_n_0 | ssdebounce/state_reg[1]_0 |                1 |              1 |
+|  clk_IBUF_BUFG         | debounce5/key_out_i_1__4_n_0 | ssdebounce/state_reg[1]_0 |                1 |              1 |
+|  clk_IBUF_BUFG         | debounce6/key_out_i_1__5_n_0 | ssdebounce/state_reg[1]_0 |                1 |              1 |
+|  clk_IBUF_BUFG         | debounce7/key_out_i_1__6_n_0 | debounce0/cnt_reg[21]_0   |                1 |              1 |
+|  clk_IBUF_BUFG         | debounce0/key_out_i_1_n_0    | debounce0/cnt_reg[21]_0   |                1 |              1 |
+|  sc_seg/clkout_reg_n_0 |                              | sc_seg/scan_cnt_reg[0]_0  |                2 |              3 |
+|  clk_IBUF_BUFG         | play/range[2]_i_1_n_0        |                           |                1 |              3 |
+|  clk_IBUF_BUFG         | debounce1/E[0]               | ssdebounce/state_reg[1]_0 |                2 |              6 |
+|  nolabel_line69/CLK    |                              |                           |                2 |              7 |
+|  clk_IBUF_BUFG         | prev                         |                           |                3 |              8 |
+|  clk_IBUF_BUFG         | play/frequency[10]_i_1_n_0   |                           |                8 |             11 |
+|  clk_IBUF_BUFG         |                              |                           |               10 |             16 |
+|  clk_IBUF_BUFG         | ssdebounce/state[0]          | ssdebounce/state_reg[1]_0 |                9 |             21 |
+|  clk_IBUF_BUFG         |                              | gm/counter[0]_i_1_n_0     |                8 |             32 |
+|  clk_IBUF_BUFG         |                              | sc_seg/scan_cnt_reg[0]_0  |               28 |             66 |
+|  clk_IBUF_BUFG         |                              | ssdebounce/state_reg[1]_0 |               30 |             86 |
+|  clk_IBUF_BUFG         |                              | debounce0/cnt_reg[21]_0   |               33 |            111 |
++------------------------+------------------------------+---------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     8 |
+| 1      |                     9 |
 | 3      |                     2 |
 | 6      |                     1 |
+| 7      |                     1 |
 | 8      |                     1 |
-| 10     |                     1 |
 | 11     |                     1 |
-| 16+    |                     3 |
+| 16+    |                     6 |
 +--------+-----------------------+
 
 
