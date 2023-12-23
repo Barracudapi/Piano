@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Fri Dec 22 23:24:38 2023
-| Host         : Alaina running 64-bit major release  (build 9200)
+| Date         : Sat Dec 23 16:38:43 2023
+| Host         : S210-07 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file learn_mode_timing_summary_routed.rpt -rpx learn_mode_timing_summary_routed.rpx -warn_on_violation
 | Design       : learn_mode
 | Device       : 7a35t-csg324
@@ -52,9 +52,9 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 369 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 370 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 7 register/latch pins with no clock driven by root clock pin: nolabel_line69/clk_1_reg/Q (HIGH)
+ There are 19 register/latch pins with no clock driven by root clock pin: nolabel_line72/clk_1_reg/Q (HIGH)
 
  There are 3 register/latch pins with no clock driven by root clock pin: sc_seg/clkout_reg/Q (HIGH)
 
@@ -71,7 +71,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 771 pins that are not constrained for maximum delay. (HIGH)
+ There are 800 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

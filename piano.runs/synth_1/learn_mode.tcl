@@ -22,25 +22,24 @@ create_project -in_memory -part xc7a35tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/86138/Documents/GitHub/Piano/piano.cache/wt [current_project]
-set_property parent.project_path C:/Users/86138/Documents/GitHub/Piano/piano.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Administrator/Documents/GitHub/Piano/piano.cache/wt [current_project]
+set_property parent.project_path C:/Users/Administrator/Documents/GitHub/Piano/piano.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/86138/Documents/GitHub/Piano/piano.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Administrator/Documents/GitHub/Piano/piano.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/Interval.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock2.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song2.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/light_7seg_ego1.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/scan_seg.v
-  C:/Users/86138/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock2.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song2.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/light_7seg_ego1.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/scan_seg.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -50,8 +49,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/86138/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc
-set_property used_in_implementation false [get_files C:/Users/86138/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc]
+read_xdc C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc
+set_property used_in_implementation false [get_files C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc]
 
 
 synth_design -top learn_mode -part xc7a35tcsg324-1
