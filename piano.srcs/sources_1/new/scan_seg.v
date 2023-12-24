@@ -21,6 +21,7 @@
 
 
 module scan_seg(
+input [1:0] learn_state,
 input [3:0] digit1,
 input [3:0] digit2,
 input [2:0] interval,
@@ -82,6 +83,7 @@ output [7:0] seg_out1
                 end
                 
                 wire [7:0] useless_seg_en0, useless_seg_en1;
-                light_7seg_ego1 u0(.digit1(digit1), .digit2(digit2), .interval(interval), .octave(octave), .note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out0), .seg_en(useless_seg_en0));
-                light_7seg_ego1 u1(.digit1(digit1), .digit2(digit2), .interval(interval), .octave(octave), .note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out1), .seg_en(useless_seg_en1));
+                wire [1:0] useless_learnstate;
+                light_7seg_ego1 u0(.learn_state(useless_learnstate), .digit1(digit1), .digit2(digit2), .interval(interval), .octave(octave), .note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out0), .seg_en(useless_seg_en0));
+                light_7seg_ego1 u1(.learn_state(learn_state), .digit1(digit1), .digit2(digit2), .interval(interval), .octave(octave), .note_cnt(note_cnt), .sw({1'b0, scan_cnt}), .seg_out(seg_out1), .seg_en(useless_seg_en1));
 endmodule

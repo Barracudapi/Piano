@@ -26,16 +26,17 @@ input clk, reset,
 input [7:0] sw,
 input wire [2:0] octave_sw,
 input select_song_btn,
+input learn_btn, evaluate_btn,
 output sd,
 output melody,
 output reg [7:0] guide_lights,
 output [7:0] seg_en,
 output [7:0] seg_out0, seg_out1,
-output [1:0] led_for_ss,
-output reg [3:0] interval_led
+output reg [3:0] interval_led,
+output reg [2:0] state_led
     );
     `include "ppppparameters.v"
-   wire [1:0] useless_state;
+   reg [1:0] state;
    reg [5:0] cnt = 6'd0;
    reg [5:0] cnt_checker = 6'd0;
    reg [4:0] music;
@@ -59,18 +60,19 @@ output reg [3:0] interval_led
    reg correct_note = 0;
    reg [4:0] music_holder;
    reg [7:0] guide_lights_holder;
-    
+   wire learn_button, evaluate_button;
    reg counter_for_sss;
    reg [1:0] sss_shift;
    wire select;
+   reg [7:0] data7, data6, data5, data4, data3, data2, data1, data0;
     //learning mode has similar functions to free play except the led function which we modify in this module.
     free_play play(clk, reset, octave_sw, sw, frequency);
     generate_melody gm(.clk(clk), .frequency(frequency), .melody(melody));
     learn_song1 song1(cnt, music1, interval1);
     learn_song2 song2(cnt, music2, interval2);
-    scan_seg sc_seg(digit1, digit2, interval, octave, cnt, reset, clk, seg_en, seg_out0, seg_out1);
+    //scan_seg sc_seg(digit1, digit2, interval, octave, cnt, reset, clk, seg_en, seg_out0, seg_out1);
+    tubes_display tb(clk, ~reset, data7, ee, ll, ll, oo, a8, a8, a8, seg_en, seg_out1, seg_out0);
     clock2(clk, reset, clk_1sec);
-    assign led_for_ss = sss_shift;
     
     
     //sometimes if you dont flip the switch fast enough, it glitches and cnt increments too many times. A switch debouncer for each switch is added to mitigate this issue.
@@ -93,6 +95,46 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
             sss_shift <= {sss_shift[0], counter_for_sss};
     end
     
+    always @(posedge clk) begin
+        case(octave)
+            low: data7 <= ll;
+            middle: data7 <= mm;
+            high: data7 <= hh;
+        default: data7 <= ll;
+        endcase
+        end
+    //////////////////////////////////////////////////////////////////////
+    //state machine for learn mode
+    debounce learnbutton(clk, reset, learn_btn, learn_button);
+    debounce evalbutton(clk, reset, evaluate_btn, evaluate_button);
+    always@(posedge clk, negedge reset) begin
+            if(~reset) begin
+                state <= learn;
+            end else begin
+                case(state)
+                    learn: begin
+                        state_led <= 3'b001;
+                        if(cnt >= 5)
+                            state <= finish;
+                            end
+                    finish: begin
+                        state_led <= 3'b010;
+                        if(learn_button == 1)
+                            state <= learn;
+                        else if(evaluate_button == 1)
+                            state <= evaluate;
+                            end
+                    evaluate:
+                    begin
+                        state_led <= 3'b100;
+                        if(learn_button == 1)
+                            state <= learn;
+                            end
+                            default: state <= finish;
+                endcase
+            end
+        end
+    
    
         
      always @(posedge clk, negedge reset) begin
@@ -102,10 +144,11 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
            digit1 <= 0;
            digit2 <= 0;
        end
-       else if(sss_shift[1] ^ sss_shift[0]) begin
+       else if(state == learn) begin
+            if(sss_shift[1] ^ sss_shift[0]) begin
             cnt <= 0;
             guide_lights <= 8'b0000_0000;
-      end else begin  
+        end else begin  
         
       guide_lights <= 8'b0000_0000;
       case(music)
@@ -211,6 +254,7 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                     
             end
             end
+            end
             
             always @(sw_d) begin
                 if(sw_d != guide_lights | (octave != octave_sw & sw_d == not_playing_note)) begin
@@ -256,7 +300,6 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                 if(sw_d == not_playing_note) begin
                     countdown<=interval;
                     music_holder <= music;
-                    guide_lights_holder <= guide_lights;
                     case(countdown)
                     1: interval_led <= 4'b1000;
                     2: interval_led <= 4'b1100;
@@ -267,7 +310,6 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                     endcase
                     end
                 else begin
-                if(correct_note == 1'b1) begin
                     countdown <= countdown - 1;
                     case(countdown)
                         1: interval_led <= 4'b1000;
@@ -279,6 +321,5 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                         endcase
                         if(countdown == 0) begin music_holder <= music; countdown<=interval; end
                         end
-                    end
                     end
 endmodule
