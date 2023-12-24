@@ -113,3 +113,7 @@ set_property src_info {type:XDC file:1 line:115 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN U4 [get_ports learn_btn]
 set_property src_info {type:XDC file:1 line:116 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V1 [get_ports evaluate_btn]
+set_property src_info {type:XDC file:1 line:120 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R15 [get_ports userbtn]
+set_property src_info {type:XDC file:1 line:121 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R17 [get_ports updatebtn]

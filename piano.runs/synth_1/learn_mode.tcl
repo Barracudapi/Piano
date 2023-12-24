@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -29,10 +28,11 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/Administrator/Documents/GitHub/Piano/piano.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v
+  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock2.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v
-  C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v
   C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v

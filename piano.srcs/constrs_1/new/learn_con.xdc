@@ -114,3 +114,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports learn_btn]
 set_property IOSTANDARD LVCMOS33 [get_ports evaluate_btn]
 set_property PACKAGE_PIN U4 [get_ports learn_btn]
 set_property PACKAGE_PIN V1 [get_ports evaluate_btn]
+
+set_property IOSTANDARD LVCMOS33 [get_ports userbtn]
+set_property IOSTANDARD LVCMOS33 [get_ports updatebtn]
+set_property PACKAGE_PIN R15 [get_ports userbtn]
+set_property PACKAGE_PIN R17 [get_ports updatebtn]

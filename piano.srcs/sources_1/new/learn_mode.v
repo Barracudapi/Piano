@@ -26,7 +26,7 @@ input clk, reset,
 input [7:0] sw,
 input wire [2:0] octave_sw,
 input select_song_btn,
-input learn_btn, evaluate_btn,
+input learn_btn, evaluate_btn, userbtn, updatebtn,
 output sd,
 output melody,
 output reg [7:0] guide_lights,
@@ -36,48 +36,52 @@ output reg [3:0] interval_led,
 output reg [2:0] state_led
     );
     `include "ppppparameters.v"
-   reg [1:0] state;
-   reg [5:0] cnt = 6'd0;
+   reg [1:0] state; //learn mode states
+   reg [5:0] cnt = 6'd0; //music count
    reg [4:0] music;
-   wire [4:0] music1;
-   wire [4:0] music2;
+   wire [4:0] music1, music2;
    assign sd = 1'b1;
    wire [10:0] frequency;
-   reg [7:0] prev = 0;
-   reg [3:0] digit1 = 0; 
-   reg [3:0] digit2 = 0;
+   reg [7:0] prev = 0; //previous combination of switches
+   reg [3:0] digit1 = 0, digit2 = 0; //digit1 is the mistake in the ones position, digit2 is mistakes in the tens position
    reg [3:0] temp = 0;
-   wire [7:0] sw_d;
-   wire [7:0] sw_d2;
-   reg [2:0] interval;
+   wire [7:0] sw_d, sw_d2; //sw_d is debounced key, sw_d2 is to debounce it so that it only returns one period of the clock cycle
+   reg [2:0] interval; //length of each note to play
    wire [2:0] interval1;
    wire [2:0] interval2;
-   reg [1:0] song_choice = 2'b00;
-   wire select_song_octave_swd;
-   reg [2:0] octave;
-   wire clk_1sec;
-   reg [2:0] countdown;
-   reg [4:0] music_holder;
-   reg [7:0] guide_lights_holder;
-   wire learn_button, evaluate_button;
+   reg [2:0] octave; //pitch of the note
+   wire clk_1sec; //a one second clock to time the interval
+   reg [2:0] countdown; //countdown the interval to 0
+   reg [7:0] guide_lights_holder;//holds previous combination of guide_lights
+   wire learn_button, evaluate_button, userbtnd, updatebtnd;
    reg counter_for_sss;
    reg [1:0] sss_shift;
-   wire select;
-   wire [7:0] data7, data6, data5, data4, data3, data2, data1, data0;
-   wire [1:0] score;
+   wire select; //select songs
+   wire [7:0] data7, data6, data5, data4, data3, data2, data1, data0; //seven segment tube display
+   reg [1:0] score; //will display "fail", "okay", "good" and "perfect"
+   reg [5:0] mistakes;//increments everytime a wrong key is played
+   reg [3:0] rating1, rating2;//rating1 is the rating in the ones position, rating2 is rating in the tens position
+   wire [3:0] user_rating1, user_rating2;
+   wire [1:0] user;
+   
    
     //learning mode has similar functions to free play except the led function which we modify in this module.
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     free_play play(clk, reset, octave_sw, sw, frequency);
     generate_melody gm(.clk(clk), .frequency(frequency), .melody(melody));
     learn_song1 song1(cnt, music1, interval1);
-    learn_song2 song2(cnt, music2, interval2);
-    //scan_seg sc_seg(digit1, digit2, interval, octave, cnt, reset, clk, seg_en, seg_out0, seg_out1);
+    learn_song2 song2(cnt, music2, interval2);  
+    
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     tubes_display tb(clk, ~reset, data7, data6, data5, data4, data3, data2, data1, data0, seg_en, seg_out1, seg_out0);
-    learnmode_7seg l7(clk, reset, state, octave, interval, score, digit1, digit2, data7, data6, data5, data4, data3, data2, data1, data0);
+    learnmode_7seg l7(clk, reset, state, octave, interval, score, digit1, digit2, user, user_rating1, user_rating2, data7, data6, data5, data4, data3, data2, data1, data0);
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     clock2 c2(clk, reset, clk_1sec);
+    account acc(clk, reset, state, rating1, rating2, userbtnd, updatebtnd, user, user_rating1, user_rating2);
     
     
     //sometimes if you dont flip the switch fast enough, it glitches and cnt increments too many times. A switch debouncer for each switch is added to mitigate this issue.
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         debounce debounce0(clk ,reset, sw[0], sw_d[0]);
         debounce debounce1(clk ,reset, sw[1], sw_d[1]);
         debounce debounce2(clk ,reset, sw[2], sw_d[2]);
@@ -86,6 +90,8 @@ output reg [2:0] state_led
         debounce debounce5(clk ,reset, sw[5], sw_d[5]);
         debounce debounce6(clk ,reset, sw[6], sw_d[6]);
         debounce debounce7(clk ,reset, sw[7], sw_d[7]);
+        debounce learnbutton(clk, reset, learn_btn, learn_button);
+        debounce evalbutton(clk, reset, evaluate_btn, evaluate_button);
         debounce2 debounce20(clk ,reset, sw[0], sw_d2[0]);
         debounce2 debounce21(clk ,reset, sw[1], sw_d2[1]);
         debounce2 debounce22(clk ,reset, sw[2], sw_d2[2]);
@@ -94,22 +100,21 @@ output reg [2:0] state_led
         debounce2 debounce25(clk ,reset, sw[5], sw_d2[5]);
         debounce2 debounce26(clk ,reset, sw[6], sw_d2[6]);
         debounce2 debounce27(clk ,reset, sw[7], sw_d2[7]);
-    
-    
-debounce2 ssdebounce(clk, reset, select_song_btn, select);
+        debounce2 ssdebounce(clk, reset, select_song_btn, select);
+        debounce2 user_btn(clk, reset, userbtn, userbtnd);
+        debounce2 update_btn(clk,reset,updatebtn, updatebtnd);
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
- always @(posedge clk, negedge reset) begin
-        if(~reset)
-            sss_shift <= 2'b00;
-        else
-            sss_shift <= {sss_shift[0], counter_for_sss};
-    end
+    always @(posedge clk, negedge reset) begin
+            if(~reset)
+                sss_shift <= 2'b00;
+            else
+                sss_shift <= {sss_shift[0], counter_for_sss};
+        end
     
 
-    //////////////////////////////////////////////////////////////////////
     //state machine for learn mode
-    debounce learnbutton(clk, reset, learn_btn, learn_button);
-    debounce evalbutton(clk, reset, evaluate_btn, evaluate_button);
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     always@(posedge clk, negedge reset) begin
             if(~reset) begin
                 state <= learn;
@@ -119,6 +124,9 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                         state_led <= 3'b001;
                         if(cnt >= 5)
                             state <= finish;
+                            
+                        if(evaluate_button == 1)
+                                state<= evaluate;
                             end
                     finish: begin
                         state_led <= 3'b010;
@@ -137,9 +145,10 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                 endcase
             end
         end
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
-   
-        
+      //we move to the next note on these conditions: (1) the switch and octave is flipped corresponding to the correct music and (2) if the previous combination of switches are all down 
+     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
      always @(posedge clk, negedge reset) begin
        if(~reset) begin
            cnt <= 0;
@@ -235,13 +244,14 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                     end
                end
                prev <= sw_d;
-          
-                    
             end
             end
             end
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             
             
+            //Function to count mistake. When the key pattern is different from the guide_light pattern or if they are the same but different octave, we +1 mistake. Rating also drops.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             always @(posedge clk) begin
                 if(~reset) begin digit1 <= 0; digit2 <= 0; guide_lights_holder <= guide_lights; end
                 else begin
@@ -252,7 +262,11 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                         digit1 <= 4'd0;
                         digit2 <= digit2 + 1;
                         end
-                    else begin digit1 <= digit1 + 1; end
+                    else begin 
+                    digit1 <= digit1 + 1;  
+                    if(rating1 < 0) begin rating1 <= 4'd9; rating2<= rating2 - 1; end
+                    else rating1 <= rating1 - 1;
+                    end
                     guide_lights_holder <= 8'b0000_0000;
                     end
                 end
@@ -260,9 +274,11 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                 if(sw_d == not_playing_note)begin guide_lights_holder <= guide_lights; end
             end
             end
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             
             
-            
+            //Function to change songs. Everytime we press the select button, counter_for_sss simply gets the other value. We then give music the value depending on the state.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
            always@(posedge clk, negedge reset) begin
                        if(~reset) begin
                            counter_for_sss = 0;
@@ -286,8 +302,10 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                                endcase
                            end
                      end
-                     
-                    
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////         
+            
+            //Function to visually show the user how long to play the note. Each clock period is roughly 0.67seconds. We only count down when a key is playing.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////        
             always @(posedge clk_1sec) begin
                 if(sw_d == not_playing_note) begin
                     countdown<=interval;
@@ -313,4 +331,19 @@ debounce2 ssdebounce(clk, reset, select_song_btn, select);
                         if(countdown == 0) begin countdown<=interval; end
                         end
                     end
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    
+            //Function to combine digit1 and digit2 to mistakes. We then assign a score depending on your range of mistakes.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////        
+            always @(posedge clk) begin
+                mistakes <= 10 * digit2 + digit1;
+                if(mistakes == 6'd0) begin score <= 3; end
+                else if(mistakes > 5'd3 & mistakes <= 5'd6) begin score <= 2; end
+                else if(mistakes > 5'd6 & mistakes <= 5'd10) begin score <= 1; end
+                else begin score <= 0; end
+                end
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+                
+                
+            
 endmodule
