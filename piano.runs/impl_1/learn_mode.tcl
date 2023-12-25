@@ -65,15 +65,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Administrator/Documents/GitHub/Piano/piano.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Administrator/Documents/GitHub/Piano/piano.xpr [current_project]
-  set_property ip_output_repo C:/Users/Administrator/Documents/GitHub/Piano/piano.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Administrator/Documents/GitHub/Piano2/piano.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Administrator/Documents/GitHub/Piano2/piano.xpr [current_project]
+  set_property ip_output_repo C:/Users/Administrator/Documents/GitHub/Piano2/piano.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/learn_mode.dcp
-  read_xdc C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc
+  add_files -quiet C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/learn_mode.dcp
+  read_xdc C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/constrs_1/new/learn_con.xdc
   link_design -top learn_mode -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

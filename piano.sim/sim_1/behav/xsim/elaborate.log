@@ -3,6 +3,10 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot learn_tb_behav xil_defaultlib.learn_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port sd [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:45]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port melody [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:46]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out0 [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:48]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 8 for port seg_out1 [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:49]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -14,6 +18,7 @@ Compiling module xil_defaultlib.learn_song2
 Compiling module xil_defaultlib.tubes_display
 Compiling module xil_defaultlib.learnmode_7seg
 Compiling module xil_defaultlib.clock2
+Compiling module xil_defaultlib.account
 Compiling module xil_defaultlib.debounce
 Compiling module xil_defaultlib.debounce2
 Compiling module xil_defaultlib.learn_mode

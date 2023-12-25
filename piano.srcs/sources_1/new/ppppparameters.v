@@ -49,7 +49,7 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
     
     
      parameter period2 = 100_000;
-       parameter a0=8'h00, a1=8'h01, a2=8'h02, a3=8'h03, a4=8'h08, a5=8'h05, 
+       parameter a0=8'h00, a1=8'h01, a2=8'h02, a3=8'h03, a4=8'h04, a5=8'h05, 
        a6=8'h06, a7=8'h07, a8=8'h08, a9=8'h09, 
        aa=8'h0a, bb=8'h0b, cc=8'h0c, dd=8'h0d, ee=8'h0e, ff=8'h10,  
        gg=8'h11, hh=8'h12, ii=8'h13, jj=8'h14, kk=8'h15, ll=8'h16,mm=8'h17,

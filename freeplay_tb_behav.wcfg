@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="75573580093050fs"></ZoomStartTime>
-      <ZoomEndTime time="83673580093051fs"></ZoomEndTime>
-      <Cursor1Time time="80543580093000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="9990000000002fs"></ZoomEndTime>
+      <Cursor1Time time="21000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="107"></NameColumnWidth>
+      <NameColumnWidth column_width="103"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/learn_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -92,5 +92,13 @@
    <wvobject fp_name="/learn_tb/lm/sw_d" type="array">
       <obj_property name="ElementShortName">sw_d[7:0]</obj_property>
       <obj_property name="ObjectShortName">sw_d[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/learn_tb/lm/l7/rating1" type="array">
+      <obj_property name="ElementShortName">rating1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rating1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/learn_tb/lm/l7/rating2" type="array">
+      <obj_property name="ElementShortName">rating2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rating2[3:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -22,7 +22,7 @@
 
 module learnmode_7seg(
 input clk, reset, [1:0] state,  [2:0] octave, [2:0] interval, [1:0] score, [3:0] digit1, [3:0] digit2, [1:0] user,
-input [3:0] user_rating1, user_rating2,
+input [3:0] user_rating1, user_rating2, rating1, rating2,
 output reg [7:0] data7, data6, data5, data4, data3, data2, data1, data0
     );
     `include "ppppparameters.v"
@@ -104,14 +104,14 @@ output reg [7:0] data7, data6, data5, data4, data3, data2, data1, data0
                     data5 <= rr;
                     data4 <= ff;
                     data3 <= ee;
-                    data2 <= cc;
-                    data1 <= tt;
+//                    data2 <= cc;
+//                    data1 <= tt;
                     end
                     default: data7<= null;
                 endcase
                 
-                if(score !== 3) begin
-                case(digit2)
+//                if(score !== 3) begin
+                case(rating2)
                     0: data1 <= a0;
                     1: data1 <= a1;
                     2:data1 <= a2;
@@ -124,9 +124,9 @@ output reg [7:0] data7, data6, data5, data4, data3, data2, data1, data0
                     9:data1 <= a9;
                     default: data1 <= a0;
                     endcase
-                    end
+//                    end
                     
-                    case(digit1)
+                    case(rating1)
                     0: data0 <= a0;
                     1: data0 <= a1;
                     2:data0 <= a2;

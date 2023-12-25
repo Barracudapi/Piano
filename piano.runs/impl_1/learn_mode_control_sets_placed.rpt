@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sun Dec 24 23:55:49 2023
-| Host         : S210-07 running 64-bit major release  (build 9200)
+| Date         : Mon Dec 25 15:58:39 2023
+| Host         : S210-03 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file learn_mode_control_sets_placed.rpt
 | Design       : learn_mode
 | Device       : xc7a35t
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    48 |
-| Unused register locations in slices containing registers |   171 |
+| Number of unique control sets                            |    47 |
+| Unused register locations in slices containing registers |   143 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              62 |           36 |
-| No           | No                    | Yes                    |             330 |          105 |
+| No           | No                    | No                     |              67 |           39 |
+| No           | No                    | Yes                    |             330 |          100 |
 | No           | Yes                   | No                     |              32 |            8 |
-| Yes          | No                    | No                     |              65 |           31 |
+| Yes          | No                    | No                     |              80 |           32 |
 | Yes          | No                    | Yes                    |             258 |          114 |
-| Yes          | Yes                   | No                     |              42 |           14 |
+| Yes          | Yes                   | No                     |              42 |           16 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -48,54 +48,53 @@ Table of Contents
 +--------------------+--------------------------------+-----------------------+------------------+----------------+
 |    Clock Signal    |          Enable Signal         |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
 +--------------------+--------------------------------+-----------------------+------------------+----------------+
-|  clk_IBUF_BUFG     | debounce4/key_out_i_1__3_n_0   | c2/AR[0]              |                1 |              1 |
-|  clk_IBUF_BUFG     | debounce5/key_out_i_1__4_n_0   | c2/AR[0]              |                1 |              1 |
-|  clk_IBUF_BUFG     | debounce6/key_out_i_1__5_n_0   | c2/AR[0]              |                1 |              1 |
-|  clk_IBUF_BUFG     | debounce7/key_out_i_1__6_n_0   | c2/AR[0]              |                1 |              1 |
-|  clk_IBUF_BUFG     | evalbutton/key_out_i_1__8_n_0  | c2/AR[0]              |                1 |              1 |
 |  clk_IBUF_BUFG     | learnbutton/key_out_i_1__7_n_0 | c2/AR[0]              |                1 |              1 |
-|  clk_IBUF_BUFG     | debounce3/key_out_i_1__2_n_0   | c2/AR[0]              |                1 |              1 |
+|  clk_IBUF_BUFG     | evalbutton/key_out_i_1__8_n_0  | c2/AR[0]              |                1 |              1 |
+|  clk_IBUF_BUFG     | debounce7/key_out_i_1__6_n_0   | c2/AR[0]              |                1 |              1 |
+|  clk_IBUF_BUFG     | debounce6/key_out_i_1__5_n_0   | c2/AR[0]              |                1 |              1 |
+|  clk_IBUF_BUFG     | debounce0/key_out_i_1_n_0      | c2/AR[0]              |                1 |              1 |
 |  clk_IBUF_BUFG     | debounce1/key_out_i_1__0_n_0   | c2/AR[0]              |                1 |              1 |
 |  clk_IBUF_BUFG     | debounce2/key_out_i_1__1_n_0   | c2/AR[0]              |                1 |              1 |
-|  clk_IBUF_BUFG     | debounce0/key_out_i_1_n_0      | c2/AR[0]              |                1 |              1 |
-|  tb/clkout_reg_n_0 |                                | c2/AR[0]              |                2 |              3 |
+|  clk_IBUF_BUFG     | debounce4/key_out_i_1__3_n_0   | c2/AR[0]              |                1 |              1 |
+|  clk_IBUF_BUFG     | debounce5/key_out_i_1__4_n_0   | c2/AR[0]              |                1 |              1 |
+|  clk_IBUF_BUFG     | debounce3/key_out_i_1__2_n_0   | c2/AR[0]              |                1 |              1 |
+|  tb/clkout_reg_n_0 |                                | c2/AR[0]              |                1 |              3 |
 |  clk_IBUF_BUFG     | play/range[2]_i_1_n_0          |                       |                1 |              3 |
 |  clk_IBUF_BUFG     | state_led[2]_i_1_n_0           |                       |                1 |              3 |
 |  clk_IBUF_BUFG     | l7/data7[3]_i_2_n_0            | l7/data5[4]_i_1_n_0   |                2 |              4 |
-|  clk_IBUF_BUFG     | debounce26/digit1              | c2/AR[0]              |                1 |              4 |
-|  clk_IBUF_BUFG     | user_btn/E[0]                  |                       |                1 |              4 |
-|  clk_IBUF_BUFG     | debounce26/rating1_reg[0][0]   |                       |                1 |              4 |
-|  clk_IBUF_BUFG     | debounce26/E[0]                | c2/AR[0]              |                1 |              4 |
-|  clk_IBUF_BUFG     | acc/user0_rating1              |                       |                2 |              4 |
-|  clk_IBUF_BUFG     | acc/user1_rating1              |                       |                1 |              4 |
-|  clk_IBUF_BUFG     | acc/user3_rating1              |                       |                1 |              4 |
-|  clk_IBUF_BUFG     | acc/user2_rating1              |                       |                1 |              4 |
-|  clk_IBUF_BUFG     | l7/data3[5]_i_1_n_0            | l7/data5_reg[5]_0     |                3 |              5 |
-|  clk_IBUF_BUFG     | debounce4/E[0]                 | c2/AR[0]              |                2 |              6 |
-|  clk_IBUF_BUFG     | debounce2/E[0]                 | debounce26/SR[0]      |                2 |              7 |
+|  clk_IBUF_BUFG     | debounce21/digit1              | c2/AR[0]              |                1 |              4 |
+|  clk_IBUF_BUFG     | debounce21/E[0]                | c2/AR[0]              |                2 |              4 |
+|  clk_IBUF_BUFG     | l7/data3[5]_i_1_n_0            | l7/data3_reg[5]_0     |                2 |              5 |
+|  clk_IBUF_BUFG     | debounce3/E[0]                 | c2/AR[0]              |                2 |              6 |
 |  c2/CLK            |                                |                       |                2 |              7 |
-|  clk_IBUF_BUFG     | l7/data5_reg[5]_0              |                       |                6 |              7 |
+|  clk_IBUF_BUFG     | debounce2/E[0]                 | debounce21/SR[0]      |                3 |              7 |
+|  clk_IBUF_BUFG     | l7/data3_reg[5]_0              |                       |                5 |              7 |
 |  tb/Q[2]           |                                |                       |                3 |              8 |
 | ~tb/Q[2]           |                                |                       |                4 |              8 |
-|  clk_IBUF_BUFG     | l7/data5[5]_i_2_n_0            | l7/data5_reg[5]_0     |                2 |              8 |
+|  clk_IBUF_BUFG     | acc/user3_rating1              |                       |                2 |              8 |
+|  clk_IBUF_BUFG     | acc/user0_rating1              |                       |                1 |              8 |
+|  clk_IBUF_BUFG     | update_btn/E[0]                |                       |                5 |              8 |
+|  clk_IBUF_BUFG     | acc/user2_rating1              |                       |                1 |              8 |
+|  clk_IBUF_BUFG     | acc/user1_rating1              |                       |                1 |              8 |
+|  clk_IBUF_BUFG     | l7/data5[5]_i_2_n_0            | l7/data3_reg[5]_0     |                3 |              8 |
 |  clk_IBUF_BUFG     | prev                           |                       |                3 |              8 |
-|  clk_IBUF_BUFG     | l7/data1[4]_i_1_n_0            |                       |                3 |              9 |
+|  clk_IBUF_BUFG     | l7/data1[3]_i_1_n_0            |                       |                3 |              8 |
 |  clk_IBUF_BUFG     | l7/data7[3]_i_2_n_0            | l7/SS[0]              |                3 |             10 |
-|  clk_IBUF_BUFG     | play/frequency[10]_i_1_n_0     |                       |               10 |             11 |
-|  clk_IBUF_BUFG     | debounce27/state[0]            | c2/AR[0]              |                9 |             22 |
-|  clk_IBUF_BUFG     | debounce25/state[0]            | c2/AR[0]              |                8 |             22 |
-|  clk_IBUF_BUFG     | debounce20/state[0]            | c2/AR[0]              |               11 |             22 |
-|  clk_IBUF_BUFG     | ssdebounce/state[0]            | c2/AR[0]              |               10 |             22 |
-|  clk_IBUF_BUFG     | update_btn/state[0]            | c2/AR[0]              |                8 |             22 |
-|  clk_IBUF_BUFG     | debounce24/state[0]            | c2/AR[0]              |               10 |             22 |
-|  clk_IBUF_BUFG     | user_btn/state_0[0]            | c2/AR[0]              |               10 |             22 |
+|  clk_IBUF_BUFG     | play/frequency[10]_i_1_n_0     |                       |                9 |             11 |
+|  clk_IBUF_BUFG     | debounce20/state[0]            | c2/AR[0]              |                9 |             22 |
+|  clk_IBUF_BUFG     | ssdebounce/state[0]            | c2/AR[0]              |                9 |             22 |
+|  clk_IBUF_BUFG     | update_btn/state_0[0]          | c2/AR[0]              |                9 |             22 |
+|  clk_IBUF_BUFG     | debounce26/state[0]            | c2/AR[0]              |               11 |             22 |
+|  clk_IBUF_BUFG     | debounce25/state[0]            | c2/AR[0]              |                9 |             22 |
+|  clk_IBUF_BUFG     | debounce24/state[0]            | c2/AR[0]              |                9 |             22 |
+|  clk_IBUF_BUFG     | debounce22/state[0]            | c2/AR[0]              |                8 |             22 |
 |  clk_IBUF_BUFG     | debounce21/state[0]            | c2/AR[0]              |                8 |             22 |
-|  clk_IBUF_BUFG     | debounce22/state[0]            | c2/AR[0]              |               10 |             22 |
-|  clk_IBUF_BUFG     | debounce23/state[0]            | c2/AR[0]              |                9 |             22 |
-|  clk_IBUF_BUFG     | debounce26/state[0]            | c2/AR[0]              |                9 |             22 |
+|  clk_IBUF_BUFG     | user_btn/state_0[0]            | c2/AR[0]              |                8 |             22 |
+|  clk_IBUF_BUFG     | debounce23/state[0]            | c2/AR[0]              |               11 |             22 |
+|  clk_IBUF_BUFG     | debounce27/state[0]            | c2/AR[0]              |               11 |             22 |
 |  clk_IBUF_BUFG     |                                | gm/counter[0]_i_1_n_0 |                8 |             32 |
-|  clk_IBUF_BUFG     |                                |                       |               27 |             39 |
-|  clk_IBUF_BUFG     |                                | c2/AR[0]              |              103 |            327 |
+|  clk_IBUF_BUFG     |                                |                       |               30 |             44 |
+|  clk_IBUF_BUFG     |                                | c2/AR[0]              |               99 |            327 |
 +--------------------+--------------------------------+-----------------------+------------------+----------------+
 
 
@@ -104,12 +103,11 @@ Table of Contents
 +--------+-----------------------+
 | 1      |                    10 |
 | 3      |                     3 |
-| 4      |                     9 |
+| 4      |                     3 |
 | 5      |                     1 |
 | 6      |                     1 |
 | 7      |                     3 |
-| 8      |                     4 |
-| 9      |                     1 |
+| 8      |                    10 |
 | 10     |                     1 |
 | 11     |                     1 |
 | 16+    |                    14 |

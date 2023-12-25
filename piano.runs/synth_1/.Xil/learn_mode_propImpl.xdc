@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc rfile:../../../piano.srcs/constrs_1/new/learn_con.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/constrs_1/new/learn_con.xdc rfile:../../../piano.srcs/constrs_1/new/learn_con.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:52 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN M6 [get_ports sd]
 set_property src_info {type:XDC file:1 line:53 export:INPUT save:INPUT read:READ} [current_design]

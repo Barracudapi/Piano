@@ -2,15 +2,16 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Dec 24 22:57:22 2023
-# Process ID: 13980
-# Current directory: C:/Users/Administrator/Documents/GitHub/Piano
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4080 C:\Users\Administrator\Documents\GitHub\Piano\piano.xpr
-# Log file: C:/Users/Administrator/Documents/GitHub/Piano/vivado.log
-# Journal file: C:/Users/Administrator/Documents/GitHub/Piano\vivado.jou
+# Start of session at: Mon Dec 25 14:45:44 2023
+# Process ID: 7300
+# Current directory: C:/Users/Administrator/Documents/GitHub/Piano2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7076 C:\Users\Administrator\Documents\GitHub\Piano2\piano.xpr
+# Log file: C:/Users/Administrator/Documents/GitHub/Piano2/vivado.log
+# Journal file: C:/Users/Administrator/Documents/GitHub/Piano2\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Administrator/Documents/GitHub/Piano/piano.xpr
+open_project C:/Users/Administrator/Documents/GitHub/Piano2/piano.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Documents/GitHub/Piano' since last save.
 CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/keyboard.v'.
 CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/sim_keyboard.v'.
 Scanning sources...
@@ -20,43 +21,32 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
 update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-[Sun Dec 24 23:51:23 2023] Launched synth_1...
-Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-[Sun Dec 24 23:52:10 2023] Launched synth_1...
-Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
 launch_runs impl_1 -jobs 8
-[Sun Dec 24 23:52:57 2023] Launched impl_1...
-Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+[Mon Dec 25 14:46:09 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 14:46:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
 launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Sun Dec 24 23:53:54 2023] Launched impl_1...
-Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Sun Dec 24 23:54:45 2023] Launched synth_1...
-Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/runme.log
-[Sun Dec 24 23:54:45 2023] Launched impl_1...
-Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/runme.log
+[Mon Dec 25 14:47:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
 open_run impl_1
 INFO: [Netlist 29-17] Analyzing 278 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2017.4
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-13980-S210-07/dcp2/learn_mode.xdc]
-Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/.Xil/Vivado-13980-S210-07/dcp2/learn_mode.xdc]
+Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano2/.Xil/Vivado-7300-S210-03/dcp0/learn_mode.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano2/.Xil/Vivado-7300-S210-03/dcp0/learn_mode.xdc]
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 1253.965 ; gain = 2.934
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 1153.398 ; gain = 3.105
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 1253.965 ; gain = 2.934
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 1153.398 ; gain = 3.105
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1392.137 ; gain = 443.746
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1326.430 ; gain = 452.152
 WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
 open_hw
 connect_hw_server
@@ -71,7 +61,7 @@ INFO: [Labtools 27-2221] Launch Output:
 
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
@@ -82,7 +72,7 @@ Resolution:
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
@@ -92,6 +82,507 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+disconnect_hw_server
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 14:54:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 25 14:55:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 14:55:30 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 15:02:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 25 15:03:20 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 15:03:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 15:09:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 25 15:10:48 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 15:10:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 15:11:35 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 15:11:35 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 25 15:13:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'learn_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj learn_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/account.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module account
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/clock2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/debounce2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/free_play.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module free_play
+WARNING: [VRFC 10-2282] `include directive not isolated on its own line [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/free_play.v:31]
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/free_play.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/generate_melody.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module generate_melody
+WARNING: [VRFC 10-2282] `include directive not isolated on its own line [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/generate_melody.v:32]
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/generate_melody.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/learn_mode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learn_mode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/learn_song1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learn_song1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/learn_song2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learn_song2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/learnmode_7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learnmode_7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/tubes_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tubes_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learn_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot learn_tb_behav xil_defaultlib.learn_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port sd [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:45]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port melody [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:46]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out0 [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:48]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 8 for port seg_out1 [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.free_play
+Compiling module xil_defaultlib.generate_melody
+Compiling module xil_defaultlib.learn_song1
+Compiling module xil_defaultlib.learn_song2
+Compiling module xil_defaultlib.tubes_display
+Compiling module xil_defaultlib.learnmode_7seg
+Compiling module xil_defaultlib.clock2
+Compiling module xil_defaultlib.account
+Compiling module xil_defaultlib.debounce
+Compiling module xil_defaultlib.debounce2
+Compiling module xil_defaultlib.learn_mode
+Compiling module xil_defaultlib.learn_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot learn_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2409.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "learn_tb_behav -key {Behavioral:sim_1:Functional:learn_tb} -tclbatch {learn_tb.tcl} -view {C:/Users/Administrator/Documents/GitHub/Piano2/freeplay_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/Users/Administrator/Documents/GitHub/Piano2/freeplay_tb_behav.wcfg
+source learn_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'learn_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 2429.004 ; gain = 19.367
+add_wave {{/learn_tb/lm/l7/rating1}} 
+add_wave {{/learn_tb/lm/l7/rating2}} 
+run 10 us
+run 10 us
+save_wave_config {C:/Users/Administrator/Documents/GitHub/Piano2/freeplay_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'learn_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj learn_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot learn_tb_behav xil_defaultlib.learn_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port sd [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:45]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port melody [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:46]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out0 [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:48]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 8 for port seg_out1 [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:49]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "learn_tb_behav -key {Behavioral:sim_1:Functional:learn_tb} -tclbatch {learn_tb.tcl} -view {C:/Users/Administrator/Documents/GitHub/Piano2/freeplay_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/Users/Administrator/Documents/GitHub/Piano2/freeplay_tb_behav.wcfg
+source learn_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'learn_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2467.676 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'learn_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj learn_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/account.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module account
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/clock2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/debounce2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/free_play.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module free_play
+WARNING: [VRFC 10-2282] `include directive not isolated on its own line [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/free_play.v:31]
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/free_play.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/generate_melody.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module generate_melody
+WARNING: [VRFC 10-2282] `include directive not isolated on its own line [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/generate_melody.v:32]
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/generate_melody.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/learn_mode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learn_mode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/learn_song1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learn_song1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/learn_song2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learn_song2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/learnmode_7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learnmode_7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sources_1/new/tubes_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tubes_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module learn_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d27275362db04977b7e3347b5f3884ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot learn_tb_behav xil_defaultlib.learn_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port sd [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:45]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port melody [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:46]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out0 [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:48]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 8 for port seg_out1 [C:/Users/Administrator/Documents/GitHub/Piano2/piano.srcs/sim_1/new/learn_tb.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.free_play
+Compiling module xil_defaultlib.generate_melody
+Compiling module xil_defaultlib.learn_song1
+Compiling module xil_defaultlib.learn_song2
+Compiling module xil_defaultlib.tubes_display
+Compiling module xil_defaultlib.learnmode_7seg
+Compiling module xil_defaultlib.clock2
+Compiling module xil_defaultlib.account
+Compiling module xil_defaultlib.debounce
+Compiling module xil_defaultlib.debounce2
+Compiling module xil_defaultlib.learn_mode
+Compiling module xil_defaultlib.learn_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot learn_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/GitHub/Piano2/piano.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "learn_tb_behav -key {Behavioral:sim_1:Functional:learn_tb} -tclbatch {learn_tb.tcl} -view {C:/Users/Administrator/Documents/GitHub/Piano2/freeplay_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/Users/Administrator/Documents/GitHub/Piano2/freeplay_tb_behav.wcfg
+source learn_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'learn_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2467.676 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2467.676 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 15:33:10 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 15:33:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 25 15:34:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 15:38:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 15:39:21 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 15:39:21 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 25 15:40:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 15:44:22 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 25 15:45:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 15:45:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 15:48:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 25 15:49:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 15:49:30 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Mon Dec 25 15:56:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 25 15:57:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1/runme.log
+[Mon Dec 25 15:57:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/impl_1/learn_mode.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+dis
+ambiguous command name "dis": disconnect_debug_port disconnect_hw_server disconnect_net display_hw_ila_data display_hw_sio_scan
+disconnect_hw_server
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 25 00:30:58 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 25 16:00:29 2023...

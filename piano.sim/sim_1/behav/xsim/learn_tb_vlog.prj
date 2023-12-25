@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../piano.srcs/sources_1/new/account.v" \
 "../../../../piano.srcs/sources_1/new/clock2.v" \
 "../../../../piano.srcs/sources_1/new/debounce.v" \
 "../../../../piano.srcs/sources_1/new/debounce2.v" \

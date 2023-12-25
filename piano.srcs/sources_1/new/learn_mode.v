@@ -74,7 +74,7 @@ output reg [2:0] state_led
     
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     tubes_display tb(clk, ~reset, data7, data6, data5, data4, data3, data2, data1, data0, seg_en, seg_out1, seg_out0);
-    learnmode_7seg l7(clk, reset, state, octave, interval, score, digit1, digit2, user, user_rating1, user_rating2, data7, data6, data5, data4, data3, data2, data1, data0);
+    learnmode_7seg l7(clk, reset, state, octave, interval, score, digit1, digit2, user, user_rating1, user_rating2, rating1, rating2, data7, data6, data5, data4, data3, data2, data1, data0);
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     clock2 c2(clk, reset, clk_1sec);
     account acc(clk, reset, state, rating1, rating2, userbtnd, updatebtnd, user, user_rating1, user_rating2);
@@ -264,8 +264,8 @@ output reg [2:0] state_led
                         end
                     else begin 
                     digit1 <= digit1 + 1;  
-                    if(rating1 < 0) begin rating1 <= 4'd9; rating2<= rating2 - 1; end
-                    else rating1 <= rating1 - 1;
+//                    if(rating1 == 0) begin rating1 <= 4'd9; rating2<= rating2 - 1; end
+//                    else rating1 <= rating1 - 1;
                     end
                     guide_lights_holder <= 8'b0000_0000;
                     end
@@ -337,9 +337,16 @@ output reg [2:0] state_led
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////        
             always @(posedge clk) begin
                 mistakes <= 10 * digit2 + digit1;
+                if(14 - digit1 < 10) begin rating1 <= 14 - digit1; end
+                else rating1 <= 4 - digit1;
+                if(digit1 > 4) begin
+                    rating2 <= 6 - digit2 + 1;
+                    end
+                else rating2 <= 6- digit2;
+                
                 if(mistakes == 6'd0) begin score <= 3; end
-                else if(mistakes > 5'd3 & mistakes <= 5'd6) begin score <= 2; end
-                else if(mistakes > 5'd6 & mistakes <= 5'd10) begin score <= 1; end
+                else if(mistakes == 5'd1 | mistakes == 5'd2 | mistakes == 5'd3 | mistakes == 5'd4 | mistakes == 5'd5) begin score <= 2; end
+                else if(mistakes == 5'd6  | mistakes == 5'd7 | mistakes == 5'd8 | mistakes == 5'd9) begin score <= 1; end
                 else begin score <= 0; end
                 end
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    

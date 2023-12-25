@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1'
+HD_PWD='C:/Users/Administrator/Documents/GitHub/Piano2/piano.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
