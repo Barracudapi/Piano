@@ -47,7 +47,7 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
     //learn mode states
     parameter learn = 2'b00, finish = 2'b01, evaluate = 2'b10;
     
-    
+    //seven segment tube display
      parameter period2 = 100_000;
        parameter a0=8'h00, a1=8'h01, a2=8'h02, a3=8'h03, a4=8'h04, a5=8'h05, 
        a6=8'h06, a7=8'h07, a8=8'h08, a9=8'h09, 
@@ -55,5 +55,13 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
        gg=8'h11, hh=8'h12, ii=8'h13, jj=8'h14, kk=8'h15, ll=8'h16,mm=8'h17,
        nn=8'h18,oo=8'h19,pp=8'h1a,qq=8'h1b,rr=8'h1c,ss=8'h1d,tt=8'h1e,
        uu=8'h1f,vv=8'h20,ww=8'h21,xx=8'h22,yy=8'h23,zz=8'h24, null = 8'h25;
+       
+   //Interval parameter
+   parameter one = 3'b001, two = 3'b010, three = 3'b011, four = 3'b100;
+   
+   //song_length
+   parameter s1_length = 6'd42, s2_length = 6'd57;
+   
+   //clock2 parameter
     
     

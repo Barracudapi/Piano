@@ -37,7 +37,8 @@ output reg [2:0] state_led
     );
     `include "ppppparameters.v"
    reg [1:0] state; //learn mode states
-   reg [5:0] cnt = 6'd0; //music count
+   reg [1:0] prev_state;
+   reg [5:0] cnt; //music count
    reg [4:0] music;
    wire [4:0] music1, music2;
    assign sd = 1'b1;
@@ -61,8 +62,9 @@ output reg [2:0] state_led
    reg [1:0] score; //will display "fail", "okay", "good" and "perfect"
    reg [5:0] mistakes;//increments everytime a wrong key is played
    reg [3:0] rating1, rating2;//rating1 is the rating in the ones position, rating2 is rating in the tens position
-   wire [3:0] user_rating1, user_rating2;
+   wire [3:0] user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2;
    wire [1:0] user;
+   reg [5:0] song_length;
    
    
     //learning mode has similar functions to free play except the led function which we modify in this module.
@@ -74,10 +76,10 @@ output reg [2:0] state_led
     
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     tubes_display tb(clk, ~reset, data7, data6, data5, data4, data3, data2, data1, data0, seg_en, seg_out1, seg_out0);
-    learnmode_7seg l7(clk, reset, state, octave, interval, score, digit1, digit2, user, user_rating1, user_rating2, rating1, rating2, data7, data6, data5, data4, data3, data2, data1, data0);
+    learnmode_7seg l7(clk, reset, state, octave, interval, score, digit1, digit2, user, user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2, rating1, rating2, data7, data6, data5, data4, data3, data2, data1, data0);
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     clock2 c2(clk, reset, clk_1sec);
-    account acc(clk, reset, state, rating1, rating2, userbtnd, updatebtnd, user, user_rating1, user_rating2);
+    account acc(clk, reset, state, rating1, rating2, userbtnd, updatebtnd, user, user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2);
     
     
     //sometimes if you dont flip the switch fast enough, it glitches and cnt increments too many times. A switch debouncer for each switch is added to mitigate this issue.
@@ -121,25 +123,25 @@ output reg [2:0] state_led
             end else begin
                 case(state)
                     learn: begin
+                        prev_state <= learn;
                         state_led <= 3'b001;
-                        if(cnt >= 5)
+                        if(cnt >= 5)//song_length
                             state <= finish;
-                            
-                        if(evaluate_button == 1)
-                                state<= evaluate;
                             end
                     finish: begin
                         state_led <= 3'b010;
-                        if(learn_button == 1)
+                        if(learn_button == 1) begin
                             state <= learn;
+                            prev_state <= finish; end
                         else if(evaluate_button == 1)
                             state <= evaluate;
                             end
                     evaluate:
                     begin
                         state_led <= 3'b100;
-                        if(learn_button == 1)
+                        if(learn_button == 1) begin
                             state <= learn;
+                            prev_state <= evaluate; end
                             end
                             default: state <= finish;
                 endcase
@@ -159,6 +161,7 @@ output reg [2:0] state_led
             cnt <= 0;
             guide_lights <= 8'b0000_0000;
         end else begin  
+        if(prev_state == finish | prev_state == evaluate) begin cnt <= 0; end
         guide_lights <= 8'b0000_0000;
       case(music)
            5'd1: begin guide_lights[0] <= 1'b1; octave <= low; end
@@ -264,8 +267,6 @@ output reg [2:0] state_led
                         end
                     else begin 
                     digit1 <= digit1 + 1;  
-//                    if(rating1 == 0) begin rating1 <= 4'd9; rating2<= rating2 - 1; end
-//                    else rating1 <= rating1 - 1;
                     end
                     guide_lights_holder <= 8'b0000_0000;
                     end
@@ -296,8 +297,8 @@ output reg [2:0] state_led
                              music <= 5'b0;
                          end else begin
                            case(counter_for_sss)
-                                0: begin music <= music1; interval <= interval1; end
-                                1: begin music <= music2; interval <= interval2; end
+                                0: begin music <= music1; interval <= interval1; song_length <= s1_length; end
+                                1: begin music <= music2; interval <= interval2; song_length <= s2_length; end
                                 default: begin music <= music1; interval <= interval1;end
                                endcase
                            end
@@ -335,19 +336,22 @@ output reg [2:0] state_led
                     
             //Function to combine digit1 and digit2 to mistakes. We then assign a score depending on your range of mistakes.
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////        
-            always @(posedge clk) begin
-                mistakes <= 10 * digit2 + digit1;
-                if(14 - digit1 < 10) begin rating1 <= 14 - digit1; end
-                else rating1 <= 4 - digit1;
-                if(digit1 > 4) begin
-                    rating2 <= 6 - digit2 + 1;
+            always @(posedge clk or negedge reset) begin
+            if(~reset) begin rating1 <= 0; rating2 <= 0; end
+                else begin
+                    mistakes <= 10 * digit2 + digit1;
+                    if(14 - digit1 < 10) begin rating1 <= 14 - digit1; end
+                    else rating1 <= 4 - digit1;
+                    if(digit1 > 4) begin
+                        rating2 <= 6 - digit2 - 1;
+                        end
+                    else rating2 <= 6- digit2;
+                    
+                    if(mistakes == 6'd0) begin score <= 3; end
+                    else if(mistakes == 5'd1 | mistakes == 5'd2 | mistakes == 5'd3 | mistakes == 5'd4 | mistakes == 5'd5) begin score <= 2; end
+                    else if(mistakes == 5'd6  | mistakes == 5'd7 | mistakes == 5'd8 | mistakes == 5'd9) begin score <= 1; end
+                    else begin score <= 0; end
                     end
-                else rating2 <= 6- digit2;
-                
-                if(mistakes == 6'd0) begin score <= 3; end
-                else if(mistakes == 5'd1 | mistakes == 5'd2 | mistakes == 5'd3 | mistakes == 5'd4 | mistakes == 5'd5) begin score <= 2; end
-                else if(mistakes == 5'd6  | mistakes == 5'd7 | mistakes == 5'd8 | mistakes == 5'd9) begin score <= 1; end
-                else begin score <= 0; end
                 end
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 

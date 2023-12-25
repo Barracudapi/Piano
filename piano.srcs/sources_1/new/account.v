@@ -27,13 +27,9 @@ input [3:0] rating1, rating2,
 input userbtn,
 input updatebtn,
 output reg [1:0] user,
-output reg [3:0] user_rating1, user_rating2
+output reg [3:0] user0_rating1, user0_rating2, user1_rating1, user1_rating2, user2_rating1, user2_rating2, user3_rating1, user3_rating2
     );
     `include "ppppparameters.v"
-    reg [3:0] user0_rating1, user0_rating2;
-    reg [3:0] user1_rating1, user1_rating2;
-    reg [3:0] user2_rating1, user2_rating2;
-    reg [3:0] user3_rating1, user3_rating2;
     
      always@(posedge clk, negedge reset) begin
               if(~reset) begin
@@ -53,10 +49,10 @@ output reg [3:0] user_rating1, user_rating2
           
             if(updatebtn == 1) begin
                 case(user)
-                    0: begin user0_rating1 <= rating1; user0_rating2 <= rating2; user_rating1 <= user0_rating1; user_rating2 <= user0_rating2; end
-                    1: begin user1_rating1 <= rating1; user1_rating2 <= rating2; user_rating1 <= user1_rating1; user_rating2 <= user1_rating2; end
-                    2: begin user2_rating1 <= rating1; user2_rating2 <= rating2; user_rating1 <= user2_rating1; user_rating2 <= user2_rating2; end
-                    3: begin user3_rating1 <= rating1; user3_rating2 <= rating2; user_rating1 <= user3_rating1; user_rating2 <= user3_rating2; end
+                    0: begin user0_rating1 <= rating1; user0_rating2 <= rating2; end
+                    1: begin user1_rating1 <= rating1; user1_rating2 <= rating2; end
+                    2: begin user2_rating1 <= rating1; user2_rating2 <= rating2; end
+                    3: begin user3_rating1 <= rating1; user3_rating2 <= rating2; end
                     endcase
                 end
             end
