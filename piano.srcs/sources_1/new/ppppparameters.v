@@ -64,4 +64,4 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
    
    //clock2 parameter
     
-    
+    parameter idle_learn = 2'b11;

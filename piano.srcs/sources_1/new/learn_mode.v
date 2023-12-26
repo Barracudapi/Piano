@@ -24,9 +24,7 @@
 module learn_mode(
 input clk, reset,
 input [7:0] sw,
-input wire [2:0] octave_sw,
-input select_song_btn,
-input learn_btn, evaluate_btn, userbtn, updatebtn,
+input topbtn, midbtn, botbtn, leftbtn,
 output sd,
 output melody,
 output reg [7:0] guide_lights,
@@ -66,6 +64,27 @@ output reg [2:0] state_led
    wire [1:0] user;
    reg [5:0] song_length;
    
+   wire hb, mb, lb;
+   reg hb2, mb2, lb2;
+   reg select_song_btn;
+   reg learn_btn, evaluate_btn;
+   reg userbtn, updatebtn;
+   
+    debounce2 debouncehb(clk ,reset, hb2, hb);
+    debounce2 debouncemb(clk ,reset, mb2, mb);
+    debounce2 debouncelb(clk ,reset, lb2, lb);
+    reg [2:0] octave_sw;
+    
+    
+    
+    always @(posedge clk) begin
+        if(hb == 1) begin octave_sw <= high; end
+        else if(mb == 1) begin octave_sw <= middle; end
+        else if (lb ==1 ) begin octave_sw <= low; end
+   end
+   
+   
+  
    
     //learning mode has similar functions to free play except the led function which we modify in this module.
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -76,7 +95,7 @@ output reg [2:0] state_led
     
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     tubes_display tb(clk, ~reset, data7, data6, data5, data4, data3, data2, data1, data0, seg_en, seg_out1, seg_out0);
-    learnmode_7seg l7(clk, reset, state, octave, interval, score, digit1, digit2, user, user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2, rating1, rating2, data7, data6, data5, data4, data3, data2, data1, data0);
+    learnmode_7seg l7(cnt, clk, reset, state, octave, octave_sw, interval, score, digit1, digit2, user, user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2, rating1, rating2, counter_for_sss, data7, data6, data5, data4, data3, data2, data1, data0);
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     clock2 c2(clk, reset, clk_1sec);
     account acc(clk, reset, state, rating1, rating2, userbtnd, updatebtnd, user, user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2);
@@ -119,17 +138,30 @@ output reg [2:0] state_led
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     always@(posedge clk, negedge reset) begin
             if(~reset) begin
-                state <= learn;
+                state <= idle_learn;
             end else begin
                 case(state)
+                    idle_learn: begin
+                        prev_state <= idle_learn;
+                        select_song_btn <= topbtn;
+                        learn_btn <= leftbtn;
+                        if(learn_button == 1)
+                            state <= learn;
+                        end
                     learn: begin
                         prev_state <= learn;
                         state_led <= 3'b001;
+                        hb2 <= topbtn;
+                        mb2 <= midbtn;
+                        lb2 <= botbtn;
                         if(cnt >= 5)//song_length
                             state <= finish;
                             end
                     finish: begin
                         state_led <= 3'b010;
+                        learn_btn <= leftbtn;
+                        evaluate_btn <= topbtn;
+                        
                         if(learn_button == 1) begin
                             state <= learn;
                             prev_state <= finish; end
@@ -139,6 +171,9 @@ output reg [2:0] state_led
                     evaluate:
                     begin
                         state_led <= 3'b100;
+                        userbtn <= midbtn;
+                        updatebtn <= botbtn;
+                        learn_btn <= leftbtn;
                         if(learn_button == 1) begin
                             state <= learn;
                             prev_state <= evaluate; end
@@ -156,13 +191,14 @@ output reg [2:0] state_led
            cnt <= 0;
            temp <= 0;
        end
-       else if(state == learn) begin
+       else if(state == idle_learn) begin
             if(sss_shift[1] ^ sss_shift[0]) begin
             cnt <= 0;
             guide_lights <= 8'b0000_0000;
-        end else begin  
-        if(prev_state == finish | prev_state == evaluate) begin cnt <= 0; end
-        guide_lights <= 8'b0000_0000;
+        end end 
+        else if(state == evaluate | state == idle_learn | state == finish) begin cnt<= 0; end
+        else if(state == learn) begin  
+                guide_lights <= 8'b0000_0000;
       case(music)
            5'd1: begin guide_lights[0] <= 1'b1; octave <= low; end
            5'd2: begin guide_lights[1] <= 1'b1; octave <= low; end
@@ -249,13 +285,13 @@ output reg [2:0] state_led
                prev <= sw_d;
             end
             end
-            end
+          
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             
             
             //Function to count mistake. When the key pattern is different from the guide_light pattern or if they are the same but different octave, we +1 mistake. Rating also drops.
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            always @(posedge clk) begin
+            always @(posedge clk or negedge reset) begin
                 if(~reset) begin digit1 <= 0; digit2 <= 0; guide_lights_holder <= guide_lights; end
                 else begin
                 if(sw_d2 == 8'b00000001| sw_d2 == 8'b00000010 | sw_d2 == 8'b00000100 | sw_d2 == 8'b00001000   | sw_d2 == 8'b00010000 |sw_d2 == 8'b00100000 | sw_d2 == 8'b01000000) begin
@@ -282,11 +318,11 @@ output reg [2:0] state_led
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
            always@(posedge clk, negedge reset) begin
                        if(~reset) begin
-                           counter_for_sss = 0;
-                       end else if(select == 1) begin
+                           counter_for_sss <= 0;
+                       end else if(select == 1) begin   
                            case(counter_for_sss)
-                               0: counter_for_sss = 1;
-                               1: counter_for_sss = 0;
+                               0: counter_for_sss <= 1;
+                               1: counter_for_sss <= 0;                          
                            endcase
                        end else
                            counter_for_sss <= counter_for_sss;
@@ -299,7 +335,7 @@ output reg [2:0] state_led
                            case(counter_for_sss)
                                 0: begin music <= music1; interval <= interval1; song_length <= s1_length; end
                                 1: begin music <= music2; interval <= interval2; song_length <= s2_length; end
-                                default: begin music <= music1; interval <= interval1;end
+                                default: begin music <= music1; interval <= interval1; song_length <= s1_length; end
                                endcase
                            end
                      end
