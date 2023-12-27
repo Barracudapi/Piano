@@ -164,10 +164,10 @@ output reg [7:0] data7, data6, data5, data4, data3, data2, data1, data0
                     data5 <= ee;
                     data4 <= rr;
                     case(user)
-                    0: data3 <= a1;
-                    1: data3 <= a2;
-                    2: data3 <= a3;
-                    3: data3 <= a4;
+                    0: data3 <= a4;
+                    1: data3 <= a1;
+                    2: data3 <= a2;
+                    3: data3 <= a3;
                     default: data3<= null;
                     endcase
                     

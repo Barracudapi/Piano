@@ -45,7 +45,7 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
     parameter not_playing_note = 8'b00000000;
     
     //learn mode states
-    parameter learn = 2'b00, finish = 2'b01, evaluate = 2'b10;
+    parameter learn = 2'b00, finish = 2'b01, evaluate = 2'b10, idle_learn = 2'b11;
     
     //seven segment tube display
      parameter period2 = 100_000;
@@ -64,4 +64,3 @@ parameter low1 = 262, middle1 = 523, high1 = 1046,
    
    //clock2 parameter
     
-    parameter idle_learn = 2'b11;

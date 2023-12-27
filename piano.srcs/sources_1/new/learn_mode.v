@@ -52,7 +52,7 @@ output reg [2:0] state_led
    wire clk_1sec; //a one second clock to time the interval
    reg [2:0] countdown; //countdown the interval to 0
    reg [7:0] guide_lights_holder;//holds previous combination of guide_lights
-   wire idlelearn_button, evaluate_button, userbtnd, updatebtnd, learn_button;
+   wire idlelearn_button, evaluate_button, userbtnd, updatebtnd, clearbtnd, learn_button;
    reg counter_for_sss;
    reg [1:0] sss_shift;
    wire select; //select songs
@@ -68,7 +68,7 @@ output reg [2:0] state_led
    reg hb2, mb2, lb2;
    reg select_song_btn;
    reg idlelearn_btn, evaluate_btn, learn_btn;
-   reg userbtn, updatebtn;
+   reg userbtn, updatebtn, clearbtn;
    
     debounce2 debouncehb(clk ,reset, hb2, hb);
     debounce2 debouncemb(clk ,reset, mb2, mb);
@@ -88,7 +88,7 @@ output reg [2:0] state_led
     learnmode_7seg l7(cnt, clk, reset, state, octave, octave_sw, interval, score, digit1, digit2, user, user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2, rating1, rating2, counter_for_sss, data7, data6, data5, data4, data3, data2, data1, data0);
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     clock2 c2(clk, reset, clk_1sec);
-    account acc(clk, reset, state, rating1, rating2, userbtnd, updatebtnd, user, user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2);
+    account acc(clk, reset, state, rating1, rating2, userbtnd, updatebtnd, clearbtnd, user, user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2);
     
     
     //sometimes if you dont flip the switch fast enough, it glitches and cnt increments too many times. A switch debouncer for each switch is added to mitigate this issue.
@@ -103,7 +103,7 @@ output reg [2:0] state_led
         debounce debounce7(clk ,reset, sw[7], sw_d[7]);
         debounce idlelearnbutton(clk, reset, idlelearn_btn, idlelearn_button);
         debounce learnbutton(clk, reset, learn_btn, learn_button);
-        debounce evalbutton(clk, reset, evaluate_btn, evaluate_button);
+        debounce2 evalbutton(clk, reset, evaluate_btn, evaluate_button);
         debounce2 debounce20(clk ,reset, sw[0], sw_d2[0]);
         debounce2 debounce21(clk ,reset, sw[1], sw_d2[1]);
         debounce2 debounce22(clk ,reset, sw[2], sw_d2[2]);
@@ -115,6 +115,7 @@ output reg [2:0] state_led
         debounce2 ssdebounce(clk, reset, select_song_btn, select);
         debounce2 user_btn(clk, reset, userbtn, userbtnd);
         debounce2 update_btn(clk,reset,updatebtn, updatebtnd);
+        debounce2 clear_btn(clk,reset,clearbtn, clearbtnd);
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
             always @(posedge clk) begin
@@ -135,10 +136,12 @@ output reg [2:0] state_led
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     always@(posedge clk, negedge reset) begin
             if(~reset) begin
+                state_led <= 3'b111;
                 state <= idle_learn;
             end else begin
                 case(state)
                     idle_learn: begin
+                        state_led <= 3'b111;
                         select_song_btn <= leftbtn;
                         learn_btn <= midbtn;
                         if(learn_button == 1)
@@ -155,22 +158,23 @@ output reg [2:0] state_led
                     finish: begin
                         state_led <= 3'b010;
                         idlelearn_btn <= leftbtn;
-                        evaluate_btn <= topbtn;
+                        evaluate_btn <= botbtn;
                         if(idlelearn_button == 1) begin
                             state <= idle_learn; end
-                        else if(evaluate_button == 1)
+                        if(evaluate_button == 1)
                             state <= evaluate;
                             end
                     evaluate:
                     begin
                         state_led <= 3'b100;
-                        userbtn <= midbtn;
-                        updatebtn <= botbtn;
+                        userbtn <= botbtn;
+                        updatebtn <= midbtn;
                         idlelearn_btn <= leftbtn;
+                        clearbtn <= topbtn;
                         if(idlelearn_button == 1) begin
                             state <= idle_learn; end
                             end
-                            default: state <= finish;
+                            default: state <= idle_learn;
                 endcase
             end
         end

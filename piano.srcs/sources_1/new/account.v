@@ -25,7 +25,7 @@ input clk, input reset,
 input [1:0] state,
 input [3:0] rating1, rating2,
 input userbtn,
-input updatebtn,
+input updatebtn, clearbtn,
 output reg [1:0] user,
 output reg [3:0] user0_rating1, user0_rating2, user1_rating1, user1_rating2, user2_rating1, user2_rating2, user3_rating1, user3_rating2
     );
@@ -55,6 +55,17 @@ output reg [3:0] user0_rating1, user0_rating2, user1_rating1, user1_rating2, use
                     3: begin user3_rating1 <= rating1; user3_rating2 <= rating2; end
                     endcase
                 end
+                
+                if(clearbtn == 1) begin
+                    case(user)
+                        0: begin user0_rating1 <= 0; user0_rating2 <= 0; end
+                        1: begin user1_rating1 <= 0; user1_rating2 <= 0; end
+                        2: begin user2_rating1 <= 0; user2_rating2 <= 0; end
+                        3: begin user3_rating1 <= 0; user3_rating2 <= 0; end
+                        endcase
+                    end
+                
+                
             end
             end
     
