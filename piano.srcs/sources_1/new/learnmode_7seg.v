@@ -299,9 +299,12 @@ output reg [7:0] data7, data6, data5, data4, data3, data2, data1, data0
                             data4 <= rr;
                             data3 <= nn;
                             data2 <= null;
-                            data1 <= null;
-                            data0 <= null;
-                        
+                            data1 <= ss;
+                            case(counter_for_sss)
+                            0: data0 <= a1;
+                            1: data0 <= a2;
+                            default: data0 <= null;
+                            endcase
                         end
                         end
 endmodule

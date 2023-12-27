@@ -52,7 +52,7 @@ output reg [2:0] state_led
    wire clk_1sec; //a one second clock to time the interval
    reg [2:0] countdown; //countdown the interval to 0
    reg [7:0] guide_lights_holder;//holds previous combination of guide_lights
-   wire learn_button, evaluate_button, userbtnd, updatebtnd;
+   wire idlelearn_button, evaluate_button, userbtnd, updatebtnd, learn_button;
    reg counter_for_sss;
    reg [1:0] sss_shift;
    wire select; //select songs
@@ -63,29 +63,19 @@ output reg [2:0] state_led
    wire [3:0] user0_r1, user0_r2, user1_r1, user1_r2, user2_r1, user2_r2, user3_r1, user3_r2;
    wire [1:0] user;
    reg [5:0] song_length;
-   
+   reg song_finish;
    wire hb, mb, lb;
    reg hb2, mb2, lb2;
    reg select_song_btn;
-   reg learn_btn, evaluate_btn;
+   reg idlelearn_btn, evaluate_btn, learn_btn;
    reg userbtn, updatebtn;
    
     debounce2 debouncehb(clk ,reset, hb2, hb);
     debounce2 debouncemb(clk ,reset, mb2, mb);
     debounce2 debouncelb(clk ,reset, lb2, lb);
     reg [2:0] octave_sw;
-    
-    
-    
-    always @(posedge clk) begin
-        if(hb == 1) begin octave_sw <= high; end
-        else if(mb == 1) begin octave_sw <= middle; end
-        else if (lb ==1 ) begin octave_sw <= low; end
-   end
    
-   
-  
-   
+ 
     //learning mode has similar functions to free play except the led function which we modify in this module.
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     free_play play(clk, reset, octave_sw, sw, frequency);
@@ -111,6 +101,7 @@ output reg [2:0] state_led
         debounce debounce5(clk ,reset, sw[5], sw_d[5]);
         debounce debounce6(clk ,reset, sw[6], sw_d[6]);
         debounce debounce7(clk ,reset, sw[7], sw_d[7]);
+        debounce idlelearnbutton(clk, reset, idlelearn_btn, idlelearn_button);
         debounce learnbutton(clk, reset, learn_btn, learn_button);
         debounce evalbutton(clk, reset, evaluate_btn, evaluate_button);
         debounce2 debounce20(clk ,reset, sw[0], sw_d2[0]);
@@ -125,7 +116,13 @@ output reg [2:0] state_led
         debounce2 user_btn(clk, reset, userbtn, userbtnd);
         debounce2 update_btn(clk,reset,updatebtn, updatebtnd);
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+        
+            always @(posedge clk) begin
+            if(hb == 1) begin octave_sw <= high; end
+            else if(mb == 1) begin octave_sw <= middle; end
+            else if (lb ==1 ) begin octave_sw <= low; end
+       end
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     always @(posedge clk, negedge reset) begin
             if(~reset)
                 sss_shift <= 2'b00;
@@ -142,29 +139,25 @@ output reg [2:0] state_led
             end else begin
                 case(state)
                     idle_learn: begin
-                        prev_state <= idle_learn;
-                        select_song_btn <= topbtn;
-                        learn_btn <= leftbtn;
+                        select_song_btn <= leftbtn;
+                        learn_btn <= midbtn;
                         if(learn_button == 1)
                             state <= learn;
                         end
                     learn: begin
-                        prev_state <= learn;
                         state_led <= 3'b001;
                         hb2 <= topbtn;
                         mb2 <= midbtn;
                         lb2 <= botbtn;
-                        if(cnt >= 5)//song_length
+                        if(cnt >= 5) //song_length
                             state <= finish;
                             end
                     finish: begin
                         state_led <= 3'b010;
-                        learn_btn <= leftbtn;
+                        idlelearn_btn <= leftbtn;
                         evaluate_btn <= topbtn;
-                        
-                        if(learn_button == 1) begin
-                            state <= learn;
-                            prev_state <= finish; end
+                        if(idlelearn_button == 1) begin
+                            state <= idle_learn; end
                         else if(evaluate_button == 1)
                             state <= evaluate;
                             end
@@ -173,10 +166,9 @@ output reg [2:0] state_led
                         state_led <= 3'b100;
                         userbtn <= midbtn;
                         updatebtn <= botbtn;
-                        learn_btn <= leftbtn;
-                        if(learn_button == 1) begin
-                            state <= learn;
-                            prev_state <= evaluate; end
+                        idlelearn_btn <= leftbtn;
+                        if(idlelearn_button == 1) begin
+                            state <= idle_learn; end
                             end
                             default: state <= finish;
                 endcase
@@ -196,8 +188,8 @@ output reg [2:0] state_led
             cnt <= 0;
             guide_lights <= 8'b0000_0000;
         end end 
-        else if(state == evaluate | state == idle_learn | state == finish) begin cnt<= 0; end
-        else if(state == learn) begin  
+        else if(state == learn) begin 
+//        if(cnt >= 5 & song_finish == 0) begin song_finish <= 1; end  
                 guide_lights <= 8'b0000_0000;
       case(music)
            5'd1: begin guide_lights[0] <= 1'b1; octave <= low; end
@@ -285,7 +277,6 @@ output reg [2:0] state_led
                prev <= sw_d;
             end
             end
-          
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             
             

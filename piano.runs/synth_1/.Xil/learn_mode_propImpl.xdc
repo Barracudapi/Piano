@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc rfile:../../../piano.srcs/constrs_1/new/learn_con.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc rfile:../../../piano.srcs/constrs_1/new/learn_con.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:48 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports select_song_btn]
 set_property src_info {type:XDC file:1 line:49 export:INPUT save:INPUT read:READ} [current_design]

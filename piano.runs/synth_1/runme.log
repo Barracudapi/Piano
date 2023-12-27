@@ -14,21 +14,21 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7196 
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:36]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:39]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:42]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:45]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:48]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:51]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:57]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:60]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:63]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:67]
+INFO: Helper process launched with PID 9656 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:36]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:39]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:42]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:45]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:48]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:51]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:57]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:60]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:63]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/ppppparameters.v:67]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 341.496 ; gain = 112.234
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 344.027 ; gain = 114.125
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'learn_mode' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:24]
+INFO: [Synth 8-638] synthesizing module 'learn_mode' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:24]
 	Parameter low1 bound to: 262 - type: integer 
 	Parameter middle1 bound to: 523 - type: integer 
 	Parameter high1 bound to: 1046 - type: integer 
@@ -119,16 +119,16 @@ INFO: [Synth 8-638] synthesizing module 'learn_mode' [C:/Users/temp_acc/Document
 	Parameter s1_length bound to: 6'b101010 
 	Parameter s2_length bound to: 6'b111001 
 	Parameter idle_learn bound to: 2'b11 
-INFO: [Synth 8-638] synthesizing module 'debounce2' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v:23]
+INFO: [Synth 8-638] synthesizing module 'debounce2' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v:23]
 	Parameter idle bound to: 2'b00 
 	Parameter p_filter bound to: 2'b01 
 	Parameter wait_r bound to: 2'b10 
 	Parameter n_filter bound to: 2'b11 
 	Parameter TIME bound to: 2000000 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element key_rflag_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v:32]
-WARNING: [Synth 8-6014] Unused sequential element key_state_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v:66]
-INFO: [Synth 8-256] done synthesizing module 'debounce2' (1#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v:23]
-INFO: [Synth 8-638] synthesizing module 'free_play' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:23]
+WARNING: [Synth 8-6014] Unused sequential element key_rflag_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v:32]
+WARNING: [Synth 8-6014] Unused sequential element key_state_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v:66]
+INFO: [Synth 8-256] done synthesizing module 'debounce2' (1#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce2.v:23]
+INFO: [Synth 8-638] synthesizing module 'free_play' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:23]
 	Parameter low1 bound to: 262 - type: integer 
 	Parameter middle1 bound to: 523 - type: integer 
 	Parameter high1 bound to: 1046 - type: integer 
@@ -219,21 +219,21 @@ INFO: [Synth 8-638] synthesizing module 'free_play' [C:/Users/temp_acc/Documents
 	Parameter s1_length bound to: 6'b101010 
 	Parameter s2_length bound to: 6'b111001 
 	Parameter idle_learn bound to: 2'b11 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:35]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:47]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:53]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:59]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:65]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:71]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:77]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:83]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:89]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:95]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:101]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:107]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:113]
-INFO: [Synth 8-256] done synthesizing module 'free_play' (2#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:23]
-INFO: [Synth 8-638] synthesizing module 'generate_melody' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:35]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:59]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:89]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:95]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:101]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:107]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:113]
+INFO: [Synth 8-256] done synthesizing module 'free_play' (2#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/free_play.v:23]
+INFO: [Synth 8-638] synthesizing module 'generate_melody' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:23]
 	Parameter low1 bound to: 262 - type: integer 
 	Parameter middle1 bound to: 523 - type: integer 
 	Parameter high1 bound to: 1046 - type: integer 
@@ -324,8 +324,8 @@ INFO: [Synth 8-638] synthesizing module 'generate_melody' [C:/Users/temp_acc/Doc
 	Parameter s1_length bound to: 6'b101010 
 	Parameter s2_length bound to: 6'b111001 
 	Parameter idle_learn bound to: 2'b11 
-INFO: [Synth 8-256] done synthesizing module 'generate_melody' (3#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:23]
-INFO: [Synth 8-638] synthesizing module 'learn_song1' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v:27]
+INFO: [Synth 8-256] done synthesizing module 'generate_melody' (3#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:23]
+INFO: [Synth 8-638] synthesizing module 'learn_song1' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v:27]
 	Parameter low1 bound to: 262 - type: integer 
 	Parameter middle1 bound to: 523 - type: integer 
 	Parameter high1 bound to: 1046 - type: integer 
@@ -416,8 +416,8 @@ INFO: [Synth 8-638] synthesizing module 'learn_song1' [C:/Users/temp_acc/Documen
 	Parameter s1_length bound to: 6'b101010 
 	Parameter s2_length bound to: 6'b111001 
 	Parameter idle_learn bound to: 2'b11 
-INFO: [Synth 8-256] done synthesizing module 'learn_song1' (4#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v:27]
-INFO: [Synth 8-638] synthesizing module 'learn_song2' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song2.v:27]
+INFO: [Synth 8-256] done synthesizing module 'learn_song1' (4#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v:27]
+INFO: [Synth 8-638] synthesizing module 'learn_song2' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song2.v:27]
 	Parameter low1 bound to: 262 - type: integer 
 	Parameter middle1 bound to: 523 - type: integer 
 	Parameter high1 bound to: 1046 - type: integer 
@@ -508,8 +508,8 @@ INFO: [Synth 8-638] synthesizing module 'learn_song2' [C:/Users/temp_acc/Documen
 	Parameter s1_length bound to: 6'b101010 
 	Parameter s2_length bound to: 6'b111001 
 	Parameter idle_learn bound to: 2'b11 
-INFO: [Synth 8-256] done synthesizing module 'learn_song2' (5#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song2.v:27]
-INFO: [Synth 8-638] synthesizing module 'tubes_display' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:45]
+INFO: [Synth 8-256] done synthesizing module 'learn_song2' (5#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song2.v:27]
+INFO: [Synth 8-638] synthesizing module 'tubes_display' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:45]
 	Parameter low1 bound to: 262 - type: integer 
 	Parameter middle1 bound to: 523 - type: integer 
 	Parameter high1 bound to: 1046 - type: integer 
@@ -600,18 +600,18 @@ INFO: [Synth 8-638] synthesizing module 'tubes_display' [C:/Users/temp_acc/Docum
 	Parameter s1_length bound to: 6'b101010 
 	Parameter s2_length bound to: 6'b111001 
 	Parameter idle_learn bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:87]
-WARNING: [Synth 8-567] referenced signal 'data0' should be on the sensitivity list [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
-WARNING: [Synth 8-567] referenced signal 'data1' should be on the sensitivity list [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
-WARNING: [Synth 8-567] referenced signal 'data2' should be on the sensitivity list [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
-WARNING: [Synth 8-567] referenced signal 'data3' should be on the sensitivity list [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
-WARNING: [Synth 8-567] referenced signal 'data4' should be on the sensitivity list [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
-WARNING: [Synth 8-567] referenced signal 'data5' should be on the sensitivity list [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
-WARNING: [Synth 8-567] referenced signal 'data6' should be on the sensitivity list [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
-WARNING: [Synth 8-567] referenced signal 'data7' should be on the sensitivity list [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
-WARNING: [Synth 8-567] referenced signal 'seg_out' should be on the sensitivity list [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:100]
-INFO: [Synth 8-256] done synthesizing module 'tubes_display' (6#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:45]
-INFO: [Synth 8-638] synthesizing module 'learnmode_7seg' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learnmode_7seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:87]
+WARNING: [Synth 8-567] referenced signal 'data0' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
+WARNING: [Synth 8-567] referenced signal 'data1' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
+WARNING: [Synth 8-567] referenced signal 'data2' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
+WARNING: [Synth 8-567] referenced signal 'data3' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
+WARNING: [Synth 8-567] referenced signal 'data4' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
+WARNING: [Synth 8-567] referenced signal 'data5' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
+WARNING: [Synth 8-567] referenced signal 'data6' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
+WARNING: [Synth 8-567] referenced signal 'data7' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:86]
+WARNING: [Synth 8-567] referenced signal 'seg_out' should be on the sensitivity list [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:100]
+INFO: [Synth 8-256] done synthesizing module 'tubes_display' (6#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:45]
+INFO: [Synth 8-638] synthesizing module 'learnmode_7seg' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learnmode_7seg.v:23]
 	Parameter low1 bound to: 262 - type: integer 
 	Parameter middle1 bound to: 523 - type: integer 
 	Parameter high1 bound to: 1046 - type: integer 
@@ -702,13 +702,14 @@ INFO: [Synth 8-638] synthesizing module 'learnmode_7seg' [C:/Users/temp_acc/Docu
 	Parameter s1_length bound to: 6'b101010 
 	Parameter s2_length bound to: 6'b111001 
 	Parameter idle_learn bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learnmode_7seg.v:101]
-INFO: [Synth 8-226] default block is never used [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learnmode_7seg.v:166]
-INFO: [Synth 8-256] done synthesizing module 'learnmode_7seg' (7#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learnmode_7seg.v:23]
-INFO: [Synth 8-638] synthesizing module 'clock2' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock2.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learnmode_7seg.v:101]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learnmode_7seg.v:166]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learnmode_7seg.v:303]
+INFO: [Synth 8-256] done synthesizing module 'learnmode_7seg' (7#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learnmode_7seg.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock2' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock2.v:23]
 	Parameter TIME_1SEC bound to: 75000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock2' (8#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock2.v:23]
-INFO: [Synth 8-638] synthesizing module 'account' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock2' (8#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/clock2.v:23]
+INFO: [Synth 8-638] synthesizing module 'account' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:23]
 	Parameter low1 bound to: 262 - type: integer 
 	Parameter middle1 bound to: 523 - type: integer 
 	Parameter high1 bound to: 1046 - type: integer 
@@ -799,57 +800,56 @@ INFO: [Synth 8-638] synthesizing module 'account' [C:/Users/temp_acc/Documents/G
 	Parameter s1_length bound to: 6'b101010 
 	Parameter s2_length bound to: 6'b111001 
 	Parameter idle_learn bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:40]
-WARNING: [Synth 8-5788] Register user_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:36]
-WARNING: [Synth 8-5788] Register user0_rating1_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:52]
-WARNING: [Synth 8-5788] Register user0_rating2_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:52]
-WARNING: [Synth 8-5788] Register user1_rating1_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:53]
-WARNING: [Synth 8-5788] Register user1_rating2_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:53]
-WARNING: [Synth 8-5788] Register user2_rating1_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:54]
-WARNING: [Synth 8-5788] Register user2_rating2_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:54]
-WARNING: [Synth 8-5788] Register user3_rating1_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:55]
-WARNING: [Synth 8-5788] Register user3_rating2_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:55]
-INFO: [Synth 8-256] done synthesizing module 'account' (9#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:23]
-INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:40]
+WARNING: [Synth 8-5788] Register user_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:36]
+WARNING: [Synth 8-5788] Register user0_rating1_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:52]
+WARNING: [Synth 8-5788] Register user0_rating2_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:52]
+WARNING: [Synth 8-5788] Register user1_rating1_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:53]
+WARNING: [Synth 8-5788] Register user1_rating2_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:53]
+WARNING: [Synth 8-5788] Register user2_rating1_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:54]
+WARNING: [Synth 8-5788] Register user2_rating2_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:54]
+WARNING: [Synth 8-5788] Register user3_rating1_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:55]
+WARNING: [Synth 8-5788] Register user3_rating2_reg in module account is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:55]
+INFO: [Synth 8-256] done synthesizing module 'account' (9#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/account.v:23]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:23]
 	Parameter TIME_20MS bound to: 2000000 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element state_key_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:40]
-WARNING: [Synth 8-6014] Unused sequential element state_key_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:48]
-WARNING: [Synth 8-6014] Unused sequential element pos_key_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:88]
-WARNING: [Synth 8-6014] Unused sequential element neg_key_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:89]
-WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:90]
-WARNING: [Synth 8-6014] Unused sequential element count_start_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:91]
-INFO: [Synth 8-256] done synthesizing module 'debounce' (10#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:143]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:298]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:298]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:298]
-INFO: [Synth 8-226] default block is never used [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:335]
-WARNING: [Synth 8-6014] Unused sequential element prev_state_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:145]
-WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:192]
-WARNING: [Synth 8-6014] Unused sequential element song_length_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:336]
-WARNING: [Synth 8-5788] Register select_song_btn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:124]
-WARNING: [Synth 8-5788] Register learn_btn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:114]
-WARNING: [Synth 8-5788] Register state_led_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:153]
-WARNING: [Synth 8-5788] Register hb2_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:73]
-WARNING: [Synth 8-5788] Register mb2_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:74]
-WARNING: [Synth 8-5788] Register lb2_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]
-WARNING: [Synth 8-5788] Register evaluate_btn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:115]
-WARNING: [Synth 8-5788] Register userbtn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:125]
-WARNING: [Synth 8-5788] Register updatebtn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:126]
-WARNING: [Synth 8-5788] Register guide_lights_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:197]
-WARNING: [Synth 8-5788] Register octave_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:98]
-WARNING: [Synth 8-5788] Register prev_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:230]
-WARNING: [Synth 8-5788] Register guide_lights_holder_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:295]
-WARNING: [Synth 8-5788] Register interval_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:98]
-WARNING: [Synth 8-5788] Register mistakes_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:378]
-WARNING: [Synth 8-5788] Register score_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:98]
-INFO: [Synth 8-256] done synthesizing module 'learn_mode' (11#1) [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:24]
+WARNING: [Synth 8-6014] Unused sequential element state_key_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:40]
+WARNING: [Synth 8-6014] Unused sequential element state_key_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:48]
+WARNING: [Synth 8-6014] Unused sequential element pos_key_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:88]
+WARNING: [Synth 8-6014] Unused sequential element neg_key_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:89]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:90]
+WARNING: [Synth 8-6014] Unused sequential element count_start_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:91]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (10#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:140]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:289]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:289]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:289]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:326]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:184]
+WARNING: [Synth 8-6014] Unused sequential element song_length_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:327]
+WARNING: [Synth 8-5788] Register select_song_btn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:115]
+WARNING: [Synth 8-5788] Register learn_btn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:105]
+WARNING: [Synth 8-5788] Register state_led_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:148]
+WARNING: [Synth 8-5788] Register hb2_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:73]
+WARNING: [Synth 8-5788] Register mb2_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:74]
+WARNING: [Synth 8-5788] Register lb2_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:75]
+WARNING: [Synth 8-5788] Register idlelearn_btn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:104]
+WARNING: [Synth 8-5788] Register evaluate_btn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:106]
+WARNING: [Synth 8-5788] Register userbtn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:116]
+WARNING: [Synth 8-5788] Register updatebtn_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:117]
+WARNING: [Synth 8-5788] Register guide_lights_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:189]
+WARNING: [Synth 8-5788] Register octave_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:88]
+WARNING: [Synth 8-5788] Register prev_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:222]
+WARNING: [Synth 8-5788] Register guide_lights_holder_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:286]
+WARNING: [Synth 8-5788] Register interval_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:88]
+WARNING: [Synth 8-5788] Register mistakes_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:369]
+WARNING: [Synth 8-5788] Register score_reg in module learn_mode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:88]
+INFO: [Synth 8-256] done synthesizing module 'learn_mode' (11#1) [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:24]
 WARNING: [Synth 8-3917] design learn_mode has port sd driven by constant 1
 WARNING: [Synth 8-3331] design learnmode_7seg has unconnected port reset
-WARNING: [Synth 8-3331] design learnmode_7seg has unconnected port counter_for_sss
 WARNING: [Synth 8-3331] design free_play has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 384.336 ; gain = 155.074
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 386.473 ; gain = 156.570
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -859,47 +859,47 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 384.336 ; gain = 155.074
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 386.473 ; gain = 156.570
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc]
-WARNING: [Vivado 12-584] No ports matched 'select_song_btn'. [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc:48]
+Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc]
+WARNING: [Vivado 12-584] No ports matched 'select_song_btn'. [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc:48]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/learn_mode_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/constrs_1/new/learn_con.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/learn_mode_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/learn_mode_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 721.152 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 724.238 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 721.152 ; gain = 491.891
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 724.238 ; gain = 494.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 721.152 ; gain = 491.891
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 724.238 ; gain = 494.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 721.152 ; gain = 491.891
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 724.238 ; gain = 494.336
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "range" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "frequency" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
 INFO: [Synth 8-5546] ROM "clkout" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element seg_out_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:109]
+WARNING: [Synth 8-6014] Unused sequential element seg_out_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:109]
 INFO: [Synth 8-5544] ROM "data7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "data7" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "data6" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -909,17 +909,15 @@ INFO: [Synth 8-5544] ROM "data2" won't be mapped to Block RAM because address si
 INFO: [Synth 8-5545] ROM "div_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "key_out" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-INFO: [Synth 8-5544] ROM "guide_lights" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "prev" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
 INFO: [Synth 8-5544] ROM "digit2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element digit2_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'interval_reg' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v:47]
-WARNING: [Synth 8-327] inferring latch for variable 'interval_reg' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song2.v:43]
-WARNING: [Synth 8-327] inferring latch for variable 'seg_out0_reg' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'seg_out1_reg' [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:102]
+WARNING: [Synth 8-6014] Unused sequential element digit2_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:88]
+WARNING: [Synth 8-327] inferring latch for variable 'interval_reg' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song1.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'interval_reg' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_song2.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_out0_reg' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:104]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_out1_reg' [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:102]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 721.152 ; gain = 491.891
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 724.238 ; gain = 494.336
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -952,7 +950,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 13    
 	                3 Bit    Registers := 7     
 	                2 Bit    Registers := 32    
-	                1 Bit    Registers := 46    
+	                1 Bit    Registers := 49    
 +---ROMs : 
 	                              ROMs := 1     
 +---Muxes : 
@@ -963,20 +961,21 @@ Detailed RTL Component Info :
 	   2 Input     18 Bit        Muxes := 1     
 	   4 Input     11 Bit        Muxes := 7     
 	   8 Input      8 Bit        Muxes := 1     
-	   5 Input      8 Bit        Muxes := 5     
+	   5 Input      8 Bit        Muxes := 6     
 	  12 Input      8 Bit        Muxes := 1     
 	  22 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 14    
+	   2 Input      8 Bit        Muxes := 11    
+	   3 Input      8 Bit        Muxes := 1     
 	  22 Input      7 Bit        Muxes := 1     
 	   5 Input      6 Bit        Muxes := 2     
 	   6 Input      6 Bit        Muxes := 1     
 	   4 Input      6 Bit        Muxes := 2     
-	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 2     
 	   4 Input      5 Bit        Muxes := 4     
 	   2 Input      5 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
-	  14 Input      4 Bit        Muxes := 2     
-	  13 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 3     
+	  13 Input      4 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 3     
 	  43 Input      3 Bit        Muxes := 1     
@@ -984,16 +983,16 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 4     
 	   4 Input      3 Bit        Muxes := 3     
 	   7 Input      2 Bit        Muxes := 14    
-	   2 Input      2 Bit        Muxes := 6     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 7     
 	   4 Input      2 Bit        Muxes := 1     
-	   5 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 72    
-	   2 Input      1 Bit        Muxes := 117   
+	   4 Input      1 Bit        Muxes := 71    
+	   2 Input      1 Bit        Muxes := 115   
 	  13 Input      1 Bit        Muxes := 2     
 	  43 Input      1 Bit        Muxes := 1     
 	  58 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 1     
-	  23 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	  24 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1017,12 +1016,13 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 5     
 	                3 Bit    Registers := 5     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 9     
+	                1 Bit    Registers := 10    
 +---Muxes : 
 	  22 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 14    
+	   2 Input      8 Bit        Muxes := 11    
+	   3 Input      8 Bit        Muxes := 1     
 	  22 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 3     
@@ -1030,9 +1030,10 @@ Detailed RTL Component Info :
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 3     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 37    
+	   2 Input      1 Bit        Muxes := 26    
+	   3 Input      1 Bit        Muxes := 4     
 	   4 Input      1 Bit        Muxes := 7     
-	  23 Input      1 Bit        Muxes := 1     
+	  24 Input      1 Bit        Muxes := 1     
 Module debounce2 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1094,7 +1095,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	                8 Bit    Registers := 8     
 +---Muxes : 
-	   5 Input      8 Bit        Muxes := 5     
+	   5 Input      8 Bit        Muxes := 6     
 	  12 Input      8 Bit        Muxes := 1     
 	   5 Input      6 Bit        Muxes := 2     
 	   6 Input      6 Bit        Muxes := 1     
@@ -1102,11 +1103,13 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 4     
 	   4 Input      4 Bit        Muxes := 1     
-	  14 Input      4 Bit        Muxes := 2     
-	  13 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 3     
+	  13 Input      4 Bit        Muxes := 1     
 	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 10    
-	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 2     
 	  13 Input      1 Bit        Muxes := 1     
 Module clock2 
 Detailed RTL Component Info : 
@@ -1150,9 +1153,9 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/generate_melody.v:51]
 INFO: [Synth 8-5546] ROM "clkout" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element seg_out_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:109]
+WARNING: [Synth 8-6014] Unused sequential element seg_out_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/tubes_display.v:109]
 INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -1169,30 +1172,31 @@ INFO: [Synth 8-5546] ROM "debounce4/key_out" won't be mapped to RAM because it i
 INFO: [Synth 8-5546] ROM "debounce5/key_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "debounce6/key_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "debounce7/key_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "idlelearnbutton/key_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "learnbutton/key_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "evalbutton/key_out" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element debounce0/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element debounce1/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element debounce2/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element debounce3/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element debounce4/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element debounce5/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element debounce6/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element debounce7/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element learnbutton/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element evalbutton/cnt_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
-WARNING: [Synth 8-6014] Unused sequential element digit2_reg was removed.  [C:/Users/temp_acc/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:98]
+WARNING: [Synth 8-6014] Unused sequential element debounce0/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element debounce1/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element debounce2/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element debounce3/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element debounce4/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element debounce5/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element debounce6/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element debounce7/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element idlelearnbutton/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element learnbutton/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element evalbutton/cnt_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/debounce.v:55]
+WARNING: [Synth 8-6014] Unused sequential element digit2_reg was removed.  [C:/Users/Administrator/Documents/GitHub/Piano/piano.srcs/sources_1/new/learn_mode.v:88]
 WARNING: [Synth 8-3917] design learn_mode has port sd driven by constant 1
 WARNING: [Synth 8-3331] design learnmode_7seg has unconnected port reset
-WARNING: [Synth 8-3331] design learnmode_7seg has unconnected port counter_for_sss
 WARNING: [Synth 8-3331] design free_play has unconnected port reset
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (song2/\interval_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (song1/\interval_reg[2] )
 INFO: [Synth 8-3886] merging instance 'l7/data3_reg[3]' (FDRE) to 'l7/data3_reg[4]'
 INFO: [Synth 8-3886] merging instance 'l7/data2_reg[4]' (FDRE) to 'l7/data2_reg[7]'
-INFO: [Synth 8-3886] merging instance 'l7/data1_reg[4]' (FDRE) to 'l7/data1_reg[6]'
-INFO: [Synth 8-3886] merging instance 'l7/data0_reg[4]' (FDRE) to 'l7/data1_reg[6]'
-INFO: [Synth 8-3886] merging instance 'l7/data1_reg[5]' (FDSE) to 'l7/data0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'l7/data0_reg[4]' (FDRE) to 'l7/data0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'l7/data1_reg[5]' (FDRE) to 'l7/data1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'l7/data0_reg[5]' (FDRE) to 'l7/data0_reg[6]'
 INFO: [Synth 8-3886] merging instance 'l7/data7_reg[6]' (FDRE) to 'l7/data7_reg[7]'
 INFO: [Synth 8-3886] merging instance 'l7/data6_reg[6]' (FDRE) to 'l7/data7_reg[7]'
 INFO: [Synth 8-3886] merging instance 'l7/data5_reg[6]' (FDRE) to 'l7/data7_reg[7]'
@@ -1200,14 +1204,14 @@ INFO: [Synth 8-3886] merging instance 'l7/data4_reg[6]' (FDRE) to 'l7/data4_reg[
 INFO: [Synth 8-3886] merging instance 'l7/data3_reg[6]' (FDRE) to 'l7/data3_reg[7]'
 INFO: [Synth 8-3886] merging instance 'l7/data2_reg[6]' (FDRE) to 'l7/data2_reg[7]'
 INFO: [Synth 8-3886] merging instance 'l7/data1_reg[6]' (FDRE) to 'l7/data1_reg[7]'
-INFO: [Synth 8-3886] merging instance 'l7/data0_reg[6]' (FDRE) to 'l7/data1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'l7/data0_reg[6]' (FDRE) to 'l7/data0_reg[7]'
 INFO: [Synth 8-3886] merging instance 'l7/data7_reg[7]' (FDRE) to 'l7/data6_reg[7]'
 INFO: [Synth 8-3886] merging instance 'l7/data6_reg[7]' (FDRE) to 'l7/data5_reg[7]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (l7/\data5_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (l7/\data4_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (l7/\data3_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (l7/\data2_reg[7] )
-INFO: [Synth 8-3886] merging instance 'l7/data1_reg[7]' (FDRE) to 'l7/data0_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (l7/\data1_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (l7/\data0_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\music_reg[4] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\guide_lights_holder_reg[7] )
@@ -1217,8 +1221,9 @@ WARNING: [Synth 8-3332] Sequential element (interval_reg[2]) is unused and will 
 WARNING: [Synth 8-3332] Sequential element (data4_reg[7]) is unused and will be removed from module learnmode_7seg.
 WARNING: [Synth 8-3332] Sequential element (data3_reg[7]) is unused and will be removed from module learnmode_7seg.
 WARNING: [Synth 8-3332] Sequential element (data2_reg[7]) is unused and will be removed from module learnmode_7seg.
-WARNING: [Synth 8-3332] Sequential element (data5_reg[7]) is unused and will be removed from module learnmode_7seg.
+WARNING: [Synth 8-3332] Sequential element (data1_reg[7]) is unused and will be removed from module learnmode_7seg.
 WARNING: [Synth 8-3332] Sequential element (data0_reg[7]) is unused and will be removed from module learnmode_7seg.
+WARNING: [Synth 8-3332] Sequential element (data5_reg[7]) is unused and will be removed from module learnmode_7seg.
 WARNING: [Synth 8-3332] Sequential element (music_reg[4]) is unused and will be removed from module learn_mode.
 WARNING: [Synth 8-3332] Sequential element (guide_lights_reg[7]) is unused and will be removed from module learn_mode.
 WARNING: [Synth 8-3332] Sequential element (interval_reg[2]) is unused and will be removed from module learn_mode.
@@ -1247,7 +1252,7 @@ WARNING: [Synth 8-3332] Sequential element (guide_lights_reg[0]_C) is unused and
 WARNING: [Synth 8-3332] Sequential element (user_reg[1]_P) is unused and will be removed from module account.
 WARNING: [Synth 8-3332] Sequential element (user_reg[0]_P) is unused and will be removed from module account.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 721.152 ; gain = 491.891
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 724.238 ; gain = 494.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1280,13 +1285,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 731.270 ; gain = 502.008
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 733.816 ; gain = 503.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 733.355 ; gain = 504.094
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 735.918 ; gain = 506.016
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1301,7 +1306,7 @@ WARNING: [Synth 8-3332] Sequential element (countdown_reg[2]) is unused and will
 WARNING: [Synth 8-3332] Sequential element (interval_led_reg[0]) is unused and will be removed from module learn_mode.
 INFO: [Synth 8-4480] The timing for the instance tb/seg_out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 770.953 ; gain = 541.691
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 775.547 ; gain = 545.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1325,7 +1330,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 770.953 ; gain = 541.691
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 775.547 ; gain = 545.645
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1338,7 +1343,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 770.953 ; gain = 541.691
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 775.547 ; gain = 545.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1350,25 +1355,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 770.953 ; gain = 541.691
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 775.547 ; gain = 545.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 770.953 ; gain = 541.691
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 775.547 ; gain = 545.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 770.953 ; gain = 541.691
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 775.547 ; gain = 545.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 770.953 ; gain = 541.691
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 775.547 ; gain = 545.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1385,19 +1390,19 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     1|
-|2     |CARRY4   |   273|
-|3     |LUT1     |    13|
-|4     |LUT2     |   398|
-|5     |LUT3     |   316|
-|6     |LUT4     |   209|
-|7     |LUT5     |   414|
-|8     |LUT6     |   227|
+|2     |CARRY4   |   279|
+|3     |LUT1     |    14|
+|4     |LUT2     |   418|
+|5     |LUT3     |   317|
+|6     |LUT4     |   215|
+|7     |LUT5     |   416|
+|8     |LUT6     |   226|
 |9     |MUXF7    |    10|
 |10    |RAMB18E1 |     1|
-|11    |FDCE     |   683|
+|11    |FDCE     |   707|
 |12    |FDPE     |     9|
-|13    |FDRE     |   172|
-|14    |FDSE     |    25|
+|13    |FDRE     |   174|
+|14    |FDSE     |    24|
 |15    |LD       |    20|
 |16    |LDC      |     7|
 |17    |IBUF     |    14|
@@ -1405,51 +1410,52 @@ Report Cell Usage:
 +------+---------+------+
 
 Report Instance Areas: 
-+------+--------------+----------------+------+
-|      |Instance      |Module          |Cells |
-+------+--------------+----------------+------+
-|1     |top           |                |  2833|
-|2     |  song1       |learn_song1     |     5|
-|3     |  acc         |account         |    72|
-|4     |  c2          |clock2          |    90|
-|5     |  debounce0   |debounce        |    64|
-|6     |  debounce1   |debounce_0      |    65|
-|7     |  debounce2   |debounce_1      |    62|
-|8     |  debounce20  |debounce2       |    66|
-|9     |  debounce21  |debounce2_2     |    65|
-|10    |  debounce22  |debounce2_3     |    68|
-|11    |  debounce23  |debounce2_4     |    66|
-|12    |  debounce24  |debounce2_5     |    65|
-|13    |  debounce25  |debounce2_6     |    66|
-|14    |  debounce26  |debounce2_7     |    65|
-|15    |  debounce27  |debounce2_8     |    66|
-|16    |  debounce3   |debounce_9      |    63|
-|17    |  debounce4   |debounce_10     |    86|
-|18    |  debounce5   |debounce_11     |    62|
-|19    |  debounce6   |debounce_12     |    63|
-|20    |  debounce7   |debounce_13     |    59|
-|21    |  debouncehb  |debounce2_14    |    68|
-|22    |  debouncelb  |debounce2_15    |    65|
-|23    |  debouncemb  |debounce2_16    |    66|
-|24    |  evalbutton  |debounce_17     |    62|
-|25    |  gm          |generate_melody |   541|
-|26    |  l7          |learnmode_7seg  |   112|
-|27    |  learnbutton |debounce_18     |    60|
-|28    |  play        |free_play       |    94|
-|29    |  song2       |learn_song2     |     7|
-|30    |  ssdebounce  |debounce2_19    |    66|
-|31    |  tb          |tubes_display   |    80|
-|32    |  update_btn  |debounce2_20    |    66|
-|33    |  user_btn    |debounce2_21    |    66|
-+------+--------------+----------------+------+
++------+------------------+----------------+------+
+|      |Instance          |Module          |Cells |
++------+------------------+----------------+------+
+|1     |top               |                |  2893|
+|2     |  song1           |learn_song1     |     5|
+|3     |  acc             |account         |    75|
+|4     |  c2              |clock2          |    90|
+|5     |  debounce0       |debounce        |    64|
+|6     |  debounce1       |debounce_0      |    63|
+|7     |  debounce2       |debounce_1      |    61|
+|8     |  debounce20      |debounce2       |    66|
+|9     |  debounce21      |debounce2_2     |    65|
+|10    |  debounce22      |debounce2_3     |    66|
+|11    |  debounce23      |debounce2_4     |    66|
+|12    |  debounce24      |debounce2_5     |    65|
+|13    |  debounce25      |debounce2_6     |    70|
+|14    |  debounce26      |debounce2_7     |    66|
+|15    |  debounce27      |debounce2_8     |    65|
+|16    |  debounce3       |debounce_9      |    63|
+|17    |  debounce4       |debounce_10     |    83|
+|18    |  debounce5       |debounce_11     |    61|
+|19    |  debounce6       |debounce_12     |    63|
+|20    |  debounce7       |debounce_13     |    59|
+|21    |  debouncehb      |debounce2_14    |    68|
+|22    |  debouncelb      |debounce2_15    |    65|
+|23    |  debouncemb      |debounce2_16    |    66|
+|24    |  evalbutton      |debounce_17     |    60|
+|25    |  gm              |generate_melody |   541|
+|26    |  idlelearnbutton |debounce_18     |    61|
+|27    |  l7              |learnmode_7seg  |   111|
+|28    |  learnbutton     |debounce_19     |    62|
+|29    |  play            |free_play       |    94|
+|30    |  song2           |learn_song2     |     7|
+|31    |  ssdebounce      |debounce2_20    |    67|
+|32    |  tb              |tubes_display   |    79|
+|33    |  update_btn      |debounce2_21    |    65|
+|34    |  user_btn        |debounce2_22    |    66|
++------+------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 770.953 ; gain = 541.691
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 775.547 ; gain = 545.645
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 770.953 ; gain = 204.875
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 770.953 ; gain = 541.691
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 775.547 ; gain = 207.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 775.547 ; gain = 545.645
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 325 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 331 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
@@ -1462,8 +1468,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 121 Infos, 117 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 770.953 ; gain = 545.305
-INFO: [Common 17-1381] The checkpoint 'C:/Users/temp_acc/Documents/GitHub/Piano/piano.runs/synth_1/learn_mode.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 775.547 ; gain = 549.688
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Documents/GitHub/Piano/piano.runs/synth_1/learn_mode.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file learn_mode_utilization_synth.rpt -pb learn_mode_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 770.953 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 27 02:26:06 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 775.547 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 27 21:50:23 2023...

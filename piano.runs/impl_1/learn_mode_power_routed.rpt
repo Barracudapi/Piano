@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed Dec 27 02:27:13 2023
-| Host             : LAPTOP-05G1CK8T running 64-bit major release  (build 9200)
+| Date             : Wed Dec 27 21:51:25 2023
+| Host             : S210-02 running 64-bit major release  (build 9200)
 | Command          : report_power -file learn_mode_power_routed.rpt -pb learn_mode_power_summary_routed.pb -rpx learn_mode_power_routed.rpx
 | Design           : learn_mode
 | Device           : xc7a35tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 63.503 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 61.172 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 63.017                           |
+| Dynamic (W)              | 60.686                           |
 | Device Static (W)        | 0.486                            |
 | Effective TJA (C/W)      | 4.8                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     7.928 |     2845 |       --- |             --- |
-|   LUT as Logic |     6.673 |     1442 |     20800 |            6.93 |
-|   CARRY4       |     1.003 |      273 |      8150 |            3.35 |
-|   Register     |     0.234 |      916 |     41600 |            2.20 |
-|   F7/F8 Muxes  |     0.012 |       10 |     32600 |            0.03 |
+| Slice Logic    |     7.732 |     2907 |       --- |             --- |
+|   LUT as Logic |     6.465 |     1474 |     20800 |            7.09 |
+|   CARRY4       |     1.018 |      279 |      8150 |            3.42 |
+|   Register     |     0.233 |      941 |     41600 |            2.26 |
+|   F7/F8 Muxes  |     0.010 |       10 |     32600 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       69 |       --- |             --- |
-| Signals        |     7.009 |     2255 |       --- |             --- |
+|   Others       |     0.000 |       71 |       --- |             --- |
+| Signals        |     7.053 |     2289 |       --- |             --- |
 | Block RAM      |     0.064 |      0.5 |        50 |            1.00 |
-| I/O            |    48.016 |       55 |       210 |           26.19 |
+| I/O            |    45.837 |       55 |       210 |           26.19 |
 | Static Power   |     0.486 |          |           |                 |
-| Total          |    63.503 |          |           |                 |
+| Total          |    61.172 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    15.389 |      15.048 |      0.341 |
-| Vccaux    |       1.800 |     1.811 |       1.758 |      0.053 |
-| Vcco33    |       3.300 |    13.577 |      13.576 |      0.001 |
+| Vccint    |       1.000 |    15.237 |      14.896 |      0.341 |
+| Vccaux    |       1.800 |     1.731 |       1.678 |      0.053 |
+| Vcco33    |       3.300 |    12.960 |      12.959 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -137,42 +137,43 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------+-----------+
-| Name          | Power (W) |
-+---------------+-----------+
-| learn_mode    |    63.017 |
-|   acc         |     0.069 |
-|   c2          |     0.514 |
-|   debounce0   |     0.138 |
-|   debounce1   |     0.122 |
-|   debounce2   |     0.119 |
-|   debounce20  |     0.213 |
-|   debounce21  |     0.198 |
-|   debounce22  |     0.213 |
-|   debounce23  |     0.208 |
-|   debounce24  |     0.206 |
-|   debounce25  |     0.198 |
-|   debounce26  |     0.211 |
-|   debounce27  |     0.203 |
-|   debounce3   |     0.141 |
-|   debounce4   |     0.155 |
-|   debounce5   |     0.121 |
-|   debounce6   |     0.117 |
-|   debounce7   |     0.115 |
-|   debouncehb  |     0.172 |
-|   debouncelb  |     0.167 |
-|   debouncemb  |     0.176 |
-|   evalbutton  |     0.175 |
-|   gm          |     7.339 |
-|   l7          |     0.863 |
-|   learnbutton |     0.156 |
-|   play        |     0.384 |
-|   song1       |     0.004 |
-|   song2       |     0.011 |
-|   ssdebounce  |     0.161 |
-|   tb          |     0.809 |
-|   update_btn  |     0.174 |
-|   user_btn    |     0.165 |
-+---------------+-----------+
++-------------------+-----------+
+| Name              | Power (W) |
++-------------------+-----------+
+| learn_mode        |    60.686 |
+|   acc             |     0.088 |
+|   c2              |     0.492 |
+|   debounce0       |     0.123 |
+|   debounce1       |     0.116 |
+|   debounce2       |     0.115 |
+|   debounce20      |     0.211 |
+|   debounce21      |     0.220 |
+|   debounce22      |     0.207 |
+|   debounce23      |     0.208 |
+|   debounce24      |     0.206 |
+|   debounce25      |     0.217 |
+|   debounce26      |     0.206 |
+|   debounce27      |     0.195 |
+|   debounce3       |     0.111 |
+|   debounce4       |     0.138 |
+|   debounce5       |     0.123 |
+|   debounce6       |     0.132 |
+|   debounce7       |     0.113 |
+|   debouncehb      |     0.164 |
+|   debouncelb      |     0.162 |
+|   debouncemb      |     0.167 |
+|   evalbutton      |     0.174 |
+|   gm              |     7.457 |
+|   idlelearnbutton |     0.171 |
+|   l7              |     0.656 |
+|   learnbutton     |     0.169 |
+|   play            |     0.367 |
+|   song1           |    <0.001 |
+|   song2           |     0.001 |
+|   ssdebounce      |     0.171 |
+|   tb              |     0.802 |
+|   update_btn      |     0.167 |
+|   user_btn        |     0.174 |
++-------------------+-----------+
 
 

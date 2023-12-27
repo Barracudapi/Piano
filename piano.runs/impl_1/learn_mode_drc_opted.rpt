@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed Dec 27 02:26:42 2023
-| Host         : LAPTOP-05G1CK8T running 64-bit major release  (build 9200)
+| Date         : Wed Dec 27 21:51:03 2023
+| Host         : S210-02 running 64-bit major release  (build 9200)
 | Command      : report_drc -file learn_mode_drc_opted.rpt -pb learn_mode_drc_opted.pb -rpx learn_mode_drc_opted.rpx
 | Design       : learn_mode
 | Device       : xc7a35tcsg324-1
@@ -109,32 +109,32 @@ Related violations: <none>
 
 REQP-1840#13 Warning
 RAMB18 async control check  
-The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[8] (net: tb/datain[4]) which is driven by a register (tb/scan_cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[8] (net: tb/ADDRARDADDR[4]) which is driven by a register (tb/scan_cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#14 Warning
 RAMB18 async control check  
-The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[8] (net: tb/datain[4]) which is driven by a register (tb/scan_cnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[8] (net: tb/ADDRARDADDR[4]) which is driven by a register (tb/scan_cnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#15 Warning
 RAMB18 async control check  
-The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[8] (net: tb/datain[4]) which is driven by a register (tb/scan_cnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[8] (net: tb/ADDRARDADDR[4]) which is driven by a register (tb/scan_cnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#16 Warning
 RAMB18 async control check  
-The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[9] (net: tb/ADDRARDADDR[4]) which is driven by a register (tb/scan_cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[9] (net: tb/ADDRARDADDR[5]) which is driven by a register (tb/scan_cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#17 Warning
 RAMB18 async control check  
-The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[9] (net: tb/ADDRARDADDR[4]) which is driven by a register (tb/scan_cnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[9] (net: tb/ADDRARDADDR[5]) which is driven by a register (tb/scan_cnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#18 Warning
 RAMB18 async control check  
-The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[9] (net: tb/ADDRARDADDR[4]) which is driven by a register (tb/scan_cnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 tb/seg_out_reg has an input control pin tb/seg_out_reg/ADDRARDADDR[9] (net: tb/ADDRARDADDR[5]) which is driven by a register (tb/scan_cnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 

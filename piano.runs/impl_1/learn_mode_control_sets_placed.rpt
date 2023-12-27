@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed Dec 27 02:26:47 2023
-| Host         : LAPTOP-05G1CK8T running 64-bit major release  (build 9200)
+| Date         : Wed Dec 27 21:51:06 2023
+| Host         : S210-02 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file learn_mode_control_sets_placed.rpt
 | Design       : learn_mode
 | Device       : xc7a35t
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    85 |
-| Unused register locations in slices containing registers |   404 |
+| Number of unique control sets                            |    86 |
+| Unused register locations in slices containing registers |   403 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,126 +33,126 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              66 |           38 |
-| No           | No                    | Yes                    |             355 |          116 |
-| No           | Yes                   | No                     |              51 |           19 |
-| Yes          | No                    | No                     |              79 |           32 |
-| Yes          | No                    | Yes                    |             337 |          138 |
-| Yes          | Yes                   | No                     |              28 |           13 |
+| No           | No                    | No                     |              70 |           42 |
+| No           | No                    | Yes                    |             379 |          130 |
+| No           | Yes                   | No                     |              51 |           20 |
+| Yes          | No                    | No                     |              80 |           33 |
+| Yes          | No                    | Yes                    |             337 |          143 |
+| Yes          | Yes                   | No                     |              24 |           11 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------------------------+-------------------------------+----------------------------------------+------------------+----------------+
-|               Clock Signal              |         Enable Signal         |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
-+-----------------------------------------+-------------------------------+----------------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG                          |                               | guide_lights_holder_reg[1]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce4/guide_lights_holder | guide_lights_holder_reg[0]_LDC_i_1_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce4/guide_lights_holder | guide_lights_holder_reg[3]_LDC_i_1_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce4/key_out_i_1__3_n_0  | debounce6/cnt_start_reg_0              |                1 |              1 |
-|  guide_lights_holder_reg[2]_LDC_i_1_n_0 |                               | guide_lights_holder_reg[2]_LDC_i_2_n_0 |                1 |              1 |
-|  guide_lights_holder_reg[1]_LDC_i_1_n_0 |                               | guide_lights_holder_reg[1]_LDC_i_2_n_0 |                1 |              1 |
-|  guide_lights_holder_reg[0]_LDC_i_1_n_0 |                               | guide_lights_holder_reg[0]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          | select_song_btn11_out         |                                        |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce5/key_out_i_1__4_n_0  | debounce6/cnt_start_reg_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | learn_btn13_out               |                                        |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce6/key_out_i_1__5_n_0  | debounce6/cnt_start_reg_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | evaluate_btn12_out            |                                        |                1 |              1 |
-|  guide_lights_holder_reg[5]_LDC_i_1_n_0 |                               | guide_lights_holder_reg[5]_LDC_i_2_n_0 |                1 |              1 |
-|  guide_lights_holder_reg[4]_LDC_i_1_n_0 |                               | guide_lights_holder_reg[4]_LDC_i_2_n_0 |                1 |              1 |
-|  guide_lights_holder_reg[3]_LDC_i_1_n_0 |                               | guide_lights_holder_reg[3]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          |                               | guide_lights_holder_reg[3]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          |                               | guide_lights_holder_reg[6]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          |                               | guide_lights_holder_reg[0]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          |                               | guide_lights_holder_reg[2]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          |                               | guide_lights_holder_reg[4]_LDC_i_2_n_0 |                1 |              1 |
-|  guide_lights_holder_reg[6]_LDC_i_1_n_0 |                               | guide_lights_holder_reg[6]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          |                               | guide_lights_holder_reg[5]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce20/state[0]           | debounce23/state_reg[0]_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce24/state[0]           | debounce23/state_reg[0]_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce0/key_out_i_1_n_0     | debounce0/cnt_start_reg_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce22/state[0]           | debounce23/state_reg[0]_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce26/state[0]           | debounce23/state_reg[0]_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce3/key_out_i_1__2_n_0  | debounce0/cnt_start_reg_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce7/key_out_i_1__6_n_0  | debounce6/cnt_start_reg_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce1/key_out_i_1__0_n_0  | debounce0/cnt_start_reg_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce2/key_out_i_1__1_n_0  | debounce0/cnt_start_reg_0              |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce4/guide_lights_holder | guide_lights_holder_reg[1]_LDC_i_1_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce4/guide_lights_holder | guide_lights_holder_reg[2]_LDC_i_1_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce4/guide_lights_holder | guide_lights_holder_reg[5]_LDC_i_1_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce4/guide_lights_holder | guide_lights_holder_reg[4]_LDC_i_1_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                          | debounce4/guide_lights_holder | guide_lights_holder_reg[6]_LDC_i_1_n_0 |                1 |              1 |
-|  song1/interval_reg[1]_i_2_n_0          |                               |                                        |                1 |              2 |
-|  song2/interval_reg[1]_i_2__0_n_0       |                               |                                        |                1 |              2 |
-|  clk_IBUF_BUFG                          | userbtn                       |                                        |                1 |              2 |
-|  clk_IBUF_BUFG                          | debounce21/state[0]           | debounce20/state_reg[0]_0              |                1 |              2 |
-|  tb/clkout_reg_n_0                      |                               | c2/div_cnt_reg[31]_0                   |                1 |              3 |
-|  clk_IBUF_BUFG                          | state_led[2]_i_1_n_0          |                                        |                1 |              3 |
-|  clk_IBUF_BUFG                          | l7/data4[5]_i_2_n_0           | l7/data3_reg[5]_0                      |                1 |              4 |
-|  clk_IBUF_BUFG                          | l7/data3[5]_i_1_n_0           | l7/data3_reg[5]_0                      |                2 |              4 |
-|  clk_IBUF_BUFG                          | debounce4/digit1_reg[0][0]    | update_btn/state_reg[0]_0              |                1 |              4 |
-|  clk_IBUF_BUFG                          | debounce4/E[0]                | update_btn/state_reg[0]_0              |                1 |              4 |
-|  c2/CLK                                 |                               |                                        |                2 |              5 |
-|  clk_IBUF_BUFG                          | l7/data2[5]_i_1_n_0           | state_reg_n_0_[1]                      |                3 |              5 |
-|  clk_IBUF_BUFG                          | debounce0/E[0]                | update_btn/state_reg[0]_0              |                2 |              6 |
-|  clk_IBUF_BUFG                          | l7/data7[3]_i_2_n_0           | l7/SS[0]                               |                2 |              6 |
-|  clk_IBUF_BUFG                          | guide_lights[6]_P_i_1_n_0     |                                        |                3 |              7 |
-|  clk_IBUF_BUFG                          |                               | debouncemb/state_reg[0]_0              |                4 |              8 |
-| ~tb/Q[2]                                |                               |                                        |                4 |              8 |
-|  clk_IBUF_BUFG                          | acc/user3_rating1[3]_i_1_n_0  |                                        |                3 |              8 |
-|  clk_IBUF_BUFG                          | acc/user2_rating1[3]_i_1_n_0  |                                        |                2 |              8 |
-|  clk_IBUF_BUFG                          | acc/user0_rating1[3]_i_1_n_0  |                                        |                2 |              8 |
-|  clk_IBUF_BUFG                          | acc/user1_rating1[3]_i_1_n_0  |                                        |                2 |              8 |
-|  tb/Q[2]                                |                               |                                        |                2 |              8 |
-|  clk_IBUF_BUFG                          | l7/data1[3]_i_1_n_0           | l7/SR[0]                               |                5 |              9 |
-|  clk_IBUF_BUFG                          |                               | debounce23/state_reg[0]_0              |                6 |             10 |
-|  clk_IBUF_BUFG                          | reset_IBUF                    |                                        |                3 |             10 |
-|  clk_IBUF_BUFG                          | prev[7]_i_1_n_0               |                                        |                4 |             11 |
-|  clk_IBUF_BUFG                          | play/frequency[10]_i_1_n_0    |                                        |                8 |             11 |
-|  clk_IBUF_BUFG                          |                               | state_reg_n_0_[1]                      |                4 |             12 |
-|  clk_IBUF_BUFG                          |                               | debounce20/state_reg[0]_0              |                7 |             14 |
-|  clk_IBUF_BUFG                          | debounce21/state[0]           | debounce23/state_reg[0]_0              |                7 |             20 |
-|  clk_IBUF_BUFG                          | debounce22/state[0]           | debounce20/state_reg[0]_0              |                8 |             21 |
-|  clk_IBUF_BUFG                          | debounce24/state[0]           | debounce20/state_reg[0]_0              |                8 |             21 |
-|  clk_IBUF_BUFG                          | debounce26/state[0]           | debounce20/state_reg[0]_0              |                9 |             21 |
-|  clk_IBUF_BUFG                          | debounce20/state[0]           | debounce20/state_reg[0]_0              |                7 |             21 |
-|  clk_IBUF_BUFG                          | ssdebounce/state[0]           | update_btn/state_reg[0]_0              |                8 |             22 |
-|  clk_IBUF_BUFG                          | debouncemb/state[0]           | debouncemb/state_reg[0]_0              |                7 |             22 |
-|  clk_IBUF_BUFG                          | debouncelb/state[0]           | debouncemb/state_reg[0]_0              |                8 |             22 |
-|  clk_IBUF_BUFG                          | debouncehb/state[0]           | debouncemb/state_reg[0]_0              |                9 |             22 |
-|  clk_IBUF_BUFG                          | debounce23/state[0]           | debounce23/state_reg[0]_0              |                9 |             22 |
-|  clk_IBUF_BUFG                          | debounce27/state[0]           | debounce23/state_reg[0]_0              |                8 |             22 |
-|  clk_IBUF_BUFG                          | user_btn/state[0]             | update_btn/state_reg[0]_0              |                9 |             22 |
-|  clk_IBUF_BUFG                          | debounce25/state[0]           | debounce23/state_reg[0]_0              |                8 |             22 |
-|  clk_IBUF_BUFG                          | update_btn/state[0]           | update_btn/state_reg[0]_0              |                9 |             22 |
-|  clk_IBUF_BUFG                          |                               | gm/counter[0]_i_1_n_0                  |                8 |             32 |
-|  clk_IBUF_BUFG                          |                               |                                        |               28 |             41 |
-|  clk_IBUF_BUFG                          |                               | c2/div_cnt_reg[31]_0                   |               14 |             53 |
-|  clk_IBUF_BUFG                          |                               | update_btn/state_reg[0]_0              |               23 |             76 |
-|  clk_IBUF_BUFG                          |                               | debounce0/cnt_start_reg_0              |               27 |             92 |
-|  clk_IBUF_BUFG                          |                               | debounce6/cnt_start_reg_0              |               27 |             92 |
-+-----------------------------------------+-------------------------------+----------------------------------------+------------------+----------------+
++-----------------------------------------+--------------------------------+----------------------------------------+------------------+----------------+
+|               Clock Signal              |          Enable Signal         |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++-----------------------------------------+--------------------------------+----------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                          |                                | guide_lights_holder_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce25/guide_lights_holder | guide_lights_holder_reg[6]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce0/key_out_i_1_n_0      | debounce0/cnt_start_reg_0              |                1 |              1 |
+|  guide_lights_holder_reg[6]_LDC_i_1_n_0 |                                | guide_lights_holder_reg[6]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce25/guide_lights_holder | guide_lights_holder_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce25/guide_lights_holder | guide_lights_holder_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  guide_lights_holder_reg[2]_LDC_i_1_n_0 |                                | guide_lights_holder_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce25/guide_lights_holder | guide_lights_holder_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce3/key_out_i_1__2_n_0   | debounce0/cnt_start_reg_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce7/key_out_i_1__6_n_0   | debounce6/cnt_start_reg_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce25/guide_lights_holder | guide_lights_holder_reg[5]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce25/guide_lights_holder | guide_lights_holder_reg[4]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce6/key_out_i_1__5_n_0   | ssdebounce/state_reg[0]_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce5/key_out_i_1__4_n_0   | ssdebounce/state_reg[0]_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce20/state[0]            | debounce23/state_reg[0]_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce4/key_out_i_1__3_n_0   | ssdebounce/state_reg[0]_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          |                                | guide_lights_holder_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          |                                | guide_lights_holder_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          |                                | guide_lights_holder_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          |                                | guide_lights_holder_reg[6]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce2/key_out_i_1__1_n_0   | debounce0/cnt_start_reg_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          |                                | guide_lights_holder_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          |                                | guide_lights_holder_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce1/key_out_i_1__0_n_0   | debounce0/cnt_start_reg_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce24/state[0]            | debounce23/state_reg[0]_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce26/state[0]            | debounce23/state_reg[0]_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce22/state[0]            | debounce23/state_reg[0]_0              |                1 |              1 |
+|  clk_IBUF_BUFG                          | debounce25/guide_lights_holder | guide_lights_holder_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | evaluate_btn_i_1_n_0           |                                        |                1 |              1 |
+|  clk_IBUF_BUFG                          | idlelearn_btn12_out            |                                        |                1 |              1 |
+|  guide_lights_holder_reg[0]_LDC_i_1_n_0 |                                | guide_lights_holder_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  guide_lights_holder_reg[1]_LDC_i_1_n_0 |                                | guide_lights_holder_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  guide_lights_holder_reg[5]_LDC_i_1_n_0 |                                | guide_lights_holder_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  guide_lights_holder_reg[3]_LDC_i_1_n_0 |                                | guide_lights_holder_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  guide_lights_holder_reg[4]_LDC_i_1_n_0 |                                | guide_lights_holder_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                          | userbtn                        |                                        |                2 |              2 |
+|  clk_IBUF_BUFG                          | debounce21/state[0]            | debounce20/state_reg[0]_0              |                1 |              2 |
+|  song1/interval_reg[1]_i_2_n_0          |                                |                                        |                1 |              2 |
+|  song2/interval_reg[1]_i_2__0_n_0       |                                |                                        |                1 |              2 |
+|  clk_IBUF_BUFG                          | learn_btn_i_1_n_0              |                                        |                1 |              2 |
+|  tb/clkout_reg_n_0                      |                                | c2/div_cnt_reg[31]_0                   |                2 |              3 |
+|  clk_IBUF_BUFG                          | state_led[2]_i_1_n_0           |                                        |                1 |              3 |
+|  clk_IBUF_BUFG                          | debounce25/E[0]                | ssdebounce/state_reg[0]_0              |                1 |              4 |
+|  clk_IBUF_BUFG                          | l7/data3[5]_i_1_n_0            | l7/data3_reg[5]_0                      |                2 |              4 |
+|  clk_IBUF_BUFG                          | debounce4/E[0]                 | debounce6/cnt_start_reg_0              |                1 |              4 |
+|  clk_IBUF_BUFG                          | l7/data4[5]_i_2_n_0            | l7/data3_reg[5]_0                      |                2 |              4 |
+|  clk_IBUF_BUFG                          | l7/data1[4]_i_1_n_0            | l7/SS[0]                               |                3 |              5 |
+|  clk_IBUF_BUFG                          | l7/data2[5]_i_1_n_0            | state_reg_n_0_[1]                      |                2 |              5 |
+|  c2/CLK                                 |                                |                                        |                1 |              5 |
+|  clk_IBUF_BUFG                          | l7/data7[3]_i_2_n_0            | l7/data7_reg[3]_0[0]                   |                2 |              6 |
+|  clk_IBUF_BUFG                          | debounce0/E[0]                 | debounce6/cnt_start_reg_0              |                3 |              6 |
+|  clk_IBUF_BUFG                          | guide_lights[6]_P_i_1_n_0      |                                        |                4 |              7 |
+|  tb/Q[2]                                |                                |                                        |                3 |              8 |
+|  clk_IBUF_BUFG                          | acc/user1_rating1[3]_i_1_n_0   |                                        |                2 |              8 |
+|  clk_IBUF_BUFG                          | acc/user3_rating1[3]_i_1_n_0   |                                        |                2 |              8 |
+|  clk_IBUF_BUFG                          | acc/user0_rating1[3]_i_1_n_0   |                                        |                2 |              8 |
+|  clk_IBUF_BUFG                          |                                | debouncemb/state_reg[0]_0              |                4 |              8 |
+|  clk_IBUF_BUFG                          | acc/user2_rating1[3]_i_1_n_0   |                                        |                2 |              8 |
+| ~tb/Q[2]                                |                                |                                        |                4 |              8 |
+|  clk_IBUF_BUFG                          | reset_IBUF                     |                                        |                3 |             10 |
+|  clk_IBUF_BUFG                          |                                | debounce23/state_reg[0]_0              |                5 |             10 |
+|  clk_IBUF_BUFG                          | play/frequency[10]_i_1_n_0     |                                        |                8 |             11 |
+|  clk_IBUF_BUFG                          | prev[7]_i_1_n_0                |                                        |                4 |             11 |
+|  clk_IBUF_BUFG                          |                                | state_reg_n_0_[1]                      |                5 |             12 |
+|  clk_IBUF_BUFG                          |                                | debounce20/state_reg[0]_0              |                8 |             14 |
+|  clk_IBUF_BUFG                          |                                | ssdebounce/state_reg[0]_0              |               11 |             19 |
+|  clk_IBUF_BUFG                          | debounce21/state[0]            | debounce23/state_reg[0]_0              |                8 |             20 |
+|  clk_IBUF_BUFG                          | debounce20/state[0]            | debounce20/state_reg[0]_0              |                8 |             21 |
+|  clk_IBUF_BUFG                          | debounce22/state[0]            | debounce20/state_reg[0]_0              |                7 |             21 |
+|  clk_IBUF_BUFG                          | debounce24/state[0]            | debounce20/state_reg[0]_0              |                8 |             21 |
+|  clk_IBUF_BUFG                          | debounce26/state[0]            | debounce20/state_reg[0]_0              |                8 |             21 |
+|  clk_IBUF_BUFG                          | user_btn/state[0]              | ssdebounce/state_reg[0]_0              |                9 |             22 |
+|  clk_IBUF_BUFG                          | ssdebounce/state[0]            | ssdebounce/state_reg[0]_0              |                9 |             22 |
+|  clk_IBUF_BUFG                          | debouncemb/state[0]            | debouncemb/state_reg[0]_0              |                9 |             22 |
+|  clk_IBUF_BUFG                          | debouncelb/state[0]            | debouncemb/state_reg[0]_0              |                9 |             22 |
+|  clk_IBUF_BUFG                          | debouncehb/state[0]            | debouncemb/state_reg[0]_0              |                7 |             22 |
+|  clk_IBUF_BUFG                          | debounce23/state[0]            | debounce23/state_reg[0]_0              |                9 |             22 |
+|  clk_IBUF_BUFG                          | update_btn/state[0]            | ssdebounce/state_reg[0]_0              |                9 |             22 |
+|  clk_IBUF_BUFG                          | debounce25/state[0]            | debounce23/state_reg[0]_0              |               10 |             22 |
+|  clk_IBUF_BUFG                          | debounce27/state[0]            | debounce23/state_reg[0]_0              |                8 |             22 |
+|  clk_IBUF_BUFG                          |                                | gm/counter[0]_i_1_n_0                  |                8 |             32 |
+|  clk_IBUF_BUFG                          |                                |                                        |               32 |             45 |
+|  clk_IBUF_BUFG                          |                                | c2/div_cnt_reg[31]_0                   |               13 |             53 |
+|  clk_IBUF_BUFG                          |                                | debounce6/cnt_start_reg_0              |               26 |             81 |
+|  clk_IBUF_BUFG                          |                                | debounce0/cnt_start_reg_0              |               27 |             92 |
+|  clk_IBUF_BUFG                          |                                | idlelearnbutton/cnt_start_reg_0        |               27 |             92 |
++-----------------------------------------+--------------------------------+----------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                    36 |
-| 2      |                     4 |
+| 1      |                    35 |
+| 2      |                     5 |
 | 3      |                     2 |
 | 4      |                     4 |
-| 5      |                     2 |
+| 5      |                     3 |
 | 6      |                     2 |
 | 7      |                     1 |
 | 8      |                     7 |
-| 9      |                     1 |
 | 10     |                     2 |
 | 11     |                     2 |
 | 12     |                     1 |
 | 14     |                     1 |
-| 16+    |                    20 |
+| 16+    |                    21 |
 +--------+-----------------------+
 
 
