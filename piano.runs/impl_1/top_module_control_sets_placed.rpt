@@ -1,0 +1,370 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Dec 29 00:07:55 2023
+| Host         : Alaina running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   297 |
+| Unused register locations in slices containing registers |  1316 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             199 |          125 |
+| No           | No                    | Yes                    |             843 |          301 |
+| No           | Yes                   | No                     |             181 |           53 |
+| Yes          | No                    | No                     |              73 |           26 |
+| Yes          | No                    | Yes                    |            1471 |          624 |
+| Yes          | Yes                   | No                     |             117 |           44 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+----------------------------------+-------------------------------------------+------------------+----------------+
+|                Clock Signal                |           Enable Signal          |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++--------------------------------------------+----------------------------------+-------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                             | m4/h/music_reg[6][0][0]          | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/evalbutton/state_0[0]         | m1/d3/cnt_reg[21]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[28][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[22][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[18][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/user_btn/state[0]             | m1/d3/cnt_reg[21]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[44][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[42][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce0/key_out_i_1_n_0     | m3/debounce2/cnt_start_reg_0              |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce1/key_out_i_1__0_n_0  | m3/debounce2/cnt_start_reg_0              |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[0][0][0]          | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[4][0][0]          | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce2/key_out_i_1__1_n_0  | m3/debounce2/cnt_start_reg_0              |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce3/guide_lights_holder | m3/guide_lights_holder_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce3/guide_lights_holder | m3/guide_lights_holder_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  m3/guide_lights_holder_reg[1]_LDC_i_1_n_0 |                                  | m3/guide_lights_holder_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  m3/guide_lights_holder_reg[2]_LDC_i_1_n_0 |                                  | m3/guide_lights_holder_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  m3/guide_lights_holder_reg[3]_LDC_i_1_n_0 |                                  | m3/guide_lights_holder_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  m3/guide_lights_holder_reg[0]_LDC_i_1_n_0 |                                  | m3/guide_lights_holder_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  m3/guide_lights_holder_reg[6]_LDC_i_1_n_0 |                                  | m3/guide_lights_holder_reg[6]_LDC_i_2_n_0 |                1 |              1 |
+|  m3/guide_lights_holder_reg[5]_LDC_i_1_n_0 |                                  | m3/guide_lights_holder_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  m3/guide_lights_holder_reg[4]_LDC_i_1_n_0 |                                  | m3/guide_lights_holder_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce27/state[0]           | m3/debounce20/state_reg[0]_1              |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce3/guide_lights_holder | m3/guide_lights_holder_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce3/guide_lights_holder | m3/guide_lights_holder_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce3/guide_lights_holder | m3/guide_lights_holder_reg[6]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce3/guide_lights_holder | m3/guide_lights_holder_reg[5]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce3/guide_lights_holder | m3/guide_lights_holder_reg[4]_LDC_i_1_n_0 |                1 |              1 |
+|  m4/clkout_reg_n_0                         | m4/cnt_interval                  | m3/evalbutton/key_pflag_reg_0             |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce3/key_out_i_1__2_n_0  | m3/update_btn/cnt_reg[21]_0               |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[2][0][0]          | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[12][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce4/key_out_i_1__3_n_0  | m3/update_btn/cnt_reg[21]_0               |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce5/key_out_i_1__4_n_0  | m3/update_btn/cnt_reg[21]_0               |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce6/key_out_i_1__5_n_0  | m3/update_btn/cnt_reg[21]_0               |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/debounce7/key_out_i_1__6_n_0  | m1/d3/cnt_reg[21]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[40][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[50][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[36][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[20][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[34][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[10][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[14][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/E[0]                        | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[8][0][0]          | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[16][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[46][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/s00/key_out_i_1__7_n_0        | m4/s44/cnt_reg[0]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[52][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[38][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             |                                  | m3/guide_lights_holder_reg[6]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             |                                  | m3/guide_lights_holder_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             |                                  | m3/guide_lights_holder_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             |                                  | m3/guide_lights_holder_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             |                                  | m3/guide_lights_holder_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             |                                  | m3/guide_lights_holder_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             |                                  | m3/guide_lights_holder_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[30][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[24][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[26][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[32][0][0]         | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/s11/key_out_i_1__8_n_0        | m4/s44/cnt_reg[0]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/s77/key_out_i_1__14_n_0       | m4/s77/cnt_reg[0]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/s66/key_out_i_1__13_n_0       | m4/s77/cnt_reg[0]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/s55/key_out_i_1__12_n_0       | m4/s77/cnt_reg[0]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/s44/key_out_i_1__11_n_0       | m4/s44/cnt_reg[0]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/s33/key_out_i_1__10_n_0       | m4/s44/cnt_reg[0]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/s22/key_out_i_1__9_n_0        | m4/s77/cnt_reg[0]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[62][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | c/state[0]                       | m1/d3/cnt_reg[21]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[6][0][0]     | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | r/state[0]                       | m2/play/h/state_reg[1]_0                  |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[60][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[58][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[56][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[36][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[50][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[54][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[52][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m1/d2/state[0]                   | m1/d3/cnt_reg[21]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[4][0][0]     | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[40][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[38][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[44][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[46][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[12][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[28][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[14][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m3/clear_btn/state[0]            | m1/d3/cnt_reg[21]_0                       |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[30][0][0]    | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/ss2/E[0]                      | m4/music_reg[54][3]_0                     |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/left_btn/state[0]             | m4/h/cnt_reg[21]_0                        |                1 |              1 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[62][0][0]         | m4/music_reg[54][3]_0                     |                2 |              2 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[56][0][0]         | m4/music_reg[54][3]_0                     |                1 |              2 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[54][0][0]         | m4/music_reg[54][3]_0                     |                1 |              2 |
+|  m3/song2/interval_reg[1]_i_2__0_n_0       |                                  |                                           |                2 |              2 |
+|  m3/song1/interval_reg[1]_i_2_n_0          |                                  |                                           |                1 |              2 |
+|  m4/s22/count_start0                       |                                  | m4/s22/music_reg[32][0]                   |                1 |              2 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[60][0][0]         | m4/music_reg[54][3]_0                     |                1 |              2 |
+|  clk_IBUF_BUFG                             | m3/select_song_btn               |                                           |                2 |              2 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[58][0][0]         | m4/music_reg[54][3]_0                     |                1 |              2 |
+|  clk_IBUF_BUFG                             |                                  | m4/interval_reg[42][1]_0                  |                1 |              2 |
+|  m1/td/clkout_reg_n_0                      |                                  | m1/d3/cnt_reg[21]_0                       |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[36][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[58][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[60][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[6][0][0]     | m4/interval_reg[42][1]_0                  |                2 |              3 |
+|  m2/play/range_reg[2]_i_2_n_0              |                                  |                                           |                1 |              3 |
+|  m2/ft/td/clkout                           |                                  | m2/play/h/state_reg[1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[62][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              3 |
+|  clk_IBUF_BUFG                             | en_free_reg_n_0                  | m4/h/cnt_reg[21]_0                        |                2 |              3 |
+|  clk_IBUF_BUFG                             | m1/getdata/data7[5]_i_1_n_0      | m3/debouncemb/cnt_reg[21]_0               |                3 |              3 |
+|  m3/tb/clkout_reg_n_0                      |                                  | m4/music_reg[54][3]_0                     |                2 |              3 |
+|  clk_IBUF_BUFG                             | m3/hb2                           |                                           |                2 |              3 |
+|  clk_IBUF_BUFG                             | m3/userbtn                       |                                           |                2 |              3 |
+|  m4/fpt/play/range_reg[2]_i_2__0_n_0       |                                  |                                           |                1 |              3 |
+|  m4/fpt/ft/td/clkout                       |                                  | m4/h/cnt_reg[21]_0                        |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[60][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[56][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[58][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              3 |
+|  m4/clkout_reg_n_0                         | m4/cnt_interval                  | m4/cnt_clk_reg[31]_0                      |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[54][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              3 |
+|  sm/td/clkout                              |                                  | m4/music_reg[54][3]_0                     |                3 |              3 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[56][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[62][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/E[0]                      | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[30][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[14][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[28][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[12][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[46][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[44][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[38][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[40][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[4][0][0]     | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[52][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[54][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              3 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[50][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              3 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[12][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[4][0][0]          | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  m1/cl1/CLK                                |                                  |                                           |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[52][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[20][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[0][0][0]          | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[6][0][0]          | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[18][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[18][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[34][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[22][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[38][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[46][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[22][0][0]    | m4/interval_reg[42][1]_0                  |                3 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[28][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[2][0][0]     | m4/interval_reg[42][1]_0                  |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[30][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[16][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[26][0][0]    | m4/interval_reg[42][1]_0                  |                3 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[10][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[32][0][0]    | m4/interval_reg[42][1]_0                  |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[42][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[24][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[0][0][0]     | m4/interval_reg[42][1]_0                  |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/counter_reg[0][0]         | m4/music_reg[54][3]_0                     |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[16][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | en_auto_reg_n_0                  | m4/h/cnt_reg[21]_0                        |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[24][0][0]    | m4/interval_reg[42][1]_0                  |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/ss2/interval_reg[8][0][0]     | m4/interval_reg[42][1]_0                  |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[20][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m3/l7/data3[5]_i_1_n_0           | m3/l7/data3_reg[5]_0                      |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[34][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[36][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m3/l7/data4[5]_i_2_n_0           | m3/l7/data3_reg[5]_0                      |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[40][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m2/play/l/state[0]               | m4/h/cnt_reg[21]_0                        |                1 |              4 |
+|  clk_IBUF_BUFG                             | m3/debounce3/digit1_reg[0][0]    | m3/update_btn/cnt_reg[21]_0               |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[2][0][0]          | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m3/debounce3/E[0]                | m3/update_btn/cnt_reg[21]_0               |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[42][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[44][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[10][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[50][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/E[0]                        | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[32][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[14][0][0]         | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[8][0][0]          | m4/music[62][2]_i_2_n_0                   |                2 |              4 |
+|  clk_IBUF_BUFG                             | m4/h/music_reg[26][0][0]         | m4/music[62][2]_i_2_n_0                   |                1 |              4 |
+|  m3/c2/CLK                                 |                                  |                                           |                1 |              5 |
+|  m4/clkout_reg_n_0                         | m4/music0                        | m4/cnt_clk_reg[31]_0                      |                2 |              5 |
+|  clk_IBUF_BUFG                             | m3/l7/data1[4]_i_1__2_n_0        | m3/l7/data3[4]_i_1_n_0                    |                4 |              5 |
+|  clk_IBUF_BUFG                             | m4/sm/music[4]_i_2_n_0           | m4/sm/music                               |                2 |              5 |
+|  clk_IBUF_BUFG                             |                                  | m2/play/h/state_reg[1]_0                  |                3 |              5 |
+|  clk_IBUF_BUFG                             | m3/l7/data2[5]_i_1__0_n_0        | m3/state_reg_n_0_[1]                      |                2 |              5 |
+|  m1/cl1/CLK                                | m1/s1/cnt[5]_i_2_n_0             | m1/s1/cnt[5]_i_1__1_n_0                   |                1 |              6 |
+|  m4/clkout_reg_n_0                         | m4/cnt_note                      | m3/evalbutton/key_pflag_reg_0             |                2 |              6 |
+|  clk_IBUF_BUFG                             | m4/s0/E[0]                       | m4/music_reg[54][3]_0                     |                2 |              6 |
+|  clk_IBUF_BUFG                             | m3/debounce0/E[0]                | m3/debounce6/cnt_start_reg_0              |                3 |              6 |
+|  clk_IBUF_BUFG                             | m3/l7/data7[3]_i_2_n_0           | m3/l7/data7[3]_i_1__0_n_0                 |                2 |              6 |
+|  clk_IBUF_BUFG                             | m3/guide_lights[6]_P_i_1_n_0     |                                           |                4 |              7 |
+| ~m1/td/Q[2]                                |                                  |                                           |                5 |              8 |
+|  m2/ft/td/scan_cnt[2]                      |                                  |                                           |                4 |              8 |
+| ~m2/ft/td/scan_cnt[2]                      |                                  |                                           |                5 |              8 |
+|  m3/tb/scan_cnt_reg[2]_0[2]                |                                  |                                           |                4 |              8 |
+| ~m3/tb/scan_cnt_reg[2]_0[2]                |                                  |                                           |                5 |              8 |
+|  m4/fpt/ft/td/scan_cnt[2]                  |                                  |                                           |                4 |              8 |
+| ~m4/fpt/ft/td/scan_cnt[2]                  |                                  |                                           |                4 |              8 |
+|  sm/td/scan_cnt[2]                         |                                  |                                           |                4 |              8 |
+| ~sm/td/scan_cnt[2]                         |                                  |                                           |                6 |              8 |
+|  clk_IBUF_BUFG                             | m3/prev[7]_i_1_n_0               |                                           |                2 |              8 |
+|  clk_IBUF_BUFG                             | m4/fpt/play/frequency_reg[8]_0   | m2/play/frequency_reg[8]_1                |                5 |              8 |
+|  clk_IBUF_BUFG                             | m3/acc/user2_rating1[3]_i_2_n_0  | m3/acc/user2_rating1[3]_i_1_n_0           |                1 |              8 |
+|  clk_IBUF_BUFG                             | m3/acc/user3_rating1[3]_i_2_n_0  | m3/acc/user3_rating1[3]_i_1_n_0           |                2 |              8 |
+|  m1/td/Q[2]                                |                                  |                                           |                6 |              8 |
+|  clk_IBUF_BUFG                             | m3/acc/user0_rating1[3]_i_2_n_0  | m3/acc/user0_rating1[3]_i_1_n_0           |                3 |              8 |
+|  clk_IBUF_BUFG                             | m3/acc/user1_rating1[3]_i_2_n_0  | m3/acc/user1_rating1[3]_i_1_n_0           |                1 |              8 |
+|  clk_IBUF_BUFG                             | m2/play/frequency[8]_i_2_n_0     | m2/play/frequency[8]_i_1_n_0              |                4 |              8 |
+|  clk_IBUF_BUFG                             |                                  | m3/debouncemb/cnt_reg[21]_0               |                5 |              9 |
+|  clk_IBUF_BUFG                             | en_free_reg_n_0                  | m2/play/h/state_reg[1]_0                  |                2 |              9 |
+|  clk_IBUF_BUFG                             | rst_IBUF                         |                                           |                3 |             10 |
+|  clk_IBUF_BUFG                             |                                  | m3/debounce20/state_reg[0]_1              |                5 |             11 |
+|  clk_IBUF_BUFG                             |                                  | m4/fpt/play/l/rst0                        |                5 |             11 |
+|  clk_IBUF_BUFG                             |                                  | m4/s3/state_reg[0]_0                      |                6 |             12 |
+|  clk_IBUF_BUFG                             |                                  | m4/s7/state_reg[0]_0                      |                4 |             12 |
+|  clk_IBUF_BUFG                             |                                  | m3/state_reg_n_0_[1]                      |                5 |             12 |
+|  clk_IBUF_BUFG                             |                                  | m4/ss7/state_reg[0]_0                     |                7 |             12 |
+|  clk_IBUF_BUFG                             |                                  | m4/ss3/state_reg[0]_0                     |                7 |             12 |
+|  clk_IBUF_BUFG                             | m4/count                         | m4/interval_reg[42][1]_0                  |                4 |             12 |
+|  clk_IBUF_BUFG                             |                                  | m3/debounce23/state_reg[0]_1              |                8 |             13 |
+|  clk_IBUF_BUFG                             | m4/count                         | m4/music_reg[54][3]_0                     |                4 |             13 |
+|  clk_IBUF_BUFG                             | m4/led[6]_i_2_n_0                | m4/led[6]_i_1__0_n_0                      |                4 |             16 |
+|  clk_IBUF_BUFG                             | m2/play/l/state[0]               | m2/play/h/state_reg[1]_0                  |                6 |             18 |
+|  clk_IBUF_BUFG                             | m4/led[6]_i_2_n_0                | m4/led[5]_i_1__0_n_0                      |                9 |             18 |
+|  clk_IBUF_BUFG                             | m1/d2/state[0]                   | m2/play/h/state_reg[1]_0                  |                7 |             21 |
+|  clk_IBUF_BUFG                             | r/state[0]                       | m3/update_btn/cnt_reg[21]_0               |               10 |             21 |
+|  clk_IBUF_BUFG                             | m3/user_btn/state[0]             | m3/evalbutton/key_pflag_reg_0             |                9 |             21 |
+|  clk_IBUF_BUFG                             | m3/evalbutton/state_0[0]         | m3/evalbutton/key_pflag_reg_0             |                7 |             21 |
+|  clk_IBUF_BUFG                             | c/state[0]                       | m3/evalbutton/key_pflag_reg_0             |                7 |             21 |
+|  clk_IBUF_BUFG                             | m3/debounce27/state[0]           | m3/debounce23/state_reg[0]_1              |                7 |             21 |
+|  clk_IBUF_BUFG                             | m1/getdata/data7[5]_i_1_n_0      | m1/d3/cnt_reg[21]_0                       |                8 |             21 |
+|  clk_IBUF_BUFG                             | m4/left_btn/state[0]             | m3/update_btn/cnt_reg[21]_0               |                9 |             21 |
+|  clk_IBUF_BUFG                             | m3/clear_btn/state[0]            | m3/evalbutton/key_pflag_reg_0             |                8 |             21 |
+|  clk_IBUF_BUFG                             | m4/ss0/state[0]                  | m4/ss3/state_reg[0]_0                     |                7 |             22 |
+|  clk_IBUF_BUFG                             | m3/debounce25/state[0]           | m3/debounce20/state_reg[0]_1              |               10 |             22 |
+|  clk_IBUF_BUFG                             | m3/debounce26/state[0]           | m3/debounce20/state_reg[0]_1              |                8 |             22 |
+|  clk_IBUF_BUFG                             | m3/debouncelb/state[0]           | m3/debouncemb/cnt_reg[21]_0               |                9 |             22 |
+|  clk_IBUF_BUFG                             | m3/debouncemb/state[0]           | m3/debouncemb/cnt_reg[21]_0               |               10 |             22 |
+|  clk_IBUF_BUFG                             | m4/s2/state[0]                   | m4/s7/state_reg[0]_0                      |               10 |             22 |
+|  clk_IBUF_BUFG                             | m4/s3/state[0]                   | m4/s3/state_reg[0]_0                      |                8 |             22 |
+|  clk_IBUF_BUFG                             | m3/debouncehb/state[0]           | m3/debouncemb/cnt_reg[21]_0               |                7 |             22 |
+|  clk_IBUF_BUFG                             | m4/ss1/state[0]                  | m4/ss7/state_reg[0]_0                     |                8 |             22 |
+|  clk_IBUF_BUFG                             | m1/d4/state[0]                   | m2/play/h/state_reg[1]_0                  |                9 |             22 |
+|  clk_IBUF_BUFG                             | m3/ssdebounce/state[0]           | m1/d3/cnt_reg[21]_0                       |               10 |             22 |
+|  clk_IBUF_BUFG                             | m1/d3/state[0]                   | m1/d3/cnt_reg[21]_0                       |                8 |             22 |
+|  clk_IBUF_BUFG                             | m4/s0/state[0]                   | m4/s3/state_reg[0]_0                      |                8 |             22 |
+|  clk_IBUF_BUFG                             | m4/s7/state[0]                   | m4/s7/state_reg[0]_0                      |                9 |             22 |
+|  clk_IBUF_BUFG                             | m1/d1/state[0]                   | m1/d3/cnt_reg[21]_0                       |                8 |             22 |
+|  clk_IBUF_BUFG                             | m3/update_btn/state[0]           | m3/update_btn/cnt_reg[21]_0               |                9 |             22 |
+|  clk_IBUF_BUFG                             | m4/s5/state[0]                   | m4/s7/state_reg[0]_0                      |               10 |             22 |
+|  clk_IBUF_BUFG                             | m2/play/h/state[0]               | m2/play/h/state_reg[1]_0                  |                9 |             22 |
+|  en_top_reg_n_0                            |                                  |                                           |                9 |             22 |
+|  clk_IBUF_BUFG                             | m4/s1/state[0]                   | m4/s7/state_reg[0]_0                      |                7 |             22 |
+|  clk_IBUF_BUFG                             | m2/play/m/state[0]               | m2/play/h/state_reg[1]_0                  |                9 |             22 |
+|  clk_IBUF_BUFG                             | m4/ss2/state[0]                  | m4/ss7/state_reg[0]_0                     |               10 |             22 |
+|  clk_IBUF_BUFG                             | m4/ss3/state[0]                  | m4/ss3/state_reg[0]_0                     |                8 |             22 |
+|  clk_IBUF_BUFG                             | m4/ss4/state[0]                  | m4/ss3/state_reg[0]_0                     |                9 |             22 |
+|  clk_IBUF_BUFG                             | m4/ss5/state[0]                  | m4/ss7/state_reg[0]_0                     |                7 |             22 |
+|  clk_IBUF_BUFG                             | m4/ss6/state[0]                  | m4/ss3/state_reg[0]_0                     |               10 |             22 |
+|  clk_IBUF_BUFG                             | m4/ss7/state[0]                  | m4/ss7/state_reg[0]_0                     |                8 |             22 |
+|  clk_IBUF_BUFG                             | m4/m/state[0]                    | m4/h/cnt_reg[21]_0                        |                8 |             22 |
+|  clk_IBUF_BUFG                             | m4/s6/state[0]                   | m4/s3/state_reg[0]_0                      |                8 |             22 |
+|  clk_IBUF_BUFG                             | m3/debounce21/state[0]           | m3/debounce23/state_reg[0]_1              |                8 |             22 |
+|  clk_IBUF_BUFG                             | m4/l/state[0]                    | m4/h/cnt_reg[21]_0                        |                8 |             22 |
+|  clk_IBUF_BUFG                             | m4/h/state[0]                    | m4/h/cnt_reg[21]_0                        |                8 |             22 |
+|  clk_IBUF_BUFG                             | m4/fpt/play/h/state[0]           | m4/fpt/play/l/rst0                        |                9 |             22 |
+|  clk_IBUF_BUFG                             | m4/fpt/play/l/state[0]           | m4/fpt/play/l/rst0                        |               10 |             22 |
+|  clk_IBUF_BUFG                             | m4/fpt/play/m/state[0]           | m4/fpt/play/l/rst0                        |                8 |             22 |
+|  clk_IBUF_BUFG                             | m3/debounce20/state[0]           | m3/debounce20/state_reg[0]_1              |                7 |             22 |
+|  clk_IBUF_BUFG                             | m3/debounce22/state[0]           | m3/debounce23/state_reg[0]_1              |                7 |             22 |
+|  clk_IBUF_BUFG                             | m3/debounce23/state[0]           | m3/debounce23/state_reg[0]_1              |                7 |             22 |
+|  clk_IBUF_BUFG                             | m3/debounce24/state[0]           | m3/debounce20/state_reg[0]_1              |                8 |             22 |
+|  clk_IBUF_BUFG                             | m4/s4/state[0]                   | m4/s3/state_reg[0]_0                      |                8 |             22 |
+|  clk_IBUF_BUFG                             |                                  | m1/d3/cnt_reg[21]_0                       |                8 |             27 |
+|  clk_IBUF_BUFG                             |                                  | m4/gm/counter[0]_i_1__1_n_0               |                8 |             32 |
+|  clk_IBUF_BUFG                             |                                  | m1/gm/counter[0]_i_1_n_0                  |                8 |             32 |
+|  clk_IBUF_BUFG                             |                                  | m2/gm/counter[0]_i_1__0_n_0               |                8 |             32 |
+|  clk_IBUF_BUFG                             |                                  | m3/gm/counter_reg[0]_i_1_n_7              |                8 |             32 |
+|  clk_IBUF_BUFG                             |                                  | m4/fpt/gm/counter[0]_i_1__2_n_0           |                8 |             32 |
+|  clk_IBUF_BUFG                             |                                  | m3/evalbutton/key_pflag_reg_0             |               13 |             32 |
+|  clk_IBUF_BUFG                             |                                  | m4/music_reg[54][3]_0                     |                9 |             38 |
+|  clk_IBUF_BUFG                             | bg_led[7]_i_1_n_0                |                                           |               11 |             40 |
+|  clk_IBUF_BUFG                             |                                  | m4/h/cnt_reg[21]_0                        |               19 |             42 |
+|  clk_IBUF_BUFG                             |                                  | m3/update_btn/cnt_reg[21]_0               |               22 |             47 |
+|  clk_IBUF_BUFG                             |                                  |                                           |               62 |             78 |
+|  clk_IBUF_BUFG                             |                                  | m4/s44/cnt_reg[0]_0                       |               27 |             92 |
+|  clk_IBUF_BUFG                             |                                  | m4/s77/cnt_reg[0]_0                       |               28 |             92 |
+|  clk_IBUF_BUFG                             |                                  | m4/cnt_clk_reg[31]_0                      |               36 |            115 |
+|  clk_IBUF_BUFG                             |                                  | m3/debounce6/cnt_start_reg_0              |               36 |            117 |
+|  clk_IBUF_BUFG                             |                                  | m3/debounce2/cnt_start_reg_0              |               36 |            120 |
++--------------------------------------------+----------------------------------+-------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    92 |
+| 2      |                    10 |
+| 3      |                    36 |
+| 4      |                    48 |
+| 5      |                     6 |
+| 6      |                     5 |
+| 7      |                     1 |
+| 8      |                    17 |
+| 9      |                     2 |
+| 10     |                     1 |
+| 11     |                     2 |
+| 12     |                     6 |
+| 13     |                     2 |
+| 16+    |                    69 |
++--------+-----------------------+
+
+
